@@ -1,0 +1,21 @@
+var db = require('./db');
+
+
+exports.send = function(req, res){
+	var room_id = req.query.room_id;
+	var user_id = req.query.user_id;
+	var data = req.query.data;
+	
+	db.add();
+	
+	//var mongo = exports.mongo;
+	//res.send(exports);
+	
+	// Get next id
+	//db.ttt.findAndModify({query:{'_id':'counter'},update:{$inc:{'next':1}},new:true,upsert:true})
+
+	//var Cat = db.mongo.model('Cat', { name: String });
+	//var kitty = new Cat({ name: 'Zildjian' });
+
+	res.send(room_id + ' ' + user_id + ' ' + data);
+};

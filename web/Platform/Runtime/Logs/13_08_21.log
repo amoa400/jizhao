@@ -1,0 +1,69 @@
+[ 2013-08-21T09:13:44+08:00 ] 127.0.0.1 /Company/loginDo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001118s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001310s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.047093s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `jz_user` WHERE ( `email` = 'weiqin@vip.126.com' ) LIMIT 1   [ RunTime:0.000851s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `jz_company` [ RunTime:0.025701s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `company_id` = 1 ) LIMIT 1   [ RunTime:0.000661s ]
+
+[ 2013-08-21T09:13:58+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-21T09:20:00+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-21T10:38:19+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-21T10:54:27+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-21T13:37:06+08:00 ] 127.0.0.1 /rms/rms_resume/showList
+ERR: 无法加载模块:RmsResume
+
+[ 2013-08-21T13:37:07+08:00 ] 127.0.0.1 /rms/rms_resume/showList
+ERR: 无法加载模块:RmsResume
+
+[ 2013-08-21T13:37:36+08:00 ] 127.0.0.1 /rms/rms_tablen/showList
+ERR: 无法加载模块:RmsTablen
+
+[ 2013-08-21T13:38:02+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-21T13:38:41+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-21T13:38:45+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-21T13:47:42+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-21T13:49:38+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-21T13:56:31+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-21T13:56:51+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-21T14:04:35+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-21T14:08:44+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-21T14:29:06+08:00 ] 127.0.0.1 /rms/rms_talent/showList
+ERR: Model:rList您所请求的方法不存在！
+
+[ 2013-08-21T14:29:14+08:00 ] 127.0.0.1 /rms/rms_talent/showList
+ERR: Model:rList您所请求的方法不存在！
+
+[ 2013-08-21T14:29:28+08:00 ] 127.0.0.1 /rms/rms_talent/showList
+ERR: Model:rList您所请求的方法不存在！
+

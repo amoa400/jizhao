@@ -1,0 +1,114 @@
+[ 2013-09-08T14:14:43+08:00 ] 127.0.0.1 /Company/loginDo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001365s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\jizhao\web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.047156s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `jz_user` WHERE ( `email` = 'weiqin@vip.126.com' ) LIMIT 1   [ RunTime:0.000800s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `jz_company` [ RunTime:0.029497s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `company_id` = 1 ) LIMIT 1   [ RunTime:0.000729s ]
+
+[ 2013-09-08T14:15:31+08:00 ] 127.0.0.1 /css/ois/manage.css
+ERR: 无法加载模块:Css
+
+[ 2013-09-08T14:21:52+08:00 ] 127.0.0.1 /css/ois/manage.css
+ERR: 无法加载模块:Css
+
+[ 2013-09-08T15:20:52+08:00 ] 127.0.0.1 /Company/loginDo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001170s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001365s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\jizhao\web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.005772s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `jz_user` WHERE ( `email` = 'weiqin@vip.126.com' ) LIMIT 1   [ RunTime:0.000537s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `jz_company` [ RunTime:0.005243s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `company_id` = 1 ) LIMIT 1   [ RunTime:0.000452s ]
+
+[ 2013-09-08T15:21:55+08:00 ] 127.0.0.1 /css/ois/manage.css
+ERR: 无法加载模块:Css
+
+[ 2013-09-08T15:21:56+08:00 ] 127.0.0.1 /cms
+ERR: 无法加载模块:Cms
+
+[ 2013-09-08T15:30:57+08:00 ] 127.0.0.1 /cms
+ERR: 无法加载模块:Cms
+
+[ 2013-09-08T16:43:40+08:00 ] 127.0.0.1 /Company/loginDo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001633s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\jizhao\web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.005905s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `jz_user` WHERE ( `email` = 'weiqin@vip.126.com' ) LIMIT 1   [ RunTime:0.000473s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `jz_company` [ RunTime:0.005487s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `company_id` = 1 ) LIMIT 1   [ RunTime:0.000485s ]
+
+[ 2013-09-08T18:57:21+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-08T18:57:27+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-08T18:58:05+08:00 ] 127.0.0.1 /css/ois/manage.css
+ERR: 无法加载模块:Css
+
+[ 2013-09-08T20:13:15+08:00 ] 127.0.0.1 /Company/loginDo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001186s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001398s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\jizhao\web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.005883s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `jz_user` WHERE ( `email` = 'weiqin@vip.126.com' ) LIMIT 1   [ RunTime:0.000523s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `jz_company` [ RunTime:0.006026s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `company_id` = 1 ) LIMIT 1   [ RunTime:0.000485s ]
+
+[ 2013-09-08T20:13:23+08:00 ] 127.0.0.1 /Company/loginDo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001278s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\jizhao\web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.005404s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `jz_user` WHERE ( `email` = 'weiqin@vip.126.com' ) LIMIT 1   [ RunTime:0.000517s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `jz_company` [ RunTime:0.005239s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `company_id` = 1 ) LIMIT 1   [ RunTime:0.000415s ]
+
+[ 2013-09-08T20:15:48+08:00 ] 127.0.0.1 /css/ois/manage.css
+ERR: 无法加载模块:Css
+
+[ 2013-09-08T20:27:46+08:00 ] 127.0.0.1 /css/ois/manage.css
+ERR: 无法加载模块:Css
+
+[ 2013-09-08T20:39:26+08:00 ] 127.0.0.1 /css/ois/manage.css
+ERR: 无法加载模块:Css
+
+[ 2013-09-08T21:22:58+08:00 ] 127.0.0.1 /css/ois/manage.css
+ERR: 无法加载模块:Css
+
+[ 2013-09-08T21:23:00+08:00 ] 127.0.0.1 /css/ois/manage.css
+ERR: 无法加载模块:Css
+
+[ 2013-09-08T21:37:21+08:00 ] 127.0.0.1 /css/ois/manage.css
+ERR: 无法加载模块:Css
+
+[ 2013-09-08T22:49:26+08:00 ] 127.0.0.1 /Company/loginDo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001137s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\jizhao\web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.005501s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `jz_user` WHERE ( `email` = 'weiqin@vip.126.com' ) LIMIT 1   [ RunTime:0.000620s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `jz_company` [ RunTime:0.005317s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `company_id` = 1 ) LIMIT 1   [ RunTime:0.000424s ]
+

@@ -1,0 +1,740 @@
+[ 2013-08-29T13:08:15+08:00 ] 127.0.0.1 /Company/loginDo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001257s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.073669s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `jz_user` WHERE ( `email` = 'acm@sjtu.edu.cn' ) LIMIT 1   [ RunTime:0.000856s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `jz_company` [ RunTime:0.016880s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `company_id` = 2 ) LIMIT 1   [ RunTime:0.000534s ]
+
+[ 2013-08-29T13:08:27+08:00 ] 127.0.0.1 /Company/loginDo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000927s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001107s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.005583s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `jz_user` WHERE ( `email` = 'acm@sjtu.edu.cn' ) LIMIT 1   [ RunTime:0.000466s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `jz_company` [ RunTime:0.004945s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `company_id` = 2 ) LIMIT 1   [ RunTime:0.001010s ]
+
+[ 2013-08-29T13:08:42+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-29T13:12:51+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-29T13:41:48+08:00 ] 127.0.0.1 /Company/loginDo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001395s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.005959s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `jz_user` WHERE ( `email` = 'weiqin@vip.126.com' ) LIMIT 1   [ RunTime:0.000556s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `jz_company` [ RunTime:0.004906s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `company_id` = 1 ) LIMIT 1   [ RunTime:0.000428s ]
+
+[ 2013-08-29T14:10:09+08:00 ] 127.0.0.1 /rms/rms_talent/edit.html.html
+ERR: 非法操作:edit.html
+
+[ 2013-08-29T14:10:23+08:00 ] 127.0.0.1 /rms/rms_talent/edit.html.html
+ERR: 非法操作:edit.html
+
+[ 2013-08-29T14:10:28+08:00 ] 127.0.0.1 /rms/rms_talent/edit.html.html
+ERR: 非法操作:edit.html
+
+[ 2013-08-29T14:10:31+08:00 ] 127.0.0.1 /rms/rms_talent/edit.html.html
+ERR: 非法操作:edit.html
+
+[ 2013-08-29T14:10:33+08:00 ] 127.0.0.1 /rms/rms_talent/edit.html.html
+ERR: 非法操作:edit.html
+
+[ 2013-08-29T14:10:56+08:00 ] 127.0.0.1 /rms/rms_talent/edit.html.html
+ERR: 非法操作:edit.html
+
+[ 2013-08-29T14:41:11+08:00 ] 127.0.0.1 /sys/sys_system/companyInfoEditDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000980s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001172s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_company` [ RunTime:0.005235s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `realname` = '上海维秦信息科技有限公司' ) AND ( `company_id` <> '1' ) LIMIT 1   [ RunTime:0.000682s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `email` = 'weiqin@vip.126.com' ) AND ( `company_id` <> '1' ) LIMIT 1   [ RunTime:0.000418s ]
+SQL: UPDATE `jz_company` SET `realname`='上海维秦信息科技有限公司',`email`='weiqin@vip.126.com',`contact_name`='黄偲',`phone`='15216708847' WHERE ( `company_id` = 1 ) [ RunTime:0.072562s ]
+
+[ 2013-08-29T14:41:18+08:00 ] 127.0.0.1 /sys/sys_system/companyInfoEditDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001181s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_company` [ RunTime:0.014661s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `realname` = '上海维秦信息科技有限公司' ) AND ( `company_id` <> '1' ) LIMIT 1   [ RunTime:0.000520s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `email` = 'weiqin@vip.126.com' ) AND ( `company_id` <> '1' ) LIMIT 1   [ RunTime:0.000477s ]
+SQL: UPDATE `jz_company` SET `realname`='上海维秦信息科技有限公司',`email`='weiqin@vip.126.com',`contact_name`='黄偲',`phone`='15216708847' WHERE ( `company_id` = 1 ) [ RunTime:0.124738s ]
+
+[ 2013-08-29T14:41:23+08:00 ] 127.0.0.1 /sys/sys_system/companyInfoEditDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000928s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001117s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_company` [ RunTime:0.005397s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `realname` = '上海维秦信息科技有限公司' ) AND ( `company_id` <> '1' ) LIMIT 1   [ RunTime:0.000518s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `email` = 'weiqin@vip.126.com' ) AND ( `company_id` <> '1' ) LIMIT 1   [ RunTime:0.000393s ]
+SQL: UPDATE `jz_company` SET `realname`='上海维秦信息科技有限公司',`email`='weiqin@vip.126.com',`contact_name`='黄偲',`phone`='15216708847' WHERE ( `company_id` = 1 ) [ RunTime:0.065493s ]
+
+[ 2013-08-29T14:41:52+08:00 ] 127.0.0.1 /rms/rms_talent/
+ERR: 非法操作:index
+
+[ 2013-08-29T15:19:54+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-29T15:45:50+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-29T16:36:59+08:00 ] 127.0.0.1 /rms/rms_talent/edit/mode/upload/talent_id_list/69%7C70%7C/filename_list/%E6%95%B4%E4%BD%93%E9%A3%8E%E6%A0%BC%E6%A1%86%E6%9E%B6%E4%BB%BB%E5%8A%A1%E4%B9%A6.docx%7C%E6%95%B4%E4%BD%93%E9%A3%8E%E6%A0%BC%E6%A1%86%E6%9E%B6%E4%BB%BB%E5%8A%A1%E4%B9%A6.pdf%7C.html
+ERR: Model:r您所请求的方法不存在！
+
+[ 2013-08-29T16:37:07+08:00 ] 127.0.0.1 /rms/rms_talent/edit/mode/upload/talent_id_list/69%7C70%7C/filename_list/%E6%95%B4%E4%BD%93%E9%A3%8E%E6%A0%BC%E6%A1%86%E6%9E%B6%E4%BB%BB%E5%8A%A1%E4%B9%A6.docx%7C%E6%95%B4%E4%BD%93%E9%A3%8E%E6%A0%BC%E6%A1%86%E6%9E%B6%E4%BB%BB%E5%8A%A1%E4%B9%A6.pdf%7C.html
+ERR: Model:r您所请求的方法不存在！
+
+[ 2013-08-29T16:37:08+08:00 ] 127.0.0.1 /rms/rms_talent/edit/mode/upload/talent_id_list/69%7C70%7C/filename_list/%E6%95%B4%E4%BD%93%E9%A3%8E%E6%A0%BC%E6%A1%86%E6%9E%B6%E4%BB%BB%E5%8A%A1%E4%B9%A6.docx%7C%E6%95%B4%E4%BD%93%E9%A3%8E%E6%A0%BC%E6%A1%86%E6%9E%B6%E4%BB%BB%E5%8A%A1%E4%B9%A6.pdf%7C.html
+ERR: Model:r您所请求的方法不存在！
+
+[ 2013-08-29T16:37:34+08:00 ] 127.0.0.1 /rms/rms_talent/edit/mode/upload/talent_id_list/69%7C70%7C/filename_list/%E6%95%B4%E4%BD%93%E9%A3%8E%E6%A0%BC%E6%A1%86%E6%9E%B6%E4%BB%BB%E5%8A%A1%E4%B9%A6.docx%7C%E6%95%B4%E4%BD%93%E9%A3%8E%E6%A0%BC%E6%A1%86%E6%9E%B6%E4%BB%BB%E5%8A%A1%E4%B9%A6.pdf%7C.html
+ERR: Model:r您所请求的方法不存在！
+
+[ 2013-08-29T18:38:38+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-29T18:39:07+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-29T18:42:11+08:00 ] 127.0.0.1 /rms/rms_talent/edit/mode/upload/talent_id_list/69%7C70%7C/filename_list/%E6%95%B4%E4%BD%93%E9%A3%8E%E6%A0%BC%E6%A1%86%E6%9E%B6%E4%BB%BB%E5%8A%A1%E4%B9%A6.docx%7C%E6%95%B4%E4%BD%93%E9%A3%8E%E6%A0%BC%E6%A1%86%E6%9E%B6%E4%BB%BB%E5%8A%A1%E4%B9%A6.pdf%7C.html
+ERR: 非法操作:edit
+
+[ 2013-08-29T18:43:34+08:00 ] 127.0.0.1 /rms/rms_talent/createEditDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001512s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+ERR: 非法操作:createeditdo
+
+[ 2013-08-29T18:43:37+08:00 ] 127.0.0.1 /rms/rms_talent/createEditDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001551s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+ERR: 非法操作:createeditdo
+
+[ 2013-08-29T18:44:18+08:00 ] 127.0.0.1 /rms/rms_talent/createEditDo.html
+ERR: 非法操作:createeditdo
+
+[ 2013-08-29T18:44:20+08:00 ] 127.0.0.1 /rms/rms_talent/createEditDo.html
+ERR: 非法操作:createeditdo
+
+[ 2013-08-29T18:44:35+08:00 ] 127.0.0.1 /rms/rms_talent/createEditDo.html
+ERR: 非法操作:createeditdo
+
+[ 2013-08-29T18:45:02+08:00 ] 127.0.0.1 /rms/rms_talent/createEditDo.html
+ERR: 非法操作:createeditdo
+
+[ 2013-08-29T18:45:44+08:00 ] 127.0.0.1 /rms/rms_talent/createEditDo.html
+ERR: 非法操作:createeditdo
+
+[ 2013-08-29T18:45:46+08:00 ] 127.0.0.1 /rms/rms_talent/createEditDo.html
+ERR: 非法操作:createeditdo
+
+[ 2013-08-29T18:45:55+08:00 ] 127.0.0.1 /rms/rms_talent/createEditDo.html
+ERR: 非法操作:createeditdo
+
+[ 2013-08-29T18:58:15+08:00 ] 127.0.0.1 /uploads//resume
+ERR: 无法加载模块:Uploads
+
+[ 2013-08-29T19:06:49+08:00 ] 127.0.0.1 /Company/loginDo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001121s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001315s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.006950s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `jz_user` WHERE ( `email` = 'weiqin@vip.126.com' ) LIMIT 1   [ RunTime:0.014002s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `jz_company` [ RunTime:0.006049s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `company_id` = 1 ) LIMIT 1   [ RunTime:0.000427s ]
+
+[ 2013-08-29T19:25:35+08:00 ] 127.0.0.1 /rms/rms_position/showList
+ERR: 无法加载模块:RmsPosition
+
+[ 2013-08-29T19:26:59+08:00 ] 127.0.0.1 /rms/rms_position/showList
+ERR: 无法加载模块:RmsPosition
+
+[ 2013-08-29T19:27:00+08:00 ] 127.0.0.1 /rms/rms_position/showList
+ERR: 无法加载模块:RmsPosition
+
+[ 2013-08-29T19:27:00+08:00 ] 127.0.0.1 /rms/rms_position/showList
+ERR: 无法加载模块:RmsPosition
+
+[ 2013-08-29T19:27:01+08:00 ] 127.0.0.1 /rms/rms_position/create
+ERR: 无法加载模块:RmsPosition
+
+[ 2013-08-29T19:27:02+08:00 ] 127.0.0.1 /rms/rms_position/showList
+ERR: 无法加载模块:RmsPosition
+
+[ 2013-08-29T19:27:04+08:00 ] 127.0.0.1 /rms/rms_position/showList
+ERR: 无法加载模块:RmsPosition
+
+[ 2013-08-29T19:27:05+08:00 ] 127.0.0.1 /rms/rms_position/create
+ERR: 无法加载模块:RmsPosition
+
+[ 2013-08-29T19:27:28+08:00 ] 127.0.0.1 /rms/rms_position/showList
+ERR: 无法加载模块:RmsPosition
+
+[ 2013-08-29T19:27:29+08:00 ] 127.0.0.1 /rms/rms_position/showList
+ERR: 无法加载模块:RmsPosition
+
+[ 2013-08-29T19:27:29+08:00 ] 127.0.0.1 /rms/rms_position/showList
+ERR: 无法加载模块:RmsPosition
+
+[ 2013-08-29T19:27:29+08:00 ] 127.0.0.1 /rms/rms_position/showList
+ERR: 无法加载模块:RmsPosition
+
+[ 2013-08-29T19:27:29+08:00 ] 127.0.0.1 /rms/rms_position/showList
+ERR: 无法加载模块:RmsPosition
+
+[ 2013-08-29T19:27:56+08:00 ] 127.0.0.1 /rms/rms_position/showList
+ERR: 非法操作:showlist
+
+[ 2013-08-29T19:27:57+08:00 ] 127.0.0.1 /rms/rms_position/showList
+ERR: 非法操作:showlist
+
+[ 2013-08-29T19:27:58+08:00 ] 127.0.0.1 /rms/rms_position/create
+ERR: 非法操作:create
+
+[ 2013-08-29T19:27:58+08:00 ] 127.0.0.1 /rms/rms_position/showList
+ERR: 非法操作:showlist
+
+[ 2013-08-29T19:48:54+08:00 ] 127.0.0.1 /rms/rms_position/create
+ERR: 非法操作:create
+
+[ 2013-08-29T19:55:53+08:00 ] 127.0.0.1 /rms/rms_position/showList
+ERR: Action:format您所请求的方法不存在！
+
+[ 2013-08-29T19:55:54+08:00 ] 127.0.0.1 /rms/rms_position/showList
+ERR: Action:format您所请求的方法不存在！
+
+[ 2013-08-29T19:55:56+08:00 ] 127.0.0.1 /rms/rms_position/showList
+ERR: Action:format您所请求的方法不存在！
+
+[ 2013-08-29T19:56:14+08:00 ] 127.0.0.1 /rms/rms_position/showList
+ERR: Model:rList您所请求的方法不存在！
+
+[ 2013-08-29T19:56:43+08:00 ] 127.0.0.1 /rms/rms_position/showList
+ERR: Model:rList您所请求的方法不存在！
+
+[ 2013-08-29T19:56:44+08:00 ] 127.0.0.1 /rms/rms_position/showList
+ERR: Model:rList您所请求的方法不存在！
+
+[ 2013-08-29T19:56:56+08:00 ] 127.0.0.1 /rms/rms_position/showList
+ERR: Model:rList您所请求的方法不存在！
+
+[ 2013-08-29T19:56:56+08:00 ] 127.0.0.1 /rms/rms_position/showList
+ERR: Model:rList您所请求的方法不存在！
+
+[ 2013-08-29T19:56:57+08:00 ] 127.0.0.1 /rms/rms_position/showList
+ERR: Model:rList您所请求的方法不存在！
+
+[ 2013-08-29T19:56:58+08:00 ] 127.0.0.1 /rms/rms_position/showList
+ERR: Model:rList您所请求的方法不存在！
+
+[ 2013-08-29T19:56:59+08:00 ] 127.0.0.1 /rms/rms_position/showList
+ERR: Model:rList您所请求的方法不存在！
+
+[ 2013-08-29T19:56:59+08:00 ] 127.0.0.1 /rms/rms_position/showList
+ERR: Model:rList您所请求的方法不存在！
+
+[ 2013-08-29T19:57:38+08:00 ] 127.0.0.1 /rms/rms_position/showList
+ERR: Model:rList您所请求的方法不存在！
+
+[ 2013-08-29T19:57:39+08:00 ] 127.0.0.1 /rms/rms_position/showList
+ERR: Model:rList您所请求的方法不存在！
+
+[ 2013-08-29T21:16:09+08:00 ] 127.0.0.1 /rms/rms_position/show/id/1.html
+ERR: 非法操作:show
+
+[ 2013-08-29T21:16:20+08:00 ] 127.0.0.1 /rms/rms_position/show/position_id/1.html
+ERR: 非法操作:show
+
+[ 2013-08-29T21:16:23+08:00 ] 127.0.0.1 /rms/rms_position/show/position_id/1.html
+ERR: 非法操作:show
+
+[ 2013-08-29T21:22:32+08:00 ] 127.0.0.1 /rms/rms_position/show/position_id/2.html
+ERR: 非法操作:show
+
+[ 2013-08-29T21:23:08+08:00 ] 127.0.0.1 /rms/rms_position/show/position_id/2.html
+ERR: 非法操作:show
+
+[ 2013-08-29T21:23:10+08:00 ] 127.0.0.1 /rms/rms_position/show/position_id/2.html
+ERR: 非法操作:show
+
+[ 2013-08-29T21:24:01+08:00 ] 127.0.0.1 /rms/rms_position/show/position_id/1.html
+ERR: 非法操作:show
+
+[ 2013-08-29T21:24:14+08:00 ] 127.0.0.1 /rms/rms_position/show/position_id/2.html
+ERR: 非法操作:show
+
+[ 2013-08-29T21:25:59+08:00 ] 127.0.0.1 /rms/rms_position/show/position_id/1.html
+ERR: 非法操作:show
+
+[ 2013-08-29T21:26:17+08:00 ] 127.0.0.1 /rms/rms_position/show/position_id/2.html
+ERR: 非法操作:show
+
+[ 2013-08-29T21:27:07+08:00 ] 127.0.0.1 /rms/rms_position/create
+ERR: 非法操作:create
+
+[ 2013-08-29T21:27:28+08:00 ] 127.0.0.1 /rms/rms_position/create
+ERR: 非法操作:create
+
+[ 2013-08-29T21:27:31+08:00 ] 127.0.0.1 /rms/rms_position/create
+ERR: 非法操作:create
+
+[ 2013-08-29T21:27:33+08:00 ] 127.0.0.1 /rms/rms_position/create
+ERR: 非法操作:create
+
+[ 2013-08-29T21:33:56+08:00 ] 127.0.0.1 /sys/sys_system/companyInfoEditDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001171s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001358s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_company` [ RunTime:0.005972s ]
+NOTIC: [8] Undefined index: realname C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Model\Base\CompanyModel.class.php 第 53 行.
+NOTIC: [8] Undefined index: email C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Model\Base\CompanyModel.class.php 第 59 行.
+
+[ 2013-08-29T21:34:13+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001671s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+ERR: 非法操作:createdo
+
+[ 2013-08-29T21:34:33+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001188s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001378s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+ERR: 非法操作:createdo
+
+[ 2013-08-29T21:34:43+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001146s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001368s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+ERR: 非法操作:createdo
+
+[ 2013-08-29T21:35:53+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001904s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+
+[ 2013-08-29T21:36:02+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002273s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+
+[ 2013-08-29T21:36:29+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001676s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+
+[ 2013-08-29T21:36:33+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001927s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002130s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+
+[ 2013-08-29T21:36:42+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001677s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+
+[ 2013-08-29T21:36:52+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001632s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+
+[ 2013-08-29T21:37:05+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001390s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+
+[ 2013-08-29T21:37:51+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001328s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+
+[ 2013-08-29T21:38:42+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001539s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+
+[ 2013-08-29T21:38:44+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001733s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+
+[ 2013-08-29T21:38:51+08:00 ] 127.0.0.1 /sys/sys_system/companyInfoEditDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001140s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001324s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_company` [ RunTime:0.006030s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `realname` = '上海维秦信息科技有限公司' ) AND ( `company_id` <> '1' ) LIMIT 1   [ RunTime:0.000605s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `email` = 'weiqin@vip.126.com' ) AND ( `company_id` <> '1' ) LIMIT 1   [ RunTime:0.000602s ]
+SQL: UPDATE `jz_company` SET `realname`='上海维秦信息科技有限公司',`email`='weiqin@vip.126.com',`contact_name`='黄偲',`phone`='15216708847' WHERE ( `company_id` = 1 ) [ RunTime:0.095198s ]
+
+[ 2013-08-29T21:38:55+08:00 ] 127.0.0.1 /sys/sys_system/companyInfoEditDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002329s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_company` [ RunTime:0.006311s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `email` = 'weiqin@vip.126.com' ) AND ( `company_id` <> '1' ) LIMIT 1   [ RunTime:0.000649s ]
+
+[ 2013-08-29T21:39:00+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001427s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+
+[ 2013-08-29T21:40:02+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001149s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001387s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+
+[ 2013-08-29T21:40:02+08:00 ] 127.0.0.1 /rms/rms_postion/showList.html
+ERR: 无法加载模块:RmsPostion
+
+[ 2013-08-29T21:40:07+08:00 ] 127.0.0.1 /rms/rms_postion/showList.html
+ERR: 无法加载模块:RmsPostion
+
+[ 2013-08-29T21:40:09+08:00 ] 127.0.0.1 /rms/rms_postion/showList.html
+ERR: 无法加载模块:RmsPostion
+
+[ 2013-08-29T21:40:38+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001159s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001350s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+
+[ 2013-08-29T21:40:40+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001784s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+
+[ 2013-08-29T21:40:42+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001613s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+
+[ 2013-08-29T21:40:55+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001996s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+
+[ 2013-08-29T21:41:03+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001151s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001341s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+
+[ 2013-08-29T21:41:09+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001614s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+
+[ 2013-08-29T21:41:28+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001440s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+
+[ 2013-08-29T21:52:14+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001424s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_1_rms_position` [ RunTime:0.005682s ]
+NOTIC: [8] Undefined offset: 3 C:\wamp\www\InterWork\Web\ThinkPHP\Lib\Core\Model.class.php 第 907 行.
+NOTIC: [8] Undefined offset: 3 C:\wamp\www\InterWork\Web\ThinkPHP\Lib\Core\Model.class.php 第 907 行.
+SQL: INSERT INTO `jz_1_rms_position` (`name`,`description`,`requirement`,`enrollment`,`create_time_int`,`status_id`) VALUES ('1','2','3',0,1377784334,1) [ RunTime:0.083153s ]
+
+[ 2013-08-29T21:57:04+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001222s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_1_rms_position` [ RunTime:0.006080s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Action\Rms\RmsPositionAction.class.php 第 29 行.
+NOTIC: [8] Undefined index: description C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Model\Rms\RmsPositionModel.class.php 第 68 行.
+NOTIC: [8] Undefined index: requirement C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Model\Rms\RmsPositionModel.class.php 第 71 行.
+
+[ 2013-08-29T21:57:13+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002462s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_1_rms_position` [ RunTime:0.005915s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Action\Rms\RmsPositionAction.class.php 第 29 行.
+NOTIC: [8] Undefined index: description C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Model\Rms\RmsPositionModel.class.php 第 68 行.
+NOTIC: [8] Undefined index: requirement C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Model\Rms\RmsPositionModel.class.php 第 71 行.
+
+[ 2013-08-29T21:57:16+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001129s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001320s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_1_rms_position` [ RunTime:0.005914s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Action\Rms\RmsPositionAction.class.php 第 29 行.
+NOTIC: [8] Undefined index: description C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Model\Rms\RmsPositionModel.class.php 第 68 行.
+NOTIC: [8] Undefined index: requirement C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Model\Rms\RmsPositionModel.class.php 第 71 行.
+
+[ 2013-08-29T21:57:22+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001127s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001306s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_1_rms_position` [ RunTime:0.006808s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Action\Rms\RmsPositionAction.class.php 第 29 行.
+NOTIC: [8] Undefined index: description C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Model\Rms\RmsPositionModel.class.php 第 68 行.
+NOTIC: [8] Undefined index: requirement C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Model\Rms\RmsPositionModel.class.php 第 71 行.
+
+[ 2013-08-29T21:57:26+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001355s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_1_rms_position` [ RunTime:0.005856s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Action\Rms\RmsPositionAction.class.php 第 29 行.
+NOTIC: [8] Undefined index: description C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Model\Rms\RmsPositionModel.class.php 第 68 行.
+NOTIC: [8] Undefined index: requirement C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Model\Rms\RmsPositionModel.class.php 第 71 行.
+
+[ 2013-08-29T21:57:29+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001143s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001339s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_1_rms_position` [ RunTime:0.006945s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Action\Rms\RmsPositionAction.class.php 第 29 行.
+NOTIC: [8] Undefined index: description C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Model\Rms\RmsPositionModel.class.php 第 68 行.
+NOTIC: [8] Undefined index: requirement C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Model\Rms\RmsPositionModel.class.php 第 71 行.
+
+[ 2013-08-29T21:58:01+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001488s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_1_rms_position` [ RunTime:0.006462s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Action\Rms\RmsPositionAction.class.php 第 29 行.
+NOTIC: [8] Undefined index: description C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Model\Rms\RmsPositionModel.class.php 第 68 行.
+NOTIC: [8] Undefined index: description C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Model\Rms\RmsPositionModel.class.php 第 69 行.
+NOTIC: [8] Undefined index: requirement C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Model\Rms\RmsPositionModel.class.php 第 71 行.
+
+[ 2013-08-29T21:58:22+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001789s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_1_rms_position` [ RunTime:0.006281s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Action\Rms\RmsPositionAction.class.php 第 29 行.
+NOTIC: [8] Undefined index: description C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Model\Rms\RmsPositionModel.class.php 第 68 行.
+NOTIC: [8] Undefined index: description C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Model\Rms\RmsPositionModel.class.php 第 69 行.
+NOTIC: [8] Undefined index: requirement C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Model\Rms\RmsPositionModel.class.php 第 71 行.
+
+[ 2013-08-29T21:58:25+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001517s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_1_rms_position` [ RunTime:0.006449s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Action\Rms\RmsPositionAction.class.php 第 29 行.
+NOTIC: [8] Undefined index: description C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Model\Rms\RmsPositionModel.class.php 第 68 行.
+NOTIC: [8] Undefined index: description C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Model\Rms\RmsPositionModel.class.php 第 69 行.
+NOTIC: [8] Undefined index: requirement C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Model\Rms\RmsPositionModel.class.php 第 71 行.
+
+[ 2013-08-29T21:58:51+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001184s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001453s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+
+[ 2013-08-29T21:59:04+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001650s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_1_rms_position` [ RunTime:0.006743s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Action\Rms\RmsPositionAction.class.php 第 29 行.
+NOTIC: [8] Undefined index: description C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Model\Rms\RmsPositionModel.class.php 第 68 行.
+NOTIC: [8] Undefined index: description C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Model\Rms\RmsPositionModel.class.php 第 69 行.
+NOTIC: [8] Undefined index: requirement C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Model\Rms\RmsPositionModel.class.php 第 71 行.
+
+[ 2013-08-29T22:00:24+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001653s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_1_rms_position` [ RunTime:0.006349s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Action\Rms\RmsPositionAction.class.php 第 29 行.
+
+[ 2013-08-29T22:00:29+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002491s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_1_rms_position` [ RunTime:0.007455s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Action\Rms\RmsPositionAction.class.php 第 29 行.
+
+[ 2013-08-29T22:00:35+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001876s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_1_rms_position` [ RunTime:0.009877s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Action\Rms\RmsPositionAction.class.php 第 29 行.
+
+[ 2013-08-29T22:00:39+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001878s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002108s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_1_rms_position` [ RunTime:0.007437s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Action\Rms\RmsPositionAction.class.php 第 29 行.
+NOTIC: [8] Undefined offset: 3 C:\wamp\www\InterWork\Web\ThinkPHP\Lib\Core\Model.class.php 第 907 行.
+NOTIC: [8] Undefined offset: 3 C:\wamp\www\InterWork\Web\ThinkPHP\Lib\Core\Model.class.php 第 907 行.
+SQL: INSERT INTO `jz_1_rms_position` (`name`,`description`,`requirement`,`enrollment`,`create_time_int`,`status_id`) VALUES ('啊富士达','士大夫十大','士大夫十大啊 ',0,1377784839,1) [ RunTime:0.082082s ]
+
+[ 2013-08-29T22:00:54+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001548s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_1_rms_position` [ RunTime:0.010647s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Action\Rms\RmsPositionAction.class.php 第 29 行.
+NOTIC: [8] Undefined offset: 3 C:\wamp\www\InterWork\Web\ThinkPHP\Lib\Core\Model.class.php 第 907 行.
+NOTIC: [8] Undefined offset: 3 C:\wamp\www\InterWork\Web\ThinkPHP\Lib\Core\Model.class.php 第 907 行.
+SQL: INSERT INTO `jz_1_rms_position` (`name`,`description`,`requirement`,`enrollment`,`create_time_int`,`status_id`) VALUES ('1','2','3',0,1377784854,1) [ RunTime:0.085292s ]
+
+[ 2013-08-29T22:01:05+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001747s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_1_rms_position` [ RunTime:0.005849s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Action\Rms\RmsPositionAction.class.php 第 29 行.
+NOTIC: [8] Undefined offset: 3 C:\wamp\www\InterWork\Web\ThinkPHP\Lib\Core\Model.class.php 第 907 行.
+NOTIC: [8] Undefined offset: 3 C:\wamp\www\InterWork\Web\ThinkPHP\Lib\Core\Model.class.php 第 907 行.
+SQL: INSERT INTO `jz_1_rms_position` (`name`,`description`,`requirement`,`enrollment`,`create_time_int`,`status_id`) VALUES ('反反复复反反复复','嘎嘎嘎嘎嘎嘎嘎嘎嘎个','哈哈哈哈哈哈哈哈哈哈',0,1377784865,1) [ RunTime:0.085083s ]
+
+[ 2013-08-29T22:01:21+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002239s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_1_rms_position` [ RunTime:0.007006s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Action\Rms\RmsPositionAction.class.php 第 29 行.
+NOTIC: [8] Undefined offset: 3 C:\wamp\www\InterWork\Web\ThinkPHP\Lib\Core\Model.class.php 第 907 行.
+NOTIC: [8] Undefined offset: 3 C:\wamp\www\InterWork\Web\ThinkPHP\Lib\Core\Model.class.php 第 907 行.
+SQL: INSERT INTO `jz_1_rms_position` (`name`,`description`,`requirement`,`enrollment`,`create_time_int`,`status_id`) VALUES ('的风格的发生过','是个大法师','的发生过大法师大法师',0,1377784881,1) [ RunTime:0.062024s ]
+
+[ 2013-08-29T22:01:25+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001579s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001807s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_1_rms_position` [ RunTime:0.011066s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Action\Rms\RmsPositionAction.class.php 第 29 行.
+
+[ 2013-08-29T22:01:28+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001866s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_1_rms_position` [ RunTime:0.006508s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Action\Rms\RmsPositionAction.class.php 第 29 行.
+NOTIC: [8] Undefined offset: 3 C:\wamp\www\InterWork\Web\ThinkPHP\Lib\Core\Model.class.php 第 907 行.
+NOTIC: [8] Undefined offset: 3 C:\wamp\www\InterWork\Web\ThinkPHP\Lib\Core\Model.class.php 第 907 行.
+SQL: INSERT INTO `jz_1_rms_position` (`name`,`description`,`requirement`,`enrollment`,`create_time_int`,`status_id`) VALUES ('的发生过','是佹得复失','第三个的发生过大法师大法师',0,1377784888,1) [ RunTime:0.065713s ]
+
+[ 2013-08-29T22:06:07+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003115s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003568s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_1_rms_position` [ RunTime:0.005785s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Action\Rms\RmsPositionAction.class.php 第 29 行.
+NOTIC: [8] Undefined offset: 3 C:\wamp\www\InterWork\Web\ThinkPHP\Lib\Core\Model.class.php 第 907 行.
+NOTIC: [8] Undefined offset: 3 C:\wamp\www\InterWork\Web\ThinkPHP\Lib\Core\Model.class.php 第 907 行.
+SQL: INSERT INTO `jz_1_rms_position` (`name`,`description`,`requirement`,`enrollment`,`create_time_int`,`status_id`) VALUES ('12','5','23',0,1377785167,1) [ RunTime:0.068742s ]
+
+[ 2013-08-29T22:06:43+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001779s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_1_rms_position` [ RunTime:0.007638s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Action\Rms\RmsPositionAction.class.php 第 29 行.
+
+[ 2013-08-29T22:06:51+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001354s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_1_rms_position` [ RunTime:0.007523s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Action\Rms\RmsPositionAction.class.php 第 29 行.
+
+[ 2013-08-29T22:08:36+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002088s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_1_rms_position` [ RunTime:0.006151s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Action\Rms\RmsPositionAction.class.php 第 29 行.
+
+[ 2013-08-29T22:09:01+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001533s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_1_rms_position` [ RunTime:0.006713s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Action\Rms\RmsPositionAction.class.php 第 29 行.
+
+[ 2013-08-29T22:09:37+08:00 ] 127.0.0.1 /rms/rms_position/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001810s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_1_rms_position` [ RunTime:0.007479s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Action\Rms\RmsPositionAction.class.php 第 29 行.
+NOTIC: [8] Undefined offset: 3 C:\wamp\www\InterWork\Web\ThinkPHP\Lib\Core\Model.class.php 第 907 行.
+NOTIC: [8] Undefined offset: 3 C:\wamp\www\InterWork\Web\ThinkPHP\Lib\Core\Model.class.php 第 907 行.
+SQL: INSERT INTO `jz_1_rms_position` (`name`,`description`,`requirement`,`enrollment`,`create_time_int`,`status_id`) VALUES ('CABU Hardware Board Design Intern','- Participate in the board development, bring up, function verification test and debugging for CMTS router products. \n- Job involves Board design, PLD design, SI measurement, Engineering Design Verification Test and other HW qualification tests \n- Interfaces cross-functionally at the working team level. Work closely with FPGA, diagnostics and software developers throughout the development process. \n- Assists in Lab set-up and management for product development. ','- Solid technical knowledge on high speed digital and analog circuit design. \n- Self motivated and willing to learn on the job. \n- Teamwork and strong communication skills are essential \n- Excellent written and verbal English skills. \n- Familiar with board development tools(Mentor or Cadence is a plus), experience with board development, verification and test; \n- Experience correlating simulation results with lab measurements using oscilloscopes, TDRs and spectrum analyzers is a plus. \n- Typically requires candidates in EE, Communication and Automation or related majors.',0,1377785377,1) [ RunTime:0.089886s ]
+

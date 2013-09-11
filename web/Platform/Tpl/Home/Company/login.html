@@ -1,0 +1,49 @@
+<include file="Index:header"/>
+
+<link href="/css/home/company.css" rel="stylesheet" type="text/css">
+
+<div id="register" class="main_container shadow5w" style="">
+	<div class="header">
+		<i class="icon icon-user icon-white"></i>&nbsp;即刻登录（尽享一站式的招聘体验）
+	</div>
+	<div class="form">
+		<form class="loginForm" action="<{:U('Company/loginDo')}>" method="post">
+		<ul>
+			<li>
+				<span class="star">*</span>
+				<span class="tt">电子邮箱：</span>
+				<input name="email" type="text">
+			</li>
+			<li class="password">
+				<span class="star">*</span>
+				<span class="tt">登录密码：</span>
+				<input name="password" type="password" placeholder="">
+			</li>
+			<li>
+				<span class="star"></span>
+				<span class="tt"></span>
+				<input type="submit" class="btn btn-primary" value="立即登录">
+			</li>
+		</ul>
+		</form>
+	</div>
+	
+	<div class="info">
+		<ul>
+			<li class="border"><a href="<{:U('Company/register')}>">还没账号？免费注册 >></a></li>
+			<li>登录遇到问题？</li>
+			<li>请拨打 __PHONE__</li>
+			<li class="tip">仅限中国大陆手机用户使用拨打免费，不产生任何费用</li>
+		</ul>
+	</div>
+	<div class="clear"></div>
+</div>
+
+<style>
+	#register {height:240px;overflow:hidden;}
+	#register .form {height:165px}
+</style>
+
+<script src="/js/home/company.js" type="text/javascript" ></script>
+
+<include file="Index:footer"/>

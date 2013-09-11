@@ -1,0 +1,12 @@
+[ 2013-08-12T23:47:34+08:00 ] 127.0.0.1 /Company/loginDo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001030s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.032369s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `jz_user` WHERE ( `email` = 'acm@sjtu.edu.cn' ) LIMIT 1   [ RunTime:0.000654s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `jz_company` [ RunTime:0.015382s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `company_id` = 2 ) LIMIT 1   [ RunTime:0.000439s ]
+

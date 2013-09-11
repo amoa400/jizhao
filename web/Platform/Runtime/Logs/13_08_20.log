@@ -1,0 +1,223 @@
+[ 2013-08-20T19:29:34+08:00 ] 127.0.0.1 /Company/loginDo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001280s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.036864s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `jz_user` WHERE ( `email` = 'weiqin@vip.126.com' ) LIMIT 1   [ RunTime:0.000906s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `jz_company` [ RunTime:0.026328s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `company_id` = 1 ) LIMIT 1   [ RunTime:0.000727s ]
+
+[ 2013-08-20T19:29:43+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T19:29:49+08:00 ] 127.0.0.1 /css/ois/manage.css
+ERR: 无法加载模块:Css
+
+[ 2013-08-20T19:34:21+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T19:34:43+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T19:47:18+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T20:20:05+08:00 ] 127.0.0.1 /rms/rms_resume/import
+ERR: 非法操作:import
+
+[ 2013-08-20T20:20:06+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T20:22:21+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T20:24:57+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T20:26:02+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T20:27:29+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T20:32:32+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T21:22:39+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T21:22:46+08:00 ] 127.0.0.1 /sys/sys_system/companyInfoEditDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001250s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_company` [ RunTime:0.005771s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `realname` = '上海维秦信息科技有限公司' ) AND ( `company_id` <> '1' ) LIMIT 1   [ RunTime:0.000629s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `email` = 'weiqin@vip.126.com' ) AND ( `company_id` <> '1' ) LIMIT 1   [ RunTime:0.000441s ]
+SQL: UPDATE `jz_company` SET `realname`='上海维秦信息科技有限公司',`email`='weiqin@vip.126.com',`contact_name`='黄偲',`phone`='15216708847' WHERE ( `company_id` = 1 ) [ RunTime:0.070617s ]
+
+[ 2013-08-20T21:23:38+08:00 ] 127.0.0.1 /css/ois/manage.css
+ERR: 无法加载模块:Css
+
+[ 2013-08-20T21:24:45+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T21:24:45+08:00 ] 127.0.0.1 /rms/rms_resume/import
+ERR: 非法操作:import
+
+[ 2013-08-20T21:24:46+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T21:25:17+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T21:25:18+08:00 ] 127.0.0.1 /rms/rms_resume/import
+ERR: 非法操作:import
+
+[ 2013-08-20T21:26:09+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T21:26:10+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T21:26:54+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T21:26:55+08:00 ] 127.0.0.1 /rms/rms_resume/import
+ERR: 非法操作:import
+
+[ 2013-08-20T21:28:08+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T21:28:19+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T21:29:58+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T21:29:59+08:00 ] 127.0.0.1 /rms/rms_resume/import
+ERR: 非法操作:import
+
+[ 2013-08-20T21:34:13+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T21:34:13+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T21:34:14+08:00 ] 127.0.0.1 /rms/rms_resume/import
+ERR: 非法操作:import
+
+[ 2013-08-20T21:34:14+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T21:34:15+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T21:34:15+08:00 ] 127.0.0.1 /rms/rms_resume/import
+ERR: 非法操作:import
+
+[ 2013-08-20T21:34:16+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T21:34:17+08:00 ] 127.0.0.1 /rms/rms_resume/import
+ERR: 非法操作:import
+
+[ 2013-08-20T21:34:17+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T21:34:25+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T21:34:26+08:00 ] 127.0.0.1 /rms/rms_resume/import
+ERR: 非法操作:import
+
+[ 2013-08-20T21:34:26+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T21:34:27+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T21:34:28+08:00 ] 127.0.0.1 /rms/rms_resume/import
+ERR: 非法操作:import
+
+[ 2013-08-20T21:34:28+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T21:35:53+08:00 ] 127.0.0.1 /rms/rms_resume/import
+ERR: 非法操作:import
+
+[ 2013-08-20T21:38:29+08:00 ] 127.0.0.1 /css/ois/manage.css
+ERR: 无法加载模块:Css
+
+[ 2013-08-20T21:38:49+08:00 ] 127.0.0.1 /css/ois/manage.css
+ERR: 无法加载模块:Css
+
+[ 2013-08-20T21:38:55+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T21:38:56+08:00 ] 127.0.0.1 /rms/rms_resume/import
+ERR: 非法操作:import
+
+[ 2013-08-20T21:38:56+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T21:41:08+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T21:41:51+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T21:41:52+08:00 ] 127.0.0.1 /rms/rms_resume/import
+ERR: 非法操作:import
+
+[ 2013-08-20T21:42:19+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T22:34:26+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T22:35:55+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T22:42:37+08:00 ] 127.0.0.1 /Company/loginDo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001361s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.005737s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `jz_user` WHERE ( `email` = 'weiqin@vip.126.com' ) LIMIT 1   [ RunTime:0.000526s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `jz_company` [ RunTime:0.005620s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `company_id` = 1 ) LIMIT 1   [ RunTime:0.000441s ]
+
+[ 2013-08-20T22:42:41+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T22:42:58+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T22:46:22+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T23:17:24+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T23:17:26+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T23:17:27+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T23:26:47+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T23:27:16+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+
+[ 2013-08-20T23:27:18+08:00 ] 127.0.0.1 /rms/rms_resume/new
+ERR: 非法操作:new
+

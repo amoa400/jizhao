@@ -1,0 +1,1075 @@
+[ 2013-08-25T09:49:31+08:00 ] 127.0.0.1 /Company/loginDo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001174s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.047346s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `jz_user` WHERE ( `email` = 'acm@sjtu.edu.cn' ) LIMIT 1   [ RunTime:0.000824s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `jz_company` [ RunTime:0.017935s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `company_id` = 2 ) LIMIT 1   [ RunTime:0.000876s ]
+
+[ 2013-08-25T09:49:34+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T09:52:51+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T09:53:07+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T09:53:10+08:00 ] 127.0.0.1 /css/ois/manage.css
+ERR: 无法加载模块:Css
+
+[ 2013-08-25T10:03:42+08:00 ] 127.0.0.1 /Company/loginDo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001007s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001188s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.004294s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `jz_user` WHERE ( `email` = 'weiqin@vip.126.com' ) LIMIT 1   [ RunTime:0.000451s ]
+NOTIC: 建议使用I方法替代_post
+
+[ 2013-08-25T10:03:50+08:00 ] 127.0.0.1 /Company/loginDo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001258s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.004173s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `jz_user` WHERE ( `email` = 'weiqin@vip.126.com' ) LIMIT 1   [ RunTime:0.000465s ]
+NOTIC: 建议使用I方法替代_post
+
+[ 2013-08-25T10:03:50+08:00 ] 127.0.0.1 /Company/loginDo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001278s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.004240s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `jz_user` WHERE ( `email` = 'weiqin@vip.126.com' ) LIMIT 1   [ RunTime:0.000452s ]
+NOTIC: 建议使用I方法替代_post
+
+[ 2013-08-25T10:03:54+08:00 ] 127.0.0.1 /Company/loginDo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001121s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.004256s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `jz_user` WHERE ( `email` = 'weiqin@vip.126.com' ) LIMIT 1   [ RunTime:0.000601s ]
+NOTIC: 建议使用I方法替代_post
+
+[ 2013-08-25T10:03:57+08:00 ] 127.0.0.1 /Company/loginDo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000919s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001094s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.004349s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `jz_user` WHERE ( `email` = 'weiqin@vip.126.com' ) LIMIT 1   [ RunTime:0.000457s ]
+NOTIC: 建议使用I方法替代_post
+
+[ 2013-08-25T10:04:00+08:00 ] 127.0.0.1 /Company/loginDo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000919s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001199s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.004306s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `jz_user` WHERE ( `email` = 'weiqin@vip.126.com' ) LIMIT 1   [ RunTime:0.000447s ]
+NOTIC: 建议使用I方法替代_post
+
+[ 2013-08-25T10:04:04+08:00 ] 127.0.0.1 /Company/loginDo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001131s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.005972s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `jz_user` WHERE ( `email` = 'weiqin@vip.126.com' ) LIMIT 1   [ RunTime:0.000806s ]
+NOTIC: 建议使用I方法替代_post
+
+[ 2013-08-25T10:05:12+08:00 ] 127.0.0.1 /Company/loginDo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002101s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002316s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.004333s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `jz_user` WHERE ( `email` = 'weiqin@vip.126.com' ) LIMIT 1   [ RunTime:0.000454s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `jz_company` [ RunTime:0.004473s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `company_id` = 1 ) LIMIT 1   [ RunTime:0.000402s ]
+
+[ 2013-08-25T10:33:34+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T10:53:00+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T10:56:15+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T10:58:12+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T12:43:37+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T12:59:16+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T13:04:37+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T14:01:12+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T14:27:13+08:00 ] 127.0.0.1 /Company/loginDo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001535s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.005628s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `jz_user` WHERE ( `email` = 'acm@sjtu.edu.cn' ) LIMIT 1   [ RunTime:0.000582s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `jz_company` [ RunTime:0.005599s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `company_id` = 2 ) LIMIT 1   [ RunTime:0.000410s ]
+
+[ 2013-08-25T14:29:52+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T14:52:04+08:00 ] 127.0.0.1 /Company/loginDo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001506s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.005454s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `jz_user` WHERE ( `email` = 'acm@sjtu.edu.cn' ) LIMIT 1   [ RunTime:0.000681s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `jz_company` [ RunTime:0.005288s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `company_id` = 2 ) LIMIT 1   [ RunTime:0.000438s ]
+
+[ 2013-08-25T14:52:30+08:00 ] 127.0.0.1 /Company/loginDo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001388s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.005174s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `jz_user` WHERE ( `email` = 'weiqin@vip.126.com' ) LIMIT 1   [ RunTime:0.000469s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `jz_company` [ RunTime:0.005265s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `company_id` = 1 ) LIMIT 1   [ RunTime:0.000427s ]
+
+[ 2013-08-25T14:53:51+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T14:53:55+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T14:54:05+08:00 ] 127.0.0.1 /sys/sys_system/companyInfoEditDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001149s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001329s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_company` [ RunTime:0.005263s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `realname` = '上海维秦信息科技有限公司' ) AND ( `company_id` <> '1' ) LIMIT 1   [ RunTime:0.022987s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `email` = 'weiqin@vip.126.com' ) AND ( `company_id` <> '1' ) LIMIT 1   [ RunTime:0.000494s ]
+SQL: UPDATE `jz_company` SET `realname`='上海维秦信息科技有限公司',`email`='weiqin@vip.126.com',`contact_name`='黄偲',`phone`='15216708847' WHERE ( `company_id` = 1 ) [ RunTime:0.080392s ]
+
+[ 2013-08-25T14:54:09+08:00 ] 127.0.0.1 /sys/sys_system/companyInfoEditDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001461s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_company` [ RunTime:0.005070s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `realname` = '上海维秦信息科技有限公司' ) AND ( `company_id` <> '1' ) LIMIT 1   [ RunTime:0.000509s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `email` = 'weiqin@vip.126.com' ) AND ( `company_id` <> '1' ) LIMIT 1   [ RunTime:0.000400s ]
+SQL: UPDATE `jz_company` SET `realname`='上海维秦信息科技有限公司',`email`='weiqin@vip.126.com',`contact_name`='黄偲',`phone`='15216708847' WHERE ( `company_id` = 1 ) [ RunTime:0.059693s ]
+
+[ 2013-08-25T14:54:13+08:00 ] 127.0.0.1 /sys/sys_system/companyInfoEditDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001174s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001357s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_company` [ RunTime:0.048402s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `realname` = '上海维秦信息科技有限公司' ) AND ( `company_id` <> '1' ) LIMIT 1   [ RunTime:0.001499s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `email` = 'weiqin@vip.126.com' ) AND ( `company_id` <> '1' ) LIMIT 1   [ RunTime:0.000844s ]
+SQL: UPDATE `jz_company` SET `realname`='上海维秦信息科技有限公司',`email`='weiqin@vip.126.com',`contact_name`='黄偲',`phone`='15216708847' WHERE ( `company_id` = 1 ) [ RunTime:0.075754s ]
+
+[ 2013-08-25T14:54:59+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T14:56:02+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T14:56:03+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T15:05:11+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T15:11:52+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T15:12:05+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T15:12:07+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T15:12:08+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T15:12:32+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T15:12:33+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T16:20:11+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T16:20:13+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T16:20:14+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T16:20:30+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T16:20:30+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T16:20:31+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T16:20:33+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T16:21:06+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T16:21:17+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T16:21:21+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T16:21:26+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T16:21:33+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T16:21:49+08:00 ] 127.0.0.1 /rms/rms_talent/create
+ERR: 模板不存在[../Platform/Tpl/Rms/RmsTalent/create.html]
+
+[ 2013-08-25T16:23:16+08:00 ] 127.0.0.1 /rms/rms_talent/create
+ERR: 模板不存在[../Platform/Tpl/Rms/RmsTalent/create.html]
+
+[ 2013-08-25T16:23:24+08:00 ] 127.0.0.1 /rms/rms_talent/create
+ERR: 模板不存在[../Platform/Tpl/Rms/RmsTalent/create.html]
+
+[ 2013-08-25T16:23:27+08:00 ] 127.0.0.1 /rms/rms_talent/create
+ERR: 模板不存在[../Platform/Tpl/Rms/RmsTalent/create.html]
+
+[ 2013-08-25T16:24:20+08:00 ] 127.0.0.1 /rms/rms_talent/create
+ERR: 模板不存在[../Platform/Tpl/Rms/RmsTalent/create.html]
+
+[ 2013-08-25T16:33:07+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T16:33:07+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T16:33:11+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T17:05:58+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T17:08:09+08:00 ] 127.0.0.1 /sys/sys_system/companyInfoEditDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001460s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_company` [ RunTime:0.005300s ]
+
+[ 2013-08-25T17:08:32+08:00 ] 127.0.0.1 /rms/rms_talent/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001181s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001379s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+ERR: 非法操作:createdo
+
+[ 2013-08-25T17:08:45+08:00 ] 127.0.0.1 /rms/rms_talent/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001481s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+ERR: 非法操作:createdo
+
+[ 2013-08-25T17:09:09+08:00 ] 127.0.0.1 /rms/rms_talent/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001104s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001284s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+ERR: 非法操作:createdo
+
+[ 2013-08-25T17:09:29+08:00 ] 127.0.0.1 /rms/rms_talent/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001150s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001334s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+ERR: 非法操作:createdo
+
+[ 2013-08-25T17:11:21+08:00 ] 127.0.0.1 /rms/rms_talent/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001105s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001292s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+ERR: 非法操作:createdo
+
+[ 2013-08-25T17:11:30+08:00 ] 127.0.0.1 /rms/rms_talent/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001317s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+ERR: 非法操作:createdo
+
+[ 2013-08-25T17:57:04+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T18:11:48+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T19:17:12+08:00 ] 127.0.0.1 /Company/loginDo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001564s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.008505s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `jz_user` WHERE ( `email` = 'weiqin@vip.126.com' ) LIMIT 1   [ RunTime:0.000880s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `jz_company` [ RunTime:0.005463s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `company_id` = 1 ) LIMIT 1   [ RunTime:0.000550s ]
+
+[ 2013-08-25T19:43:37+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T20:02:05+08:00 ] 127.0.0.1 /Company/loginDo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001166s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.004010s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `jz_user` WHERE ( `email` = 'weiqin@vip.126.com' ) LIMIT 1   [ RunTime:0.000435s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `jz_company` [ RunTime:0.003964s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `company_id` = 1 ) LIMIT 1   [ RunTime:0.000391s ]
+
+[ 2013-08-25T20:16:34+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T20:18:40+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T20:18:46+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T20:19:03+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T20:19:09+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T20:19:15+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T20:21:19+08:00 ] 127.0.0.1 /css/ois/manage.css
+ERR: 无法加载模块:Css
+
+[ 2013-08-25T20:23:03+08:00 ] 127.0.0.1 /css/ois/manage.css
+ERR: 无法加载模块:Css
+
+[ 2013-08-25T20:23:06+08:00 ] 127.0.0.1 /css/ois/manage.css
+ERR: 无法加载模块:Css
+
+[ 2013-08-25T22:40:02+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T22:40:17+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T22:43:49+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T22:52:06+08:00 ] 127.0.0.1 /company/loginDo.html
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+
+[ 2013-08-25T22:52:14+08:00 ] 127.0.0.1 /Company/loginDo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001386s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.004412s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `jz_user` WHERE ( `email` = 'weiqin@vip.126.com' ) LIMIT 1   [ RunTime:0.000557s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `jz_company` [ RunTime:0.004604s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `company_id` = 1 ) LIMIT 1   [ RunTime:0.000489s ]
+
+[ 2013-08-25T22:55:01+08:00 ] 127.0.0.1 /rms/rms_talent/create
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001540s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015420s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015796s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000979s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001018s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000955s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001035s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004800s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002082s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002424s ]
+
+[ 2013-08-25T22:55:04+08:00 ] 127.0.0.1 /rms/rms_talent/create
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001227s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013856s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014120s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000975s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000939s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000754s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000997s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004221s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001197s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001373s ]
+
+[ 2013-08-25T22:57:54+08:00 ] 127.0.0.1 /sys/sys_system/companyInfoEditDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001359s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_company` [ RunTime:0.004368s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `realname` = '上海维秦信息科技有限公司' ) AND ( `company_id` <> '1' ) LIMIT 1   [ RunTime:0.000527s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `email` = 'weiqin@vip.126.com' ) AND ( `company_id` <> '1' ) LIMIT 1   [ RunTime:0.000437s ]
+SQL: UPDATE `jz_company` SET `realname`='上海维秦信息科技有限公司',`email`='weiqin@vip.126.com',`contact_name`='黄偲',`phone`='15216708847' WHERE ( `company_id` = 1 ) [ RunTime:0.243893s ]
+
+[ 2013-08-25T22:57:57+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-25T22:58:37+08:00 ] 127.0.0.1 /sys/sys_system/companyInfoEditDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001243s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_company` [ RunTime:0.004280s ]
+NOTIC: [8] Undefined index: realname C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Model\Base\CompanyModel.class.php 第 53 行.
+NOTIC: [8] Undefined index: email C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Model\Base\CompanyModel.class.php 第 59 行.
+
+[ 2013-08-25T22:59:00+08:00 ] 127.0.0.1 /rms/rms_talent/create
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001230s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012618s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012928s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000944s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001559s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000732s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000990s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004848s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001044s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001214s ]
+
+[ 2013-08-25T22:59:04+08:00 ] 127.0.0.1 /rms/rms_talent/create
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001249s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013098s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013359s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000977s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000911s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000681s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004029s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001058s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001228s ]
+
+[ 2013-08-25T22:59:25+08:00 ] 127.0.0.1 /rms/rms_talent/create
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001116s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001313s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015319s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015558s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001010s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001155s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000725s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004819s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001242s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001501s ]
+
+[ 2013-08-25T22:59:30+08:00 ] 127.0.0.1 /rms/rms_talent/create
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001522s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015036s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015270s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000969s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000971s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001167s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001325s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005009s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001467s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001722s ]
+
+[ 2013-08-25T22:59:59+08:00 ] 127.0.0.1 /rms/rms_talent/create
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001225s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013893s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014137s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000934s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001470s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000838s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001021s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004831s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001099s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001269s ]
+
+[ 2013-08-25T23:00:03+08:00 ] 127.0.0.1 /rms/rms_talent/create
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001597s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015264s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015530s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001125s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001265s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000668s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001037s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004727s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001090s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001257s ]
+
+[ 2013-08-25T23:00:14+08:00 ] 127.0.0.1 /rms/rms_talent/create
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001537s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014551s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014799s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000912s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000905s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000789s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001031s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004129s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001020s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001195s ]
+
+[ 2013-08-25T23:00:31+08:00 ] 127.0.0.1 /rms/rms_talent/create
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001261s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013667s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013914s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000913s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000910s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000689s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001019s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004082s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001041s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001242s ]
+
+[ 2013-08-25T23:02:06+08:00 ] 127.0.0.1 /rms/rms_talent/create
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001413s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013728s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013991s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000878s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000922s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000644s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004212s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001098s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001266s ]
+
+[ 2013-08-25T23:02:56+08:00 ] 127.0.0.1 /rms/rms_talent/create
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001077s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001263s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013531s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013770s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000990s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000910s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000634s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004170s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001057s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001225s ]
+
+[ 2013-08-25T23:03:48+08:00 ] 127.0.0.1 /rms/rms_talent/create
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001248s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014632s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014853s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000943s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001024s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000696s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001037s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004186s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001585s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001764s ]
+
+[ 2013-08-25T23:06:34+08:00 ] 127.0.0.1 /rms/rms_talent/create
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001281s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015707s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015949s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001118s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001026s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000719s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001061s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004446s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001121s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001293s ]
+
+[ 2013-08-25T23:06:44+08:00 ] 127.0.0.1 /rms/rms_talent/create
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001421s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013552s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013772s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000868s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001016s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000628s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000969s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003961s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001647s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001843s ]
+
+[ 2013-08-25T23:06:52+08:00 ] 127.0.0.1 /rms/rms_talent/create
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001293s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013316s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013530s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000939s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000912s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000633s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004470s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001076s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001301s ]
+
+[ 2013-08-25T23:07:27+08:00 ] 127.0.0.1 /rms/rms_talent/create
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001254s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015508s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015772s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001010s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001066s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000818s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001162s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004697s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001737s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001934s ]
+
+[ 2013-08-25T23:07:44+08:00 ] 127.0.0.1 /rms/rms_talent/create
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001280s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014390s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014607s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000912s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000906s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000717s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004035s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001091s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001262s ]
+
+[ 2013-08-25T23:12:00+08:00 ] 127.0.0.1 /rms/rms_talent/create
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001229s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013597s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014096s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001146s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000975s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000606s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000996s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004302s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001018s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001189s ]
+
+[ 2013-08-25T23:12:03+08:00 ] 127.0.0.1 /rms/rms_talent/create
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001220s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014731s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014946s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000957s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000896s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000993s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004469s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001126s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001305s ]
+
+[ 2013-08-25T23:12:56+08:00 ] 127.0.0.1 /rms/rms_talent/create
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001569s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025367s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025732s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001397s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001455s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000956s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001878s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006435s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001632s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001895s ]
+
+[ 2013-08-25T23:13:00+08:00 ] 127.0.0.1 /rms/rms_talent/create
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001175s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001389s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013420s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013637s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000889s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000915s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000723s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004114s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001100s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001269s ]
+
+[ 2013-08-25T23:13:13+08:00 ] 127.0.0.1 /rms/rms_talent/create
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001281s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014547s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014862s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000859s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001195s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000757s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000992s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004575s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001057s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002112s ]
+
+[ 2013-08-25T23:13:47+08:00 ] 127.0.0.1 /rms/rms_talent/create
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001262s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013593s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013885s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000916s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000940s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000672s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001375s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004391s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001250s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001423s ]
+
+[ 2013-08-25T23:15:05+08:00 ] 127.0.0.1 /rms/rms_talent/create
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001093s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001282s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013185s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013408s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000900s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000905s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000633s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000987s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003936s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001202s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001395s ]
+
+[ 2013-08-25T23:15:11+08:00 ] 127.0.0.1 /rms/rms_talent/create
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001253s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014664s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014889s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000944s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000988s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000728s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004180s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001077s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001244s ]
+
+[ 2013-08-25T23:15:16+08:00 ] 127.0.0.1 /rms/rms_talent/create
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001209s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014465s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014698s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001037s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000966s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000724s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001030s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004254s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001077s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001243s ]
+
+[ 2013-08-25T23:15:33+08:00 ] 127.0.0.1 /rms/rms_talent/create
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001104s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001305s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014342s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014587s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000985s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000914s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000687s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001032s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004183s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001124s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001295s ]
+
+[ 2013-08-25T23:15:50+08:00 ] 127.0.0.1 /rms/rms_talent/create
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001517s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014247s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014548s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000934s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000849s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000966s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004438s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001118s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001290s ]
+
+[ 2013-08-25T23:16:20+08:00 ] 127.0.0.1 /rms/rms_talent/create
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001339s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013679s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013894s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000875s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000881s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000651s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001688s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004642s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001207s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001386s ]
+
+[ 2013-08-25T23:16:47+08:00 ] 127.0.0.1 /rms/rms_talent/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001265s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+ERR: 非法操作:createdo
+
+[ 2013-08-25T23:17:42+08:00 ] 127.0.0.1 /rms/rms_talent/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001218s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001514s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+
+[ 2013-08-25T23:17:56+08:00 ] 127.0.0.1 /rms/rms_talent/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001566s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+
+[ 2013-08-25T23:18:02+08:00 ] 127.0.0.1 /rms/rms_talent/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002067s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+
+[ 2013-08-25T23:18:07+08:00 ] 127.0.0.1 /rms/rms_talent/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001536s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+
+[ 2013-08-25T23:18:19+08:00 ] 127.0.0.1 /rms/rms_talent/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001504s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+
+[ 2013-08-25T23:18:25+08:00 ] 127.0.0.1 /rms/rms_talent/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001167s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001461s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+
+[ 2013-08-25T23:18:30+08:00 ] 127.0.0.1 /rms/rms_talent/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001251s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+
+[ 2013-08-25T23:19:07+08:00 ] 127.0.0.1 /rms/rms_talent/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001614s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+NOTIC: [8] Undefined variable: comDo C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Action\Rms\RmsTalentAction.class.php 第 24 行.
+NOTIC: [8] Trying to get property of non-object C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Action\Rms\RmsTalentAction.class.php 第 24 行.
+
+[ 2013-08-25T23:19:31+08:00 ] 127.0.0.1 /rms/rms_talent/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001534s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+NOTIC: [8] Undefined variable: comDo C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Action\Rms\RmsTalentAction.class.php 第 24 行.
+NOTIC: [8] Trying to get property of non-object C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Action\Rms\RmsTalentAction.class.php 第 24 行.
+
+[ 2013-08-25T23:19:51+08:00 ] 127.0.0.1 /rms/rms_talent/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001426s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+NOTIC: [8] Undefined variable: comDo C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Action\Rms\RmsTalentAction.class.php 第 24 行.
+NOTIC: [8] Trying to get property of non-object C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Action\Rms\RmsTalentAction.class.php 第 24 行.
+
+[ 2013-08-25T23:40:25+08:00 ] 127.0.0.1 /rms/rms_talent/createDo.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001839s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+NOTIC: [8] Undefined variable: comDo C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Action\Rms\RmsTalentAction.class.php 第 24 行.
+NOTIC: [8] Trying to get property of non-object C:\wamp\www\InterWork\Web\Platform\Platform\Lib\Action\Rms\RmsTalentAction.class.php 第 24 行.
+

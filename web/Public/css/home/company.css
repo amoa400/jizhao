@@ -1,0 +1,28 @@
+/* ========================================================
+	注册
+======================================================== */
+
+#register {background:#ffffff;height:580px;margin-top:20px;}
+
+#register .header {height:35px;background:#83a098;line-height:36px;padding-left:20px;color:#ffffff;}
+
+#register .form {float:left;height:505px;width:559px;border-right:1px solid #e0e0e0;padding:20px;}
+#register .form ul {margin-left:60px;}
+#register .form li {margin-top:10px;}
+#register .form li input {width:300px;padding:5px;}
+#register .form li input[type="submit"] {height:35px;width:310px;}
+#register .form .star {display:inline-block;width:12px;font-family:sans-serif;color:#ff0000;}
+#register .form .tt {display:inline-block;width:70px;text-align:right;}
+#register .form .tip {display:block;font-size:12px;margin-left:92px;color:#999999;}
+#register .form .rule {margin-top:5px;}
+#register .form .rule .ct {display:inline-block;font-size:12px;text-align:center;width:310px;color:#999999;}
+#register .form .error {color:#ff0000;}
+#register .form .iconWait {height:17px;width:16px;background:url('/images/home/company/register/loading.gif') no-repeat;}
+#register .form .iconError {height:16px;width:14px;background:url('/images/home/company/register/error.png') no-repeat;}
+#register .form .iconSuccess {height:16px;width:14px;background:url('/images/home/company/register/success.png') no-repeat;}
+
+#register .info {float:left;height:529px;width:360px;padding:16px 20px 0px 20px;background:#f5f5f5;}
+#register .info li {float:none;margin-top:10px;}
+#register .info .border {padding-bottom:10px;border-bottom:1px dotted #cccccc;}
+#register .info .hz {float:left;width:170px;height:80px;margin-left:16px;margin-top:10px;border:1px solid #cccccc;background:#ffffff;}
+#register .info .tip {font-size:12px;color:#999999;}

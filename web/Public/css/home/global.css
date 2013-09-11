@@ -1,0 +1,11 @@
+body {background:url('/images/home/bg.jpg');}
+
+/*header*/
+
+#header {height:70px;background:url('/images/home/header_bg.png');}
+#header .logo {float:left;line-height:70px;}
+#header .navi {float:right;}
+#header .navi li {margin:22px 0 0 20px;padding:5px 10px 5px 10px;}
+#header .navi .normal {text-shadow:0 0px 2px #000000;cursor:pointer;color:#ffffff;height:20px;}
+#header .navi .active {color:#54cfff;}
+#header .navi .normal:hover {color:#54cfff;}

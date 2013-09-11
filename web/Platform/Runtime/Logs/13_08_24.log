@@ -1,0 +1,33 @@
+[ 2013-08-24T22:09:58+08:00 ] 127.0.0.1 /Company/loginDo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001389s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.047349s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `jz_user` WHERE ( `email` = 'acm@sjtu.edu.cn' ) LIMIT 1   [ RunTime:0.000842s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `jz_company` [ RunTime:0.017759s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `company_id` = 2 ) LIMIT 1   [ RunTime:0.000632s ]
+
+[ 2013-08-24T22:10:03+08:00 ] 127.0.0.1 /css/ois/manage.css
+ERR: 无法加载模块:Css
+
+[ 2013-08-24T22:10:07+08:00 ] 127.0.0.1 /rms/rms_talent/new
+ERR: 非法操作:new
+
+[ 2013-08-24T23:14:47+08:00 ] 127.0.0.1 /Company/loginDo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001514s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.004387s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `jz_user` WHERE ( `email` = 'acm@sjtu.edu.cn' ) LIMIT 1   [ RunTime:0.000501s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `jz_company` [ RunTime:0.004201s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `company_id` = 2 ) LIMIT 1   [ RunTime:0.000460s ]
+
+[ 2013-08-24T23:14:49+08:00 ] 127.0.0.1 /css/ois/manage.css
+ERR: 无法加载模块:Css
+

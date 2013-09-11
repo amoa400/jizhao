@@ -1,0 +1,387 @@
+[ 2013-09-03T10:16:49+08:00 ] 127.0.0.1 /Company/loginDo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001159s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.137186s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `jz_user` WHERE ( `email` = 'weiqin@vip.126.com' ) LIMIT 1   [ RunTime:0.000802s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `jz_company` [ RunTime:0.033465s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `company_id` = 1 ) LIMIT 1   [ RunTime:0.000649s ]
+
+[ 2013-09-03T10:20:24+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T10:20:29+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T10:20:32+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T10:20:34+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T10:23:53+08:00 ] 127.0.0.1 /Company/loginDo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001386s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\InterWork\Web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.004249s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `jz_user` WHERE ( `email` = 'weiqin@vip.126.com' ) LIMIT 1   [ RunTime:0.000620s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `jz_company` [ RunTime:0.004679s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `company_id` = 1 ) LIMIT 1   [ RunTime:0.000463s ]
+
+[ 2013-09-03T11:13:12+08:00 ] 127.0.0.1 /css/ois/manage.css
+ERR: 无法加载模块:Css
+
+[ 2013-09-03T15:13:02+08:00 ] 127.0.0.1 /rms/rms_talent/undefined?id_list=109|108|107|106|105|104|103|102|101|100|99|98|97|96|95|94|93|92|91|
+ERR: 非法操作:undefined
+
+[ 2013-09-03T15:14:07+08:00 ] 127.0.0.1 /rms/rms_position/show/position_id/21.html
+ERR: 非法操作:show
+
+[ 2013-09-03T15:23:40+08:00 ] 127.0.0.1 /rms/rms_position/edit/position_id/21.html
+ERR: 非法操作:edit
+
+[ 2013-09-03T15:23:45+08:00 ] 127.0.0.1 /rms/rms_position/show/position_id/21.html
+ERR: 非法操作:show
+
+[ 2013-09-03T15:23:47+08:00 ] 127.0.0.1 /rms/rms_position/edit/position_id/21.html
+ERR: 非法操作:edit
+
+[ 2013-09-03T15:25:40+08:00 ] 127.0.0.1 /rms/rms_position/delete/position_id/2.html
+ERR: 非法操作:delete
+
+[ 2013-09-03T15:25:42+08:00 ] 127.0.0.1 /rms/rms_position/edit/position_id/2.html
+ERR: 非法操作:edit
+
+[ 2013-09-03T15:27:11+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:27:43+08:00 ] 127.0.0.1 /rms/rms_position/deleteList.html?id_list=21|2|1|
+ERR: 非法操作:deletelist
+
+[ 2013-09-03T15:29:10+08:00 ] 127.0.0.1 /rms/rms_position/deleteList.html?id_list=21|
+ERR: Model:d您所请求的方法不存在！
+
+[ 2013-09-03T15:30:37+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:30:47+08:00 ] 127.0.0.1 /rms/rms_position/show/position_id/21.html
+ERR: 非法操作:show
+
+[ 2013-09-03T15:30:50+08:00 ] 127.0.0.1 /rms/rms_position/show/position_id/2.html
+ERR: 非法操作:show
+
+[ 2013-09-03T15:31:02+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:33:26+08:00 ] 127.0.0.1 /rms/rms_position/show/position_id/2.html
+ERR: 模板不存在[../Platform/Tpl/Rms/RmsPosition/show.html]
+
+[ 2013-09-03T15:33:34+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:33:44+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:33:49+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:34:01+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:34:11+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:34:12+08:00 ] 127.0.0.1 /rms/rms_position/edit/position_id/2.html
+ERR: 非法操作:edit
+
+[ 2013-09-03T15:34:43+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:34:56+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:35:09+08:00 ] 127.0.0.1 /rms/rms_position/edit/position_id/2.html
+ERR: 非法操作:edit
+
+[ 2013-09-03T15:35:12+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:35:20+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:35:39+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:36:01+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:36:07+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:36:11+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:36:12+08:00 ] 127.0.0.1 /rms/rms_position/edit/position_id/2.html
+ERR: 非法操作:edit
+
+[ 2013-09-03T15:36:17+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:36:18+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:36:18+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:36:19+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:36:21+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:36:37+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:36:44+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:36:49+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:36:58+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:37:29+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:37:48+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:38:07+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:38:15+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:38:16+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:38:20+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:38:34+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:38:53+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:39:04+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:39:07+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:39:18+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:39:20+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:39:26+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:39:30+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:39:54+08:00 ] 127.0.0.1 /rms/rms_position/edit/position_id/2.html
+ERR: 非法操作:edit
+
+[ 2013-09-03T15:40:35+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:40:36+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:40:36+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:40:37+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:40:50+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:41:17+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:41:21+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:41:36+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:41:51+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:41:59+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:42:02+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:42:03+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:42:03+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:42:04+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:42:19+08:00 ] 127.0.0.1 /rms/rms_position/edit/position_id/2.html
+ERR: 非法操作:edit
+
+[ 2013-09-03T15:43:28+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:43:28+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:43:29+08:00 ] 127.0.0.1 /rms/rms_position/edit/position_id/2.html
+ERR: 模板不存在[../Platform/Tpl/Rms/RmsPosition/edit.html]
+
+[ 2013-09-03T15:43:32+08:00 ] 127.0.0.1 /rms/rms_position/edit/position_id/2.html
+ERR: 模板不存在[../Platform/Tpl/Rms/RmsPosition/edit.html]
+
+[ 2013-09-03T15:43:39+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:43:45+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:43:52+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:43:56+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:43:59+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:43:59+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:44:06+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:44:10+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:44:12+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:44:16+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:44:45+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:45:06+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:45:16+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:45:20+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:45:50+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:46:01+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:46:09+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:46:14+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:46:21+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:46:55+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:47:35+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:47:41+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:47:55+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:48:01+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:48:09+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:48:18+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:48:20+08:00 ] 127.0.0.1 /rms/rms_position/editDo.html
+ERR: 非法操作:editdo
+
+[ 2013-09-03T15:48:21+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:49:02+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:49:19+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:49:29+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:49:46+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:49:53+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:58:01+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T15:58:02+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T18:09:33+08:00 ] 127.0.0.1 /a
+ERR: 无法加载模块:A
+
+[ 2013-09-03T18:14:24+08:00 ] 127.0.0.1 /a
+ERR: 无法加载模块:A
+
+[ 2013-09-03T18:52:14+08:00 ] 127.0.0.1 /a
+ERR: 无法加载模块:A
+
+[ 2013-09-03T19:54:15+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T20:59:36+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T20:59:39+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+
+[ 2013-09-03T21:24:55+08:00 ] 127.0.0.1 /js/manage/page.js
+ERR: 无法加载模块:Js
+

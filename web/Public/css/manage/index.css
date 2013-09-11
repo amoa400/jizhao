@@ -1,0 +1,27 @@
+#index {}
+
+#index .product {width:80%;float:left;}
+#index .product .title {font-size:20px;margin-left:3%;border-bottom:1px solid #c9c9c9;padding-bottom:10px;margin-top:20px;font-weight:bold;margin-right:3%;}
+#index .product .dividing {border-top:1px dashed #cccccc;margin-top:20px;height:1px;margin-left:3%;margin-right:3%;}
+
+#index .product .item {width:33%;float:left;margin-left:3%;margin-top:20px;}
+#index .product .item .pic {float:left;width:64px;height:64px;display:block;}
+#index .product .item  ul {margin-left:10px;float:left;}
+#index .product .item  li {float:none;font-size:12px;margin-top:3px;}
+#index .product .item .tt {font-weight:bold;font-size:16px;}
+#index .product .item .ct {color:#0066cc;}
+#index .product .item a:hover {color:inherit;}
+
+#index .product .item .setting {background:url('/images/manage/icon/setting.png');}
+#index .product .item .manage {background:url('/images/manage/icon/manage.png');}
+#index .product .item .manageInactive {background:url('/images/manage/icon/manageInactive.png');}
+#index .product .item .interview {background:url('/images/manage/icon/interview.png');}
+#index .product .item .exam {background:url('/images/manage/icon/exam.png');}
+#index .product .item .examInactive {background:url('/images/manage/icon/examInactive.png');}
+#index .product .item .other {background:url('/images/manage/icon/other.png');}
+
+#index .info {width:17%;height:100%;padding-left:1%;padding-right:2%;position:absolute;right:0;background:#f7f7f7;border-left:1px solid #d9d9d9;}
+#index .info .item {margin-top:20px;}
+#index .info .item .tt {font-size:14px;font-weight:bold;padding-bottom:3px;border-bottom:1px solid #cccccc;}
+#index .info .item ul {margin-top:8px;}
+#index .info .item li {float:none;font-size:12px;margin-top:3px;}
