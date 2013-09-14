@@ -1,24 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
-<html>
-
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-
-	<link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-	<link href="/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
-	<link href="/css/global.css" rel="stylesheet" type="text/css">
-	<link href="/css/manage/frame.css" rel="stylesheet" type="text/css">
-	
-	<script src="/js/jquery.min.js" type="text/javascript" ></script>
-	<script src="/js/bootstrap.min.js" type="text/javascript" ></script>
-	<script src="/js/global.js" type="text/javascript" ></script>
-	
-	<title><?php echo ($pageTitle); ?> - 即招</title>
-</head>
-
-<body>
-
-<div id="frame">
+<?php if (!defined('THINK_PATH')) exit();?>
 
 <link href="/css/manage/page.css" rel="stylesheet" type="text/css">
 	
@@ -81,9 +61,3 @@
 </div>
 
 <script src="/js/manage/page.js" type="text/javascript" ></script>
-
-	</div>
-	
-	<script src="/js/manage/frame.js" type="text/javascript" ></script>
-</body>
-</html>

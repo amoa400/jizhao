@@ -25,6 +25,7 @@ class RmsPositionAction extends Action {
 		}
 		$this->assign('positionList', $positionList);
 		$this->assign('pager', $pager);
+		$this->assign('pageTitle', '职位管理');
 		$this->display();
 	}
 	

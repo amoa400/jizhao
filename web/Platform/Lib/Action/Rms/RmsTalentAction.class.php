@@ -48,6 +48,7 @@ class RmsTalentAction extends Action {
 		$this->assign('talentList', $talentList);
 		$this->assign('positionList', $positionList);
 		$this->assign('pager', $pager);
+		$this->assign('pageTitle', '求职者管理');
 		$this->display();
 	}
 	
@@ -188,7 +189,7 @@ class RmsTalentAction extends Action {
 			echo '<script>window.close()</script>';
 		}
 		else {
-			$this->success('删除成功！');
+			$this->redirect($_SERVER['HTTP_REFERER']);
 		}
 	}
 	
@@ -199,7 +200,7 @@ class RmsTalentAction extends Action {
 			if (empty($talentId)) continue;
 			D('RmsTalent')->d($talentId);
 		}
-		$this->success('删除成功！');
+		$this->redirect($_SERVER['HTTP_REFERER']);
 	}
 	
 	// 上传并解析简历
@@ -238,7 +239,7 @@ class RmsTalentAction extends Action {
 			if (empty($talentId)) continue;
 			D('RmsTalent')->uStatus($talentId, 3);
 		}
-		$this->success('成功安排笔试！', 0);
+		$this->redirect($_SERVER['HTTP_REFERER']);
 	}
 	
 	// 安排面试
@@ -248,7 +249,7 @@ class RmsTalentAction extends Action {
 			if (empty($talentId)) continue;
 			D('RmsTalent')->uStatus($talentId, 4);
 		}
-		$this->success('成功安排面试！');
+		$this->redirect($_SERVER['HTTP_REFERER']);
 	}
 	
 	// 录用
@@ -258,7 +259,7 @@ class RmsTalentAction extends Action {
 			if (empty($talentId)) continue;
 			D('RmsTalent')->uStatus($talentId, 5);
 		}
-		$this->success('成功录用！');
+		$this->redirect($_SERVER['HTTP_REFERER']);
 	}
 	
 	// 淘汰
@@ -268,7 +269,7 @@ class RmsTalentAction extends Action {
 			if (empty($talentId)) continue;
 			D('RmsTalent')->uStatus($talentId, 6);
 		}
-		$this->success('已淘汰！');
+		$this->redirect($_SERVER['HTTP_REFERER']);
 	}
 	
 	// 格式化数据

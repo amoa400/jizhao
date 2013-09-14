@@ -4,7 +4,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<meta name="description" content="管理平台 - __NAME__" />
-	<title>管理平台 - __NAME__</title>
+	<title><?php echo ($pageTitle); ?> - 管理平台 - __NAME__</title>
 
 	<link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link href="/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
@@ -35,34 +35,35 @@
 
 <link href="/css/manage/product.css" rel="stylesheet" type="text/css">
 
-<div id="product" class="main_body">
+<div id="product">
 
-<div name="rms" class="control_menu">
+
+<div name="ois" class="control_menu">
 
 	<div name="talent" class="item">
 		<span class="lv1">
-			<i class="icon1 icon1_blue icon1_user1"></i>&nbsp;&nbsp;&nbsp;求职者管理
+			<i class="icon1 icon1_blue icon1_user1"></i>&nbsp;&nbsp;&nbsp;面试管理
 		</span>
 		<div class="sub">
 			<span name="showList" class="lv2">
-				<i class="icon1 icon1_blank"></i>&nbsp;&nbsp;&nbsp;求职者列表
+				<i class="icon1 icon1_blank"></i>&nbsp;&nbsp;&nbsp;面试列表
 			</span>
 			<span name="create" class="lv2">
-				<i class="icon1 icon1_blank"></i>&nbsp;&nbsp;&nbsp;新增求职者
+				<i class="icon1 icon1_blank"></i>&nbsp;&nbsp;&nbsp;新建面试
 			</span>
 		</div>
 	</div>
 	
 	<div name="position" class="item">
 		<span class="lv1">
-			<i class="icon1 icon1_blue icon1_overview"></i>&nbsp;&nbsp;&nbsp;职位管理
+			<i class="icon1 icon1_blue icon1_overview"></i>&nbsp;&nbsp;&nbsp;面试官管理
 		</span>
 		<div class="sub">
 			<span name="showList" class="lv2">
-				<i class="icon1 icon1_blank"></i>&nbsp;&nbsp;&nbsp;职位列表
+				<i class="icon1 icon1_blank"></i>&nbsp;&nbsp;&nbsp;面试官列表
 			</span>
 			<span name="create" class="lv2">
-				<i class="icon1 icon1_blank"></i>&nbsp;&nbsp;&nbsp;新建职位
+				<i class="icon1 icon1_blank"></i>&nbsp;&nbsp;&nbsp;新增面试官
 			</span>
 		</div>
 	</div>
@@ -89,6 +90,9 @@
 	<div class="clear"></div>
 </div>
 
+	
+	</div>
+	</div>
 	
 	<div class="clear"></div>
 </div>

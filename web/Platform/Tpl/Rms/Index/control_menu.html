@@ -1,45 +1,9 @@
-<div name="rms" class="control_menu">
+<include file="Manage:Product:header"/>
 
-	<div name="talent" class="item">
-		<span class="lv1">
-			<i class="icon1 icon1_blue icon1_user1"></i>&nbsp;&nbsp;&nbsp;求职者管理
-		</span>
-		<div class="sub">
-			<span name="showList" class="lv2">
-				<i class="icon1 icon1_blank"></i>&nbsp;&nbsp;&nbsp;求职者列表
-			</span>
-			<span name="create" class="lv2">
-				<i class="icon1 icon1_blank"></i>&nbsp;&nbsp;&nbsp;新增求职者
-			</span>
-		</div>
-	</div>
-	
-	<div name="position" class="item">
-		<span class="lv1">
-			<i class="icon1 icon1_blue icon1_overview"></i>&nbsp;&nbsp;&nbsp;职位管理
-		</span>
-		<div class="sub">
-			<span name="showList" class="lv2">
-				<i class="icon1 icon1_blank"></i>&nbsp;&nbsp;&nbsp;职位列表
-			</span>
-			<span name="create" class="lv2">
-				<i class="icon1 icon1_blank"></i>&nbsp;&nbsp;&nbsp;新建职位
-			</span>
-		</div>
-	</div>
-	
+<div class="control_menu">
+	<a href="<{:U('rms/rms_talent/showList')}>" class="item <?php if ($pageTitle == '求职者管理') echo 'item_active'; ?>"><i class="icon1 icon1_blue icon1_user1"></i>&nbsp;&nbsp;&nbsp;求职者管理</a>
+	<a href="<{:U('rms/rms_position/showList')}>" class="item <?php if ($pageTitle == '职位管理') echo 'item_active'; ?>"><i class="icon1 icon1_blue icon1_user1"></i>&nbsp;&nbsp;&nbsp;职位管理</a>
 </div>
 
-<script>
-	$(document).ready(function() {
-		var hash = window.location.hash;
-		if (hash != '') {
-			hash[0] = '1';
-			var temp = hash.split('#');
-			hash = temp[1];
-			var name = hash.split('_');
-			$('.item[name="'+ name[0] +'"] .lv2[name="' + name[1] + '"]').click();
-		}
-		else $('.item[name="talent"] .lv2[name="showList"]').click();
-	});
-</script>
+<div class="main_body">
+<div class="main_body2">

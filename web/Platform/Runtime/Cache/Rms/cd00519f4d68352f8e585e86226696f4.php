@@ -3,22 +3,49 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="description" content="管理平台 - __NAME__" />
+	<title><?php echo ($pageTitle); ?> - 管理平台 - __NAME__</title>
 
 	<link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link href="/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
 	<link href="/css/global.css" rel="stylesheet" type="text/css">
-	<link href="/css/manage/frame.css" rel="stylesheet" type="text/css">
+	<link href="/css/manage/global.css" rel="stylesheet" type="text/css">
 	
 	<script src="/js/jquery.min.js" type="text/javascript" ></script>
 	<script src="/js/bootstrap.min.js" type="text/javascript" ></script>
 	<script src="/js/global.js" type="text/javascript" ></script>
-	
-	<title><?php echo ($pageTitle); ?> - 即招</title>
 </head>
 
 <body>
 
-<div id="frame">
+<div id="header">
+	<div class="logo">
+		<a href="<?php echo U('/manage/');?>"><img src="/images/logo.png"></a>
+	</div>
+	<div class="naviRight">
+		<ul>
+			<li><?php echo (session('user_name')); ?></li>
+			<li><?php echo (session('company_name')); ?></li>
+			<li>帮助</li>
+			<a href="<?php echo U('/home/company/logout');?>"><li style="border:0;">退出</li></a>
+		</ul>
+	</div>
+	<div class="clear"></div>
+</div>
+
+<link href="/css/manage/product.css" rel="stylesheet" type="text/css">
+
+<div id="product">
+
+
+
+<div class="control_menu">
+	<a href="<?php echo U('rms/rms_talent/showList');?>" class="item <?php if ($pageTitle == '求职者管理') echo 'item_active'; ?>"><i class="icon1 icon1_blue icon1_user1"></i>&nbsp;&nbsp;&nbsp;求职者管理</a>
+	<a href="<?php echo U('rms/rms_position/showList');?>" class="item <?php if ($pageTitle == '职位管理') echo 'item_active'; ?>"><i class="icon1 icon1_blue icon1_user1"></i>&nbsp;&nbsp;&nbsp;职位管理</a>
+</div>
+
+<div class="main_body">
+<div class="main_body2">
 
 <style>
 	.icon-repeat  {vertical-align:text-bottom;height:16px;width:13px;}
@@ -26,20 +53,23 @@
 	.icon-chevron-down {vertical-align:text-bottom;height:16px;width:12px;}
 </style>
 
-<div class="header">
+<div class="head">
 	<span class="title">求职者列表</span>
 </div>
 
 <div class="mytoolbar mytoolbar_table" style="margin-top:15px;">
-	<span class="item mybtn mybtn_primary" style="margin:0;" md_op_url_tmp="<?php echo U('rms/rms_talent/arrangeExam');?>">安排笔试</span>
-	<span class="item mybtn mybtn_primary" md_op_url_tmp="<?php echo U('rms/rms_talent/arrangeInterview');?>">安排面试</span>
-	<span class="item mybtn mybtn_primary" md_op_url_tmp="<?php echo U('rms/rms_talent/hire');?>">录用</span>
-	<span class="item mybtn mybtn_primary" md_op_url_tmp="<?php echo U('rms/rms_talent/eliminate');?>">淘汰</span>
-	<span class="item mybtn mybtn_primary" md_id_name="talent_id" md_confirm="1" md_op_url_tmp="<?php echo U('rms/rms_talent/deleteList');?>" md_title="确认删除？" md_content="您即将删除您选中的求职者，请确认操作！" md_button_text="删除">删除</span>
-	<span class="item split" md_disabled="1"></span>
-	<span class="item mybtn mybtn_primary" md_click_func="location.reload()">刷新 <i class="icon-repeat icon-white"></i></span>
-	<span class="item mybtn mybtn_primary para_set" md_para_name="filter" md_para_value="1" md_para_nojump="1" md_click_func="$('.filter').show();$(this).hide();$(this).next().show();" <?php if (!empty($_GET['filter'])) echo 'style="display:none;"'; ?>>筛选 <i class="icon-chevron-down icon-white"></i></span>
-	<span class="item mybtn mybtn_primary para_set" md_para_name="filter" md_para_value="0" md_para_nojump="1"  md_click_func="$('.filter').hide();$(this).hide();$(this).prev().show();" <?php if (empty($_GET['filter'])) echo 'style="display:none;"'; ?>>筛选 <i class="icon-chevron-up icon-white"></i></span>
+	<span class="item item_t mybtn mybtn_primary" style="margin:0;" md_op_url_tmp="<?php echo U('rms/rms_talent/arrangeExam');?>">安排笔试</span>
+	<span class="item item_t mybtn mybtn_primary" md_op_url_tmp="<?php echo U('rms/rms_talent/arrangeInterview');?>">安排面试</span>
+	<span class="item item_t mybtn mybtn_primary" md_op_url_tmp="<?php echo U('rms/rms_talent/hire');?>">录用</span>
+	<span class="item item_t mybtn mybtn_primary" md_op_url_tmp="<?php echo U('rms/rms_talent/eliminate');?>">淘汰</span>
+	<span class="item item_t mybtn mybtn_primary" md_id_name="talent_id" md_confirm="1" md_op_url_tmp="<?php echo U('rms/rms_talent/deleteList');?>" md_title="确认删除？" md_content="您即将删除您选中的求职者，请确认操作！" md_button_text="删除">删除</span>
+	<span class="item split"></span>
+	<span class="item mybtn mybtn_primary" onclick="location.reload()">刷新 <i class="icon-repeat icon-white"></i></span>
+	<span class="item mybtn mybtn_primary para_set" md_para_name="filter" md_para_value="1" md_para_nojump="1" onclick="$('.filter').show();$(this).hide();$(this).next().show();" <?php if (!empty($_GET['filter'])) echo 'style="display:none;"'; ?>>筛选 <i class="icon-chevron-down icon-white"></i></span>
+	<span class="item mybtn mybtn_primary para_set" md_para_name="filter" md_para_value="0" md_para_nojump="1"  onclick="$('.filter').hide();$(this).hide();$(this).prev().show();" <?php if (empty($_GET['filter'])) echo 'style="display:none;"'; ?>>筛选 <i class="icon-chevron-up icon-white"></i></span>
+	<span class="item split"></span>
+	<span class="item mybtn mybtn_primary popbox_t" md_box_id="">新增</span>
+	<span class="item mybtn mybtn_primary popbox2_t" md_box_id="multi">批量上传</span>
 </div>
 
 <div class="filter" <?php if (empty($_GET['filter'])) echo 'style="display:none;"'; ?>>
@@ -160,7 +190,7 @@
 			<td>
 				<a href="<?php echo U('rms/rms_talent/edit?talent_id='.$item['talent_id']);?>" target="_blank"><span class="mylabel mylabel_info">编辑</span></a>&nbsp;
 				<a href="javascript:void(0)" class="open_confirm_window" md_title="确认删除？" md_content="您即将删除<span class='danger'><?php echo ($item["talent_id"]); ?>号求职者<?php echo ($item["name"]); ?></span>，请确认操作！" md_button_text="删除" md_button_class="mybtn_danger" md_op_url="<?php echo U('rms/rms_talent/delete?talent_id='.$item['talent_id']);?>"><span class="mylabel mylabel_danger">删除</span></a>&nbsp;
-				<a href="javascript:void(0)" class="popbox_trigger" md_box_id="<?php echo ($item["talent_id"]); ?>" md_left="-93" md_top="-6px" md_width="80" md_border_width="3" md_background="#ffffff" md_border_color="#468847" md_btn_height="29"><span class="mylabel mylabel_success">更多</span></a>
+				<a href="javascript:void(0)" class="popbox_t" md_box_id="<?php echo ($item["talent_id"]); ?>" md_left="-93" md_top="-6px" md_width="80" md_border_width="3" md_background="#ffffff" md_border_color="#468847" md_btn_height="29"><span class="mylabel mylabel_success">更多</span></a>
 				<div class="popbox popbox_<?php echo ($item["talent_id"]); ?>">
 					<span class="btn_item">安排笔试</span>
 					<span class="btn_item">安排面试</span>
@@ -198,8 +228,43 @@
 	<?php } ?>
 </div>
 
+<div class="popbox2 popbox2_multi">
+	<div class="title">批量上传<span class="close_btn"></span></div>
+	<div class="content">
+		<div class="information2" style="margin-top:15px;text-align:center;">
+			<div class="item myform">
+				<form action="<?php echo U('/rms/rms_talent/createDo');?>" method="post" enctype="multipart/form-data">
+					<input name="resume[]" type="file" onchange="$(this).submit()" multiple="multiple" class="hidden">
+					<input type="button" class="mybtn mybtn_primary submitBtn" style="padding:15px 60px;" onclick="$('input[type=file]').click()" value="上传简历" md_default_value="上传简历">
+					<span class="formSubmitingTip hidden">正在上传...</span>
+					<span class="formDisabled hidden"></span>
+					<span class="formForceSubmit hidden">1</span>
+					<span class="formSubmitBtnName hidden">submitBtn</span>
+				</form>
+			</div>
+			<div class="item">
+				可批量上传，支持格式：pdf,doc,docx,txt
+			</div>
+			<div class="item myform">
+
+			</div>
+		</div>
+	</div>
+</div>
+
+	
+	</div>
 	</div>
 	
-	<script src="/js/manage/frame.js" type="text/javascript" ></script>
+	<div class="clear"></div>
+</div>
+
+<script src="/js/manage/product.js" type="text/javascript" ></script>
+
+
+<div class="grey"></div>
+
+<script src="/js/manage/global.js" type="text/javascript" ></script>
+
 </body>
 </html>

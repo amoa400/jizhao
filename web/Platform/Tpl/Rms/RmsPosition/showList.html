@@ -1,4 +1,4 @@
-<include file="Manage:Product:frame_header"/>
+<include file="Rms:Index:control_menu"/>
 
 <style>
 	.icon-repeat  {vertical-align:text-bottom;height:16px;width:13px;}
@@ -6,7 +6,7 @@
 	.icon-chevron-down {vertical-align:text-bottom;height:16px;width:12px;}
 </style>
 
-<div class="header">
+<div class="head">
 	<span class="title">职位列表</span>
 </div>
 
@@ -72,11 +72,11 @@
 			<th class="sel"><input class="select_all" type="checkbox"></th>
 			<th>编号</th>
 			<th width="15%">职位名称</th>
-			<th width="35%">职位描述</th>
+			<th width="30%">职位描述</th>
 			<th>报名人数</th>
 			<th>创建时间</th>
 			<th>状态</th>
-			<th>操作</th>
+			<th style="min-width:140px">操作</th>
 		</tr>
 		<?php foreach($positionList as $position) { ?>
 		<tr>
@@ -127,4 +127,4 @@
 	<?php } ?>
 </div>
 
-<include file="Manage:Product:frame_footer"/>
+<include file="Manage:Product:footer"/>
