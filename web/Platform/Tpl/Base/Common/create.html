@@ -1,0 +1,40 @@
+<include file="Manage:Product:frame_header"/>
+
+<div class="header">
+	<span class="title">新建<{$const.title}></span>
+</div>
+
+<div class="myform" style="margin-top:15px;">
+<form name="form" action="/<{$const.group}>/<{$const.group}>_<{$const.action}>/createDo" method="post">
+
+	<table>
+		<?php foreach ($fieldName as $key => $item) { ?>
+		<?php
+			if (in_array($key, $const['hideField'])) continue;
+		?>
+		<tr class="item">
+			<td class="tt"><{$item}>：</td>
+			<td class="cont"><input name="<{$key}>" type="text" class="form-control" value=""></td>
+			<td class="tip"></td>
+		</tr>
+		<?php } ?>
+		<tr class="item">
+			<td class="tt"></td>
+			<td class="cont">
+				<input type="submit" value="提交" class="mybtn mybtn_primary">&nbsp;
+				<input type="button" value="重置" class="mybtn mybtn_danger" onclick="location.reload()">
+			</td>
+			<td class="tip"></td>
+		</tr>
+	</table>
+		
+	<span class="formSubmitTip hidden">提交</span>
+	<span class="formSubmitingTip hidden">正在提交</span>
+	<span class="formSuccessTip hidden">提交成功</span>
+	<span class="formFailTip hidden">提交失败</span>
+	<span class="formDisabled hidden"></span>
+
+</form>
+</div>
+
+<include file="Manage:Product:frame_footer"/>

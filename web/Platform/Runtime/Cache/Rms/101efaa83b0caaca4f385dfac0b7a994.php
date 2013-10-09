@@ -1,14 +1,5 @@
 <?php if (!defined('THINK_PATH')) exit();?>
 
-<link href="/css/manage/page.css" rel="stylesheet" type="text/css">
-	
-<div id="page">
-
-<div class="page_header">
-	<span class="title"><?php echo ($pageTitle); ?></span>
-	<span class="close_btn" onclick="window.close()"><img src="/images/icon/close.png"></span>
-</div>
-
 <div class="page_content">
 	<div class="mytoolbar">
 		<a href="<?php echo U('/rms/rms_position/edit?position_id='.$position['position_id']);?>" target="_blank"><span class="item mybtn mybtn_wide mybtn_primary" style="margin-left:0;">编辑</span></a>
@@ -97,12 +88,3 @@
 	-->
 	
 </div>
-
-
-<div class="page_footer">
-	即招在线招聘平台（JZhao.cn）
-</div>
-
-</div>
-
-<script src="/js/manage/page.js" type="text/javascript" ></script>

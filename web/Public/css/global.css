@@ -56,12 +56,12 @@ textarea {padding:6px;}
 .mybtn_danger2:hover, .mybtn_danger2:focus, .mybtn_danger2:active {background:#c63e37;}
 .mybtn_cancel {color:#ffffff;background:#999999;}
 .mybtn_cancel:hover, .mybtn_danger2:focus, .mybtn_danger2:active {background:#888787;}
+.mybtn_warning {color:#ffffff;background:#f99e1c;}
+.mybtn_warning:hover, .mybtn_warning:focus, .mybtn_warning:active {background:#fa9505;}
 
 .mylabel {background:#999999;padding:2px 5px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;color:#ffffff;}
 .mylabel_success {background:#468847;}
 .mylabel_danger {background:#c63e37;}
 .mylabel_info {background:#3a87ad;}
 
-/*input[disabled="disabled"] {background:none;}*/
-
-.grey {background:#000;display:block;z-index:100;width:100%;height:100%;position:absolute;top:0;left:0;opacity:0.1;display:none;}
+.block_screen {background:#000000;display:block;z-index:100;width:100%;height:100%;position:absolute;top:0;left:0;opacity:0.3;min-height:100%;}

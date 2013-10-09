@@ -1,0 +1,90 @@
+[ 2013-09-16T10:08:34+08:00 ] 192.168.0.100 /Company/loginDo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001442s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\jizhao\web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.052542s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `jz_user` WHERE ( `email` = 'weiqin@vip.126.com' ) LIMIT 1   [ RunTime:0.000783s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `jz_company` [ RunTime:0.025234s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `company_id` = 1 ) LIMIT 1   [ RunTime:0.000631s ]
+
+[ 2013-09-16T10:14:13+08:00 ] 192.168.0.100 /ois/ois_interview/showList3/
+ERR: 非法操作:showlist3
+
+[ 2013-09-16T10:14:49+08:00 ] 192.168.0.100 /ois/ois_interview/create/undefined
+ERR: 非法操作:create
+
+[ 2013-09-16T10:15:26+08:00 ] 192.168.0.100 /ois/ois_interview/create/
+ERR: 非法操作:create
+
+[ 2013-09-16T10:15:35+08:00 ] 192.168.0.100 /ois/ois_interview/create/
+ERR: 非法操作:create
+
+[ 2013-09-16T10:17:06+08:00 ] 192.168.0.100 /ois/ois_interview/create/
+ERR: 非法操作:create
+
+[ 2013-09-16T10:17:10+08:00 ] 192.168.0.100 /ois/ois_interview/create/
+ERR: 非法操作:create
+
+[ 2013-09-16T10:17:25+08:00 ] 192.168.0.100 /ois/ois_interview/create/
+ERR: 非法操作:create
+
+[ 2013-09-16T10:17:43+08:00 ] 192.168.0.100 /ois/ois_interview/create/
+ERR: 非法操作:create
+
+[ 2013-09-16T10:17:55+08:00 ] 192.168.0.100 /ois/ois_interview/create/
+ERR: 非法操作:create
+
+[ 2013-09-16T10:18:20+08:00 ] 192.168.0.100 /ois/ois_interview/create/
+ERR: 非法操作:create
+
+[ 2013-09-16T10:20:58+08:00 ] 192.168.0.100 /ois/ois_interview/create/
+ERR: 非法操作:create
+
+[ 2013-09-16T10:21:16+08:00 ] 192.168.0.100 /ois/ois_interview/create/
+ERR: 非法操作:create
+
+[ 2013-09-16T10:22:24+08:00 ] 192.168.0.100 /ois/ois_interview/create/
+ERR: 非法操作:create
+
+[ 2013-09-16T10:23:22+08:00 ] 192.168.0.100 /ois/ois_interview/create/
+ERR: 非法操作:create
+
+[ 2013-09-16T10:24:17+08:00 ] 192.168.0.100 /ois/ois_interview/create/
+ERR: 非法操作:create
+
+[ 2013-09-16T10:26:47+08:00 ] 192.168.0.100 /ois/ois_interview/create/
+ERR: 非法操作:create
+
+[ 2013-09-16T11:14:57+08:00 ] 192.168.0.100 /ois/ois_interview/create/
+ERR: 非法操作:create
+
+[ 2013-09-16T11:15:04+08:00 ] 192.168.0.100 /ois/ois_interview/create/
+ERR: 非法操作:create
+
+[ 2013-09-16T11:17:31+08:00 ] 192.168.0.100 /rms/rms_position/showList3/
+ERR: 非法操作:showlist3
+
+[ 2013-09-16T15:55:06+08:00 ] 192.168.0.100 /ois/ois_interview/create/
+ERR: 非法操作:create
+
+[ 2013-09-16T16:36:26+08:00 ] 192.168.0.100 /undefined/undefined_undefined/undefined/undefined
+ERR: 无法加载模块:Undefined
+
+[ 2013-09-16T16:36:50+08:00 ] 192.168.0.100 /undefined/undefined_undefined/undefined/undefined
+ERR: 无法加载模块:Undefined
+
+[ 2013-09-16T16:37:15+08:00 ] 192.168.0.100 /undefined/undefined_undefined/undefined/undefined
+ERR: 无法加载模块:Undefined
+
+[ 2013-09-16T16:46:34+08:00 ] 192.168.0.100 /uploads/1/resume/376.
+ERR: 无法加载模块:Uploads
+
+[ 2013-09-16T16:46:37+08:00 ] 192.168.0.100 /uploads/1/resume/376.
+ERR: 无法加载模块:Uploads
+
+[ 2013-09-16T19:21:59+08:00 ] 192.168.0.100 /cms
+ERR: 无法加载模块:Cms
+

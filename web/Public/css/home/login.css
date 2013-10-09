@@ -1,0 +1,16 @@
+body {background:#f2f2f2;}
+
+.header {width:1000px;margin:0 auto;margin-top:50px;}
+.header .logo {float:left;}
+.header .company {float:right;line-height:50px;margin-right:10px;}
+
+.main {width:1000px;margin:0 auto;margin-top:30px;border:5px solid #e8e8e8;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;}
+.main2 {border:1px solid #e1e1e1;background:#ffffff;}
+
+.main .poster {width:60%;float:left;height:327px;}
+
+.main .form {width:40%;float:left;padding:50px;padding-left:0;}
+.main .form .title {font-size:18px;text-align:center;}
+.main .form .input-group {margin-top:20px;}
+
+.footer {width:1000px;margin:0 auto;margin-top:30px;text-align:center;}

@@ -1,0 +1,20 @@
+html,body {height:100%;background:url('../../images/ois/bg.png');overflow:hidden;}
+
+.ois_container {height:100%;width:90%;margin:0 auto;}
+
+.icon {display:inline-block;vertical-align:text-bottom;height:16px;}
+
+.header {margin-top:20px;height:55px;overflow:hidden;}
+.header .logo {float:left;margin-left:5px;}
+.header .logo img {height:55px;}
+.header .toolbar {float:right;}
+.header .toolbar li {line-height:55px;margin-right:20px;cursor:pointer;}
+.header .toolbar img {height:30px;}
+.header .toolbar .message {line-height:62px;cursor:auto;}
+.header .toolbar .clock {line-height:62px;cursor:auto;}
+.header .toolbar .prog {}
+.header .toolbar .prog .border {margin-top:17px;height:25px;background:#a8aaa2;line-height:25px;text-align:center;width:200px;overflow:hidden;}
+.header .toolbar .prog .border .background {height:25px;background:#83a098;width:0%;}
+.header .toolbar .progTip {position:fixed;top:13px;display:none;}
+.header .toolbar .timer {line-height:62px;cursor:auto;}
+.header .toolbar .timer {line-height:62px;cursor:auto;}

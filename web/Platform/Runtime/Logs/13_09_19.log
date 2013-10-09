@@ -1,0 +1,48 @@
+[ 2013-09-19T19:13:24+08:00 ] 192.168.0.100 /Company/registerCheck
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001351s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\jizhao\web\ThinkPHP\Common\functions.php 第 566 行.
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.057600s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `jz_user` WHERE ( `email` = 'amoa400@163.com' ) LIMIT 1   [ RunTime:0.001369s ]
+
+[ 2013-09-19T19:20:14+08:00 ] 192.168.0.100 /Company/loginDo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000983s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001272s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\jizhao\web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.005441s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `jz_user` WHERE ( `email` = 'weiqin@vip.126.com' ) LIMIT 1   [ RunTime:0.000474s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `jz_company` [ RunTime:0.122241s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `company_id` = 1 ) LIMIT 1   [ RunTime:0.000671s ]
+
+[ 2013-09-19T19:21:08+08:00 ] 192.168.0.100 /Company/registerCheck
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001145s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\jizhao\web\ThinkPHP\Common\functions.php 第 566 行.
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.005299s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `jz_user` WHERE ( `email` = 'a@qq.com' ) LIMIT 1   [ RunTime:0.000666s ]
+
+[ 2013-09-19T19:21:16+08:00 ] 192.168.0.100 /Company/registerCheck
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001211s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\jizhao\web\ThinkPHP\Common\functions.php 第 566 行.
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.006406s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `jz_user` WHERE ( `email` = 'weiqin@vip.126.com' ) LIMIT 1   [ RunTime:0.000889s ]
+

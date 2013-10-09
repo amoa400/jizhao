@@ -134,7 +134,8 @@ $('.myform form').submit(function(e) {
 			submitBtn.addClass('mybtn_success2');
 			// 是否跳转
 			if (res.jumpUrl != null) {
-				location.href = res.jumpUrl;
+				changeTab3(res.jumpUrl);
+				//location.href = res.jumpUrl;
 			}
 			if (res.jumpAction != null && res.jumpFunc != null) {
 				parent.controlMenuClick(res.jumpAction, res.jumpFunc);
@@ -147,9 +148,9 @@ $('.myform form').submit(function(e) {
 			submitBtn.addClass('mybtn_danger2');
 			// 显示失败信息
 			for(var name in res.error) {
-				var tipObj = $(thisObj).find("[name='" + name + "']").nextAll('.tip');
+				var tipObj = $(thisObj).find("[name='" + name + "']").parent().nextAll('.tip');
 				tipObj.addClass('tip_error');
-				tipObj.html(res.error[name]);
+				tipObj.html('<span class="glyphicon glyphicon-remove"></span> ' + res.error[name]);
 			}
 		}
 		generateFormIframe($(thisObj).attr('name'));
@@ -203,7 +204,7 @@ $('.mytable input[type="checkbox"]').click(function() {
 });
 
 // 工具栏按钮点击
-$('.mytoolbar_table .item').click(function() {
+$('.mytoolbar_table .item_t').click(function() {
 	// 取消点击操作
 	if ($(this).attr('md_disabled') != null) {
 		return;
@@ -273,28 +274,29 @@ function closeConfirmWindow(thisObj) {
 // 黑屏覆盖屏幕（锁定屏幕）
 function blockScreen() {
 	$('body').append('<div class="block_screen" onclick="removeAllWindow()" style="height:' + $('body').css('height') + '">&nbsp;</div>');
-	if (parent.length != 0) 
-		parent.blockScreen();
+	parent.blockScreen();
 }
 function unblockScreen() {
 	$('.block_screen').remove();
-	if (parent.length != 0) 
-		parent.unblockScreen();
+	parent.unblockScreen();
 }
 function removeAllWindow() {
 	unblockScreen();
 	$('.confirm_window').remove();
+	$('.popbox2').hide();
 }
 
 // 页面参数设置
+var url_domain = '';
 var url_addr = "";
 var url_paras = new Array();
 $(document).ready(function() {
 	var paras = location.href.split('/');	
-	url_addr = "http://" + paras[2] + '/' + paras[3] + '/' + paras[4] + '/' + paras[5];
+	url_domain = 'http://' + paras[2];
+	url_addr = 'http://' + paras[2] + '/' + paras[3] + '/' + paras[4] + '/' + paras[5];
 	for (var i = 6; i < paras.length; i += 2)
 		url_paras[paras[i]] = paras[i+1];
-	filterHighlight();
+	//filterHighlight();
 });
 $('.para_set').click(function() {
 	url_paras[$(this).attr('md_para_name')] = $(this).attr('md_para_value');
@@ -310,6 +312,15 @@ $('.para_set_form').submit(function(e) {
 		if (inputs[i].name == '') continue;
 		url_paras[inputs[i].name] = inputs[i].value;
 	}
+	// 获取select的值（多选）
+	var selects = $(this).find('select[multiple="multiple"]');
+	for (var i = 0; i < selects.length; i++) {
+		if (selects[i].name == '') continue;
+		url_paras[selects[i].name] = '';
+		for (var j = 0; j < selects[i].length; j++)
+		if (selects[i].options[j].selected && selects[i].options[j].value != 0)
+			url_paras[selects[i].name] += selects[i].options[j].value + '|';
+	}
 	paraUrlJump();
 });
 function paraUrlJump() {
@@ -323,16 +334,20 @@ function paraUrlJump() {
 	location.href = addr;
 }
 
-// 过滤器高亮
-function filterHighlight(){
-	for (var i in url_paras) {
-		$('.filter .item span[md_para_name="' + i + '"]').removeClass('link_active');
-		$('.filter .item span[md_para_name="' + i + '"][md_para_value="' + url_paras[i] + '"]').addClass('link_active');
+// 过滤器重置
+function filterReset() {
+	$('.filter_form input[type="text"]').val('');
+	var selects = $('.para_set_form select[multiple="multiple"]');
+	for (var i = 0; i < selects.length; i++) {
+		for (var j = 0; j < selects[i].length; j++) {
+			selects[i].options[j].selected = false;
+		}
 	}
+	$('.para_set_form').submit();
 }
 
 // 弹出框
-$('.popbox_trigger').click(function() {
+$('.popbox_t').click(function() {
 	var boxObj = $('.popbox_' + $(this).attr('md_box_id'));
 	if ($(this).attr('md_left') != null)
 		boxObj.css('left', $(this).offset().left + parseInt($(this).attr('md_left')) + 'px');
@@ -350,15 +365,40 @@ $('.popbox_trigger').click(function() {
 	}
 	if ($(this).attr('md_width') != null)
 		boxObj.css('width', $(this).attr('md_width') + 'px');
-	if ($(this).attr('md_btn_height') != null) {
-		boxObj.find('.btn_item').css('height', $(this).attr('md_btn_height') + 'px');
-		boxObj.find('.btn_item').css('line-height', $(this).attr('md_btn_height') + 'px');
+	if ($(this).attr('md_btn_padding_left') != null) {
+		boxObj.find('.btn_item').css('padding-left', $(this).attr('md_btn_padding_left') + 'px');
+		boxObj.find('.btn_item').css('padding-right', $(this).attr('md_btn_padding_left') + 'px');
 	}
-	
+	if ($(this).attr('md_btn_padding_top') != null) {
+		boxObj.find('.btn_item').css('padding-top', $(this).attr('md_btn_padding_top') + 'px');
+		boxObj.find('.btn_item').css('padding-bottom', $(this).attr('md_btn_padding_top') + 'px');
+	}
 	boxObj.toggle();
 });
 
+// 弹出框2
+$('.popbox2_t').click(function() {
+	blockScreen();
+	var boxObj = $('.popbox2_' + $(this).attr('md_box_id'));
+	boxObj.show();
+});
+$('.popbox2 .close_btn').click(function() {
+	removeAllWindow();
+});
 
-
-
-
+// 标签
+$('.new_tab').click(function() {
+	parent.createTab($(this).attr('md_name'), $(this).attr('md_url'));
+});
+function closeTab() {
+	parent.closeTabFromChild(this);
+}
+function changeTab(thisObj) {
+	parent.changeTabFromChild(this, $(thisObj).attr('md_name'), $(thisObj).attr('md_url'));
+}
+function changeTab2(name) {
+	parent.changeTabFromChild(this, name, '');
+}
+function changeTab3(url) {
+	parent.changeTabFromChild(this, '', url);
+}

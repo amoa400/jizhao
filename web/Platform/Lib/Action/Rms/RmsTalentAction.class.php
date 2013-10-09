@@ -10,46 +10,33 @@ class RmsTalentAction extends Action {
 	}
 
 	// 显示列表
-	public function showList() {	
-		// 获取列表
-		$ret = D('Rms/RmsTalent')->rList($_GET);
-		$talentList = $ret['data'];
+	public function showList() {
+		$const = array();
+		$const['title'] = '求职者';
+		$const['group'] = 'rms';
+		$const['action'] = 'talent';
+		$const['table'] = 'RmsTalent';
+		$const['toolbar'] = array(
+			'create' => array('on' => 1),
+			'delete' => array('on' => 1),
+		);
+		$const['showField'] = array('talent_id', 'name', 'gender', 'age', 'education', 'shcool', 'position_name', 'join_time', 'status');
+		$const['linkField'] = array(
+			'name' =>		
+				array('/rms/rms_talent/show/talent_id/{$0$}', array('talent_id')),
+			'position_name' =>		
+				array('/rms/rms_position/show/position_id/{$0$}', array('position_id')),
+		);
+		$const['hideFilterField'] = array('gender', 'education', 'position_name', 'join_time', 'status', 'province', 'city');
+		$const['specialFilterField'] = array(
+			'join_time_int' =>
+				array('timeBetween'),
+			'age' =>
+				array('between'),
+		);
+		$const['page'] = $_GET['page'];
 		
-		// 分页信息
-		$pager['count'] = $ret['count'];
-		$pager['cntPage'] = $_GET['page'];
-		if (empty($pager['cntPage'])) $pager['cntPage'] = 1;
-		$pager['totPage'] =  ceil($pager['count'] / 20);
-		
-		// 格式化求职者信息
-		$positionIdList = '';
-		foreach($talentList as $key => $talent) {
-			$talentList[$key] = $this->format($talent);
-			$positionIdList .= $talent['position_id'] . ',';
-		}
-		// 应聘职位
-		$positionIdList[strlen($positionIdList) - 1] = ' ';
-		$positionList = D('RmsPosition')->rNameList($positionIdList);;
-		foreach($talentList as $key => $talent) {
-			foreach($positionList as $position) {
-				if ($position['position_id'] == $talent['position_id']) {
-					$talentList[$key]['position_name'] = $position['name'];
-					break;
-				}
-			}
-			if (empty($talentList[$key]['position_name']))
-				$talentList[$key]['position_name'] = '无';
-		}
-		// 其他信息
-		$ret = D('RmsPosition')->rList();
-		$positionList = $ret['data'];
-		
-		
-		$this->assign('talentList', $talentList);
-		$this->assign('positionList', $positionList);
-		$this->assign('pager', $pager);
-		$this->assign('pageTitle', '求职者管理');
-		$this->display();
+		A('Base/Common')->showList($const);
 	}
 	
 	// 创建新求职者
@@ -141,7 +128,7 @@ class RmsTalentAction extends Action {
 		$positionList = $ret['data'];
 		$this->assign('talent', $talent);
 		$this->assign('positionList', $positionList);
-		$this->assign('pageTitle', '编辑求职者 - ' . $talent['name']);
+		$this->assign('tabTitle', '编辑 - ' . $talent['name']);
 		$this->display();
 	}
 	
@@ -178,7 +165,7 @@ class RmsTalentAction extends Action {
 		}
 		$talent = $this->format($talent);
 		$this->assign('talent', $talent);
-		$this->assign('pageTitle', '查看求职者 - ' . $talent['name']);
+		$this->assign('tabTitle', '查看 - ' . $talent['name']);
 		$this->display();
 	}
 	
@@ -186,7 +173,7 @@ class RmsTalentAction extends Action {
 	public function delete() {
 		D('RmsTalent')->d($_GET['talent_id']);
 		if ($_GET['close_window'] == 1) {
-			echo '<script>window.close()</script>';
+			echo '<script>parent.closeTabFromChild(this);</script>';
 		}
 		else {
 			$this->redirect($_SERVER['HTTP_REFERER']);
@@ -331,7 +318,7 @@ class RmsTalentAction extends Action {
 				$talent['status'] = '未知';
 		}
 		// 职位
-		$talent['position'] = D('RmsPosition')->rName($talent['position_id']);
+		//$talent['position'] = D('RmsPosition')->rName($talent['position_id']);
 		return $talent;
 	}
 	

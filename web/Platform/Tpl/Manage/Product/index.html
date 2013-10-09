@@ -1,0 +1,17 @@
+<include file="Manage:Index:header"/>
+
+<link href="/css/manage/product.css" rel="stylesheet" type="text/css">
+
+<div class="tab_list" onselectstart="return false">
+	<?php foreach($tabList as $tab) { ?>
+	<div class="item" md_hash="<?php echo base64_encode($tab['url']) ?>" md_fixed="1"><i class="icon1 icon1_blue icon1_<{$tab.icon}>"></i><span class="name"><{$tab.name}></span></div>
+	<?php } ?>
+	<div class="split">&nbsp;</div>
+</div>
+
+<div class="frame_list">
+</div>
+
+<script src="/js/manage/product.js" type="text/javascript"></script>
+
+<include file="Manage:Index:footer"/>

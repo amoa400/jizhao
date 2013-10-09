@@ -18,14 +18,16 @@ return array(
 	
 	// 模板常量
 	'TMPL_PARSE_STRING'	=>	array(
-		'__ROOT__'		=>		'http://jzhao.cn',	// 网站地址
-		'__NAME__'		=>		'即招',				// 网站名字
-		'__PHONE__'		=>		'400-820-8820',		// 网站电话
+		'__ROOT__'			=>		'http://jzhao.cn',			// 网站地址
+		'__NAME__'			=>		'即招',						// 网站名字
+		'__PHONE__'			=>		'400-820-8820',				// 网站电话
+		'__FMSIP__'			=>		'192.168.0.100',			// FMS服务器IP地址
+		'__SOCKET_ADDR__'	=>		'192.168.0.100:3001',		// NODEJS服务地址
 	),
 	
 	// 其他
 	'URL_MODEL'				=>	'2',		// 路由模式
-	'SHOW_PAGE_TRACE'		=>	true,		// 显示调试信息
+	'SHOW_PAGE_TRACE'		=>	false,		// 显示调试信息
 	'URL_CASE_INSENSITIVE'	=>	true,		// 路由统一小写
 	'URL_HTML_SUFFIX'	 	=>  '',			// URL后缀
 );

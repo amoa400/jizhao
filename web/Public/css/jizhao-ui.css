@@ -1,0 +1,23 @@
+/* 日历选择器 */
+.jz_date_picker {position:absolute;border:1px solid #dbdbdb;border:1px solid #8cb8db;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;padding:5px;}
+.jz_date_picker {background:#ffffff;top:200px;left:200px;width:250px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;}
+.jz_date_picker .sel {padding:5px;border-bottom:1px solid #dbdbdb;background:#85c7fa;}
+.jz_date_picker .sel .prev {float:left;width:10%;color:#ffffff;cursor:pointer;}
+.jz_date_picker .sel .next {float:left;width:10%;text-align:right;color:#ffffff;cursor:pointer;}
+.jz_date_picker .sel .prev:hover, .jz_date_picker .sel .next:hover {color:#305776;}
+.jz_date_picker .sel .date {float:left;width:80%;text-align:center;}
+.jz_date_picker .sel .date select {text-align:center;}
+.jz_date_picker .sel .date .year {width:80px;}
+.jz_date_picker .sel .date .month {width:60px;}
+.jz_date_picker .week {margin-top:5px;}
+.jz_date_picker .week table {width:100%;}
+.jz_date_picker .week td {text-align:center;}
+.jz_date_picker .week .title {font-weight:bold;}
+.jz_date_picker .week .content td {padding-top:5px;padding-left:2px;padding-right:2px;}
+.jz_date_picker .week .content td span {display:block;border:1px solid #dce7ed;padding:2px;background:#e1effa;cursor:pointer;color:#37719f;font-size:12px;}
+.jz_date_picker .week .content td .cnt {font-weight:bold;background:#85c7fa;color:#ffffff;border:1px solid #3c95da;}
+.jz_date_picker .week .content td span:hover {font-weight:bold;background:#85c7fa;color:#ffffff;border:1px solid #3c95da;}
+.jz_date_picker .week .content td:first-child {padding-left:0;}
+.jz_date_picker .week .content td:last-child {padding-right:0;}
+.jz_date_picker .time {margin-top:5px;padding:5px;padding-left:0;border-bottom:1px solid #dbdbdb;font-size:12px;text-align:center;}
+.jz_date_picker .time input {width:40px;}

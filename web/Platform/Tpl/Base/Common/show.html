@@ -1,0 +1,25 @@
+<include file="Manage:Product:frame_header"/>
+
+<div class="header">
+	<span class="title">查看<{$const.title}> - <{$data.name}></span>
+</div>
+
+<div class="mytable mytable_left mytable_firstcol mytable_fullborder" style="margin-top:15px;">
+	<table>
+		<?php foreach($fieldName as $key => $item) { ?>
+		<?php 
+			if (in_array($key, $const['hideField'])) continue;
+		?>
+		<tr>
+			<td width="80px"><{$item}>：</td>
+			<?php if (!empty($const['linkField'][$key])) { ?>
+			<td><a class="new_tab" md_url="<{$const['linkField'][$key]}>"><{$data[$key]}></a></td>
+			<?php } else { ?>
+			<td><{$data[$key]}></td>
+			<?php } ?>
+		</tr>
+		<?php } ?>
+	</table>
+</div>
+
+<include file="Manage:Product:frame_footer"/>

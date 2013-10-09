@@ -38,51 +38,16 @@
 <div id="product">
 
 
-<div name="ois" class="control_menu">
 
-	<div name="talent" class="item">
-		<span class="lv1">
-			<i class="icon1 icon1_blue icon1_user1"></i>&nbsp;&nbsp;&nbsp;面试管理
-		</span>
-		<div class="sub">
-			<span name="showList" class="lv2">
-				<i class="icon1 icon1_blank"></i>&nbsp;&nbsp;&nbsp;面试列表
-			</span>
-			<span name="create" class="lv2">
-				<i class="icon1 icon1_blank"></i>&nbsp;&nbsp;&nbsp;新建面试
-			</span>
-		</div>
-	</div>
-	
-	<div name="position" class="item">
-		<span class="lv1">
-			<i class="icon1 icon1_blue icon1_overview"></i>&nbsp;&nbsp;&nbsp;面试官管理
-		</span>
-		<div class="sub">
-			<span name="showList" class="lv2">
-				<i class="icon1 icon1_blank"></i>&nbsp;&nbsp;&nbsp;面试官列表
-			</span>
-			<span name="create" class="lv2">
-				<i class="icon1 icon1_blank"></i>&nbsp;&nbsp;&nbsp;新增面试官
-			</span>
-		</div>
-	</div>
-	
+<div class="control_menu">
+	<a href="#interview_showList" class="item" ><i class="icon1 icon1_blue icon1_user1"></i>&nbsp;&nbsp;&nbsp;面试管理</a>
+	<span class="item" href="<?php echo U('/ois/ois_interview/showList');?>" ><i class="icon1 icon1_blue icon1_user1"></i>&nbsp;&nbsp;&nbsp;面试官管理</span>
+	<span class="item" href="<?php echo U('/ois/ois_interview/showList');?>" ><i class="icon1 icon1_blue icon1_user1"></i>&nbsp;&nbsp;&nbsp;模板管理</span>
+	<span class="split">&nbsp;</span>
 </div>
 
-<script>
-	$(document).ready(function() {
-		var hash = window.location.hash;
-		if (hash != '') {
-			hash[0] = '1';
-			var temp = hash.split('#');
-			hash = temp[1];
-			var name = hash.split('_');
-			$('.item[name="'+ name[0] +'"] .lv2[name="' + name[1] + '"]').click();
-		}
-		else $('.item[name="talent"] .lv2[name="showList"]').click();
-	});
-</script>
+<div class="main_body">
+
 
 	<iframe class="main_frame">
 	</iframe>

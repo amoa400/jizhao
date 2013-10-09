@@ -3,91 +3,111 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<meta name="description" content="__NAME__ - 在线招聘平台" />
-	<title>__NAME__ - 在线招聘平台</title>
+	<meta name="description" content="即招 - 在线招聘平台" />
+	<title>即招 - 在线招聘平台</title>
 
 	<link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link href="/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
 	<link href="/css/global.css" rel="stylesheet" type="text/css">
-	<link href="/css/home/global.css" rel="stylesheet" type="text/css">
+	<link href="/css/home/login.css" rel="stylesheet" type="text/css">
 	
 	<script src="/js/jquery.min.js" type="text/javascript" ></script>
 	<script src="/js/bootstrap.min.js" type="text/javascript" ></script>
 	<script src="/js/global.js" type="text/javascript" ></script>
+	
+	
 </head>
 
 <body>
 
-<div id="header" class="shadow5b">
-	<div class="main_container">
-		<div class="logo">
-			<a href="/"><img src="/images/logo.png"></a>
-		</div>
-		<div class="navi">
-			<ul>
-				<a href="/"><li class="normal active">即招首页</li></a>
-				<li class="normal">产品简介</li>
-				<li class="normal">价格方案</li>
-				<li class="normal">关于我们</li>
-				<a href="<?php echo U('Company/register');?>"><li class="btn btn-warning">免费注册</li></a>
-				<a href="<?php echo U('Company/login');?>"><li class="btn btn-info">即刻登录</li></a>
-			</ul>
-		</div>
-		<div class="clear"></div>
+
+<div class="header">
+	<div class="logo">
+		<img src="/images/home/login/logo.png">
 	</div>
+	<div class="company"><span class="glyphicon glyphicon-home"></span> <?php echo ($company["realname"]); ?>
+	</div>
+	<div class="clearfix"></div>
 </div>
 
-<link href="/css/home/company.css" rel="stylesheet" type="text/css">
-
-<div id="register" class="main_container shadow5w" style="">
-	<div class="header">
-		<i class="icon icon-user icon-white"></i>&nbsp;即刻登录（尽享一站式的招聘体验）
-	</div>
-	<div class="form">
-		<form class="loginForm" action="<?php echo U('Company/loginDo');?>" method="post">
-		<ul>
-			<li>
-				<span class="star">*</span>
-				<span class="tt">电子邮箱：</span>
-				<input name="email" type="text">
-			</li>
-			<li class="password">
-				<span class="star">*</span>
-				<span class="tt">登录密码：</span>
-				<input name="password" type="password" placeholder="">
-			</li>
-			<li>
-				<span class="star"></span>
-				<span class="tt"></span>
-				<input type="submit" class="btn btn-primary" value="立即登录">
-			</li>
-		</ul>
-		</form>
-	</div>
+<div class="main">
+<div class="main2">
+	<div class="poster"><img src="/images/home/login/poster.png"></div>
 	
-	<div class="info">
-		<ul>
-			<li class="border"><a href="<?php echo U('Company/register');?>">还没账号？免费注册 >></a></li>
-			<li>登录遇到问题？</li>
-			<li>请拨打 __PHONE__</li>
-			<li class="tip">仅限中国大陆手机用户使用拨打免费，不产生任何费用</li>
-		</ul>
+	<div class="form">
+		<input name="company_id" value="<?php echo ($company["company_id"]); ?>" style="display:none;">
+		<div class="title"><span class="glyphicon glyphicon-user"></span> 用户登录</div>
+		<div class="input-group">
+		  <span class="input-group-addon">邮箱</span>
+		  <input name="email" type="text" class="form-control" placeholder="请输入您的邮箱..." value="<?php echo (cookie('email')); ?>">
+		</div>
+		<div class="input-group">
+		  <span class="input-group-addon">密码</span>
+		  <input name="password" type="password" class="form-control" placeholder="请输入您的密码..." value="<?php echo (cookie('password')); ?>">
+		</div>
+		<div class="input-group checkbox" style="margin-left:5px;">
+			<label>
+				<?php if (!empty($_COOKIE['email'])) { ?>
+				<input name="remember" type="checkbox" checked="checked">
+				<?php } else { ?>
+				<input name="remember" type="checkbox">
+				<?php } ?>
+				记住密码
+			</label>&nbsp;
+			<a href="#">忘记密码？</a>
+		</div>
+		<div class="input-group">
+			<input type="submit" class="submit btn btn-primary" style="width:345px;" value="登　录">
+		</div>
 	</div>
-	<div class="clear"></div>
+	<div class="clearfix"></div>
+</div>
 </div>
 
-<style>
-	#register {height:240px;overflow:hidden;}
-	#register .form {height:165px}
-</style>
-
-<script src="/js/home/company.js" type="text/javascript" ></script>
-
-
-<div id="footer" style="text-align:center;margin-top:20px;margin-bottom:20px;">
-	__NAME__在线招聘平台 - JZhao.cn
+<div class="footer">
+Copyright © 2013-2014&nbsp;&nbsp;-&nbsp;&nbsp;<a href="/">即招在线招聘平台(JZhao.cn)</a>&nbsp;&nbsp;-&nbsp;&nbsp;<a href="#">关于我们</a>
 </div>
 
+<script>
+
+	var flag = false;
+
+	$('.submit').click(function() {
+		if (flag) return;
+		flag = true;
+		
+		var thisObj = this;
+		$(thisObj).val('登录中...');
+		$(thisObj).addClass('btn-warning');
+		
+		var company_id = $('input[name="company_id"]').val();
+		var email = $('input[name="email"]').val();
+		var password = $('input[name="password"]').val();
+		var remember = 0;
+		if ($('input[name="remember"]').attr('checked') != null) remember = 1;
+
+		$.post('/company/loginDo', {company_id : company_id, email : email, password : password, remember : remember},
+			function(res) {
+				if (res.status == 'succeed') {
+					location.href = res.jumpUrl;
+				} else {
+					$(thisObj).val('登录失败');
+					$(thisObj).addClass('btn-danger');
+					$(thisObj).removeClass('btn-warning');
+					setTimeout('$(".submit").val("登　录");$(".submit").removeClass("btn-danger");', 2000);
+				}
+				flag = false;
+			}
+		);
+	});
+	
+	$('input').bind("keydown", function(e) {
+		if (e.which == 13) {
+			$('.submit').click();
+		}
+	});
+
+</script>
 
 </body>
 </html>

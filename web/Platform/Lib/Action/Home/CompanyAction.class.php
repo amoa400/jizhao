@@ -87,44 +87,77 @@ class CompanyAction extends Action {
 	
 	// 登录页面
 	public function login() {
+		$company = D('Base/Company')->r($_GET['id']);
+		$this->assign('company', $company);
 		$this->display();
 	}
+
 	// 登录处理
-	public function loginDo($data = 0) {
-		if (!empty($data)) $_POST = $data;
-		$user = D('Base/User')->rByName('email', $this->_post('email'));
-		if (empty($user)) {
-			$this->ajaxReturn(array('error' => '电子邮箱不存在'));
-		} else {
-			if ($user['password'] != encrypt($this->_post('password')))
-				$this->ajaxReturn(array('error' => '登录密码错误'));
-			else {
-				$company = D('Base/Company')->r($user['company_id']);
-				$data = $user;
-				$data['user_name'] = $user['realname'];
-				$data['company_name'] = $company['realname'];
-				$this->loginSucceed($data);
+	public function loginDo() {
+		$data = $_POST;
+		//$data['company_id'] = 1;
+		//$data['email'] = 'weiqin@vip.126.com';
+		//$data['password'] = 'amoWeiqin400';
+		//$data['remember'] = '1';
+		
+		$_SESSION = array();
+		$_SESSION['company_id'] = (int)$data['company_id'];
+		
+		$flag = false;
+		
+		// 是否为管理员
+		if (!$flag) {
+			$admin = D('Sys/SysAdmin')->rByName('email', $data['email']);
+			if (!empty($admin) && $admin['password'] == encrypt($data['password'])) {
+				$info = array();
+				$info['role'] = 1;
+				$info['user_id'] = $admin['admin_id'];
+				$info['user_name'] = $admin['name'];
+				$this->loginSucceed($info);
+				$flag = true;
 			}
 		}
+
+		// 是否为面试官
+		if (!$flag) {
+			$interviewer = D('Ois/OisInterviewer')->rByName('email', $data['email']);
+			if (!empty($interviewer) && $interviewer['password'] == encrypt($data['password'])) {
+				$info['role'] = 2;
+				$info['user_id'] = $interviewer['interviewer_id'];
+				$info['user_name'] = $interviewer['name'];
+				$this->loginSucceed($info);
+				$flag = true;
+			}
+		}
+		
+		if ($flag) {
+			if ($data['remember']) {
+				setcookie('email', $data['email'], getTime() + 86400 * 30);
+				setcookie('password', $data['password'], getTime() + 86400 * 30);
+			} else {
+				setcookie('email', '', getTime() - 3600);
+				setcookie('password', '', getTime() - 3600);
+			}
+			$this->ajaxReturn(array('status' => 'succeed', 'jumpUrl' => '/manage'));
+		}
+		else $this->ajaxReturn(array('status' => 'fail'));
 	}
+
 	// 登录成功
 	public function loginSucceed($data) {
 		$_SESSION['login'] = 1;
 		$_SESSION['role'] = $data['role'];
-		$_SESSION['company_id'] = $data['company_id'];
 		$_SESSION['user_id'] = $data['user_id'];
-		$_SESSION['company_name'] = $data['company_name'];
 		$_SESSION['user_name'] = $data['user_name'];
+		if (!empty($_SESSION['company_id'])) {
+			$company = D('Base/Company')->r($_SESSION['company_id']);
+			$_SESSION['company_name'] = $company['realname'];
+		}
 	}
+
 	// 登出
 	public function logout() {
-		unset($_SESSION['login']);
-		unset($_SESSION['role']);
-		unset($_SESSION['company_id']);
-		unset($_SESSION['user_id']);
-		unset($_SESSION['company_name']);
-		unset($_SESSION['user_name']);
-		unset($_SESSION);
+		$_SESSION = array();
 		$this->redirect('/');
 	}
 }

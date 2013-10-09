@@ -5,6 +5,56 @@ class RmsTalentModel extends Model {
 	protected $tableName; 
 	public $errorInfo;
 	
+	public $fieldName = array(
+		'talent_id' 			=> 		'编号',
+		'name' 					=> 		'姓名',
+		'gender_id' 			=> 		'性别',
+		'gender' 				=> 		'性别',
+		'age' 					=> 		'年龄',
+		'education_id' 			=> 		'学历',
+		'education' 			=> 		'学历',
+		'position_id'			=> 		'职位',
+		'position_name'			=> 		'职位',
+		'join_time_int' 		=> 		'加入时间',
+		'join_time' 			=> 		'加入时间',
+		'status_id' 			=> 		'状态',
+		'status' 				=> 		'状态',
+		'province_id' 			=> 		'省份',
+		'province' 				=> 		'省份',
+		'city_id' 				=> 		'城市',
+		'city' 					=> 		'城市',
+		'school' 				=> 		'学校',
+		'major' 				=> 		'专业',
+		'phone' 				=> 		'手机',
+		'email' 				=> 		'邮箱',
+	);
+	
+	public $textareaField = array();
+	
+	public $selectField = array(
+		'gender_id' => array(
+			'1' => '男',
+			'2' => '女',
+		),
+		'education_id' => array(
+			'1' => '博士',
+			'2' => '硕士',
+			'3' => '本科',
+			'4' => '专科',
+			'5' => '其他',
+		),
+		'status_id' => array (
+			'1' => '未查看',
+			'2' => '已查看',
+			'3' => '笔试考查',
+			'4' => '面试考查',
+			'5' => '已录用',
+			'6' => '已淘汰',
+		),
+		'position_id' => array( 
+		),
+	);
+	
 	// 自动完成
 	protected $_auto = array(
 		array('join_time_int', 'getTime', 1, 'function'),
@@ -14,6 +64,7 @@ class RmsTalentModel extends Model {
 	// 构造函数
 	public function _initialize() {
 		$this->tableName = $_SESSION['company_id'] . '_rms_talent';
+		$this->selectField['position_id'] = D('Rms/RmsPosition')->rListPair();
 	}
 	
 	// 创建
@@ -58,8 +109,20 @@ class RmsTalentModel extends Model {
 		return $ret;
 	}
 	
+	// 获取（通过其他字段）
+	public function rByName($name, $data) {
+		$sql = array($name => $data);
+		$res = $this->where($sql)->find();
+		return $res;
+	}
+	
 	// 获取列表
-	public function rList($filter) {
+	public function rList($filter, $const) {
+		global $tableName;
+		$tableName = $this->tableName;
+		$ret = D('Base/Common')->rList($filter, $const);
+		return $ret;
+	
 		$mysql = $this;
 		
 		// 搜索条件

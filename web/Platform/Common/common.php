@@ -14,6 +14,30 @@ function intToTime($time) {
 	return date('Y-m-d H:i:s', $time);
 }
 
+// 转换成使用时间
+function intToUseTime($time) {
+	$time_t = $time;
+	
+	$day = (int)($time_t / 86400);
+	$time_t -= $day * 86400;
+
+	$hour = (int)($time_t / 3600);
+	$time_t -= $hour * 3600;
+	
+	$minute = (int)($time_t / 60);
+	$time_t -= $minute * 60;
+	
+	$second = $time_t;
+	
+	$s = '';
+	if (!empty($day)) $s .= $day . '天';
+	if (!empty($day) || !empty($hour)) $s .= $hour . '小时';
+	if (!empty($day) || !empty($hour) || !empty($minute)) $s .= $minute . '分';
+	if (!empty($day) || !empty($hour) || !empty($minute) || !empty($second)) $s .= $second . '秒';
+	
+	return $s;
+}
+
 // 转换成时间
 function timeToInt($time) {
 	return strtotime($time);
@@ -91,4 +115,56 @@ function msubstr($str, $start=0, $length, $charset="utf-8", $suffix=true) {
     $slice = join("",array_slice($match[0], $start, $length));
     if($suffix) return $slice."…";
     return $slice;
+}
+
+// 是否为电子邮箱
+function validEmail($email){
+	$isValid = true;
+	$atIndex = strrpos($email, "@");
+	if (is_bool($atIndex) && !$atIndex){
+		$isValid = false;
+	}else{
+		$domain = substr($email, $atIndex+1);
+		$local = substr($email, 0, $atIndex);
+		$localLen = strlen($local);
+		$domainLen = strlen($domain);
+		if ($localLen < 1 || $localLen > 64){
+			// local part length exceeded
+			$isValid = false;
+		}else if ($domainLen < 1 || $domainLen > 255){
+			// domain part length exceeded
+			$isValid = false;
+		}else if ($local[0] == '.' || $local[$localLen-1] == '.'){
+			// local part starts or ends with '.'
+			$isValid = false;
+		}else if (preg_match('/\\.\\./', $local)){
+			// local part has two consecutive dots
+			$isValid = false;
+		}else if (!preg_match('/^[A-Za-z0-9\\-\\.]+$/', $domain)){
+			// character not valid in domain part
+			$isValid = false;
+		}else if (preg_match('/\\.\\./', $domain)){
+			// domain part has two consecutive dots
+			$isValid = false;
+		}else if(!preg_match('/^(\\\\.|[A-Za-z0-9!#%&`_=\\/$\'*+?^{}|~.-])+$/',str_replace("\\\\","",$local))){
+			// character not valid in local part unless 
+			// local part is quoted
+			if (!preg_match('/^"(\\\\"|[^"])+"$/',str_replace("\\\\","",$local))){
+				$isValid = false;
+			}
+		}
+		if ($isValid && !(checkdnsrr($domain,"MX") || checkdnsrr($domain,"A"))){
+			// domain not found in DNS
+			$isValid = false;
+		}
+	}
+	return $isValid;
+}
+
+// 生成随机字符
+function randomChar($len = 10) {
+	$s = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+	$ret = '';
+	for ($i = 0; $i < $len; $i++) $ret .= $s[rand()%strlen($s)];
+	return $ret;
 }

@@ -1,0 +1,15 @@
+.header .toolbar .online {cursor:auto;color:#137400;}
+.header .toolbar .offline {cursor:auto;}
+
+.show {background:#ffffff;float:left;margin-top:20px;-moz-box-shadow:0 0 5px #e1e3d9;-webkit-box-shadow:0 0 5px #e1e3d9;box-shadow:0 0 5px #e1e3d9;border:1px solid #e1e3d9;}
+
+.chat {background:#ffffff;float:left;margin-top:20px;margin-left:20px;-moz-box-shadow:0 0 5px #e1e3d9;-webkit-box-shadow:0 0 5px #e1e3d9;box-shadow:0 0 5px #e1e3d9;border:1px solid #e1e3d9;}
+.chat .title {height:35px;width:100%;font-size:14px;line-height:35px;text-align:center;color:#ffffff;background:#83a098;}
+.chat .content {overflow-y:auto;}
+.chat .content .item {padding:10px;padding-top:0;}
+.chat .content .item .author {font-weight:bold;}
+.chat .content .item .text {margin-top:5px;margin-left:10px;margin-right:10px;}
+.chat .input {border-top:2px solid #83a098;}
+.chat .input textarea {border:none;padding:0;height:85px;outline:none;resize:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;padding:5px;}
+.chat .input .toolbar {background:#b9c7ca;height:45px;line-height:45px;text-align:right;}
+.chat .input .toolbar input {display:inline-block;margin-right:10px;height:30px;line-height:10px;}

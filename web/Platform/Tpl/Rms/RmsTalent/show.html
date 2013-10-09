@@ -1,92 +1,59 @@
-<include file="Manage:Product:page_header"/>
+<include file="Manage:Product:frame_header"/>
 
-<div class="page_content">
-	<div class="mytoolbar">
-		<a href="<{:U('/rms/rms_talent/edit?talent_id='.$talent['talent_id'])}>" target="_blank"><span class="item mybtn mybtn_wide mybtn_primary" style="margin-left:0;">编辑</span></a>
-		<a href="javascript:void(0)" class="open_confirm_window" md_title="确认删除？" md_content="您即将删除<span class='danger'><{$talent.talent_id}>号求职者<{$talent.name}></span>，请确认操作！" md_button_text="删除" md_button_class="mybtn_danger" md_op_url="<{:U('rms/rms_talent/delete?close_window=1&talent_id='.$talent['talent_id'])}>"><span class="item mybtn mybtn_wide mybtn_danger">删除</span></a>
-		<span class="item mybtn mybtn_wide mybtn_cancel" onclick="window.close()">关闭</span>
-		<span class="item split" md_disabled="1"></span>
-		<span class="item mybtn mybtn_wide mybtn_primary" onclick="location.reload()">刷新</span>
-	</div>
-	
-	<div class="mytable mytable_left mytable_firstcol mytable_fullborder" style="margin-top:15px;">
-		<table>
-			<tr>
-				<td width="80px">编　　号：</td>
-				<td><{$talent.talent_id}></td>
-			</tr>
-			<tr>
-				<td>姓　　名：</td>
-				<td><{$talent.name}></td>
-			</tr>
-			<tr>
-				<td>性　　别：</td>
-				<td><{$talent.gender}></td>
-			</tr>
-			<tr>
-				<td>年　　龄：</td>
-				<td><{$talent.age}></td>
-			</tr>
-			<tr>
-				<td>职　　位：</td>
-				<td><{$talent.position}></td>
-			</tr>
-			<tr>
-				<td>加入时间：</td>
-				<td><{$talent.join_time}></td>
-			</tr>
-			<tr>
-				<td>状　　态：</td>
-				<td><{$talent.status}></td>
-			</tr>
-			<tr>
-				<td>简　　历：</td>
-				<td><a href="/uploads/<{$_SESSION.company_id}>/resume/<{$talent.talent_id}>.<{$talent.resume_extension}>" target="_blank">点击下载</a></td>
-			</tr>
-		</table>
-	</div>
-	
-	<!--
-	<div class="information2" style="margin-top:15px;">
-		<div class="item">
-			<span class="tt">编　　号：</span>
-			<{$talent.talent_id}>
-		</div>
-		<div class="item">
-			<span class="tt">姓　　名：</span>
-			<{$talent.name}>
-		</div>
-		<div class="item">
-			<span class="tt">性　　别：</span>
-			<{$talent.gender}>
-		</div>
-		<div class="item">
-			<span class="tt">年　　龄：</span>
-			<{$talent.age}>
-		</div>
-		<div class="item">
-			<span class="tt">学　　历：</span>
-			<{$talent.education}>
-		</div>
-		<div class="item">
-			<span class="tt">职　　位：</span>
-			<{$talent.position}>
-		</div>
-		<div class="item">
-			<span class="tt">加入时间：</span>
-			<{$talent.join_time}>
-		</div>
-		<div class="item">
-			<span class="tt">状　　态：</span>
-			<{$talent.status}>
-		</div>
-		<div class="item">
-			<span class="tt">简　　历：</span>
-			<a href="/uploads/<{$_SESSION.company_id}>/resume/<{$talent.talent_id}>.<{$talent.resume_extension}>" target="_blank">点击下载</a>
-		</div>
-	</div>
-	-->
-	
+<style>
+	.icon-repeat  {vertical-align:text-bottom;height:16px;width:13px;}
+	.icon-remove {vertical-align:text-bottom;height:16px;width:12px;}
+</style>
+
+<div class="header">
+	<span class="title">查看求职者 - <{$talent.name}></span>
 </div>
 
-<include file="Manage:Product:page_footer"/>
+<!--
+<div class="mytoolbar" style="margin-top:15px;">
+	<a md_url="/rms/rms_talent/edit/talent_id/<{$talent.talent_id}>" onclick="changeTab(this)"><span class="item mybtn mybtn_primary" style="margin-left:0;">编辑</span></a>
+	<a href="javascript:void(0)" class="open_confirm_window" md_title="确认删除？" md_content="您即将删除<span class='danger'><{$talent.talent_id}>号求职者<{$talent.name}></span>，请确认操作！" md_button_text="删除" md_button_class="mybtn_danger" md_op_url="<{:U('rms/rms_talent/delete?close_window=1&talent_id='.$talent['talent_id'])}>"><span class="item mybtn mybtn_primary">删除</span></a>
+	<span class="item split" md_disabled="1"></span>
+	<span class="item mybtn mybtn_primary" onclick="location.reload()">刷新 <i class="icon-repeat icon-white"></i></span>
+	<span class="item mybtn mybtn_cancel" onclick="closeTab()">关闭 <i class="icon-remove icon-white"></i></span>
+</div>
+-->
+	
+<div class="mytable mytable_left mytable_firstcol mytable_fullborder" style="margin-top:15px;">
+	<table>
+		<tr>
+			<td width="80px">编　　号：</td>
+			<td><{$talent.talent_id}></td>
+		</tr>
+		<tr>
+			<td>姓　　名：</td>
+			<td><{$talent.name}></td>
+		</tr>
+		<tr>
+			<td>性　　别：</td>
+			<td><{$talent.gender}></td>
+		</tr>
+		<tr>
+			<td>年　　龄：</td>
+			<td><{$talent.age}></td>
+		</tr>
+		<tr>
+			<td>职　　位：</td>
+			<td><{$talent.position}></td>
+		</tr>
+		<tr>
+			<td>加入时间：</td>
+			<td><{$talent.join_time}></td>
+		</tr>
+		<tr>
+			<td>状　　态：</td>
+			<td><{$talent.status}></td>
+		</tr>
+		<tr>
+			<td>简　　历：</td>
+			<td><a href="/uploads/<{$_SESSION.company_id}>/resume/<{$talent.talent_id}>.<{$talent.resume_extension}>" target="_blank">点击下载</a></td>
+		</tr>
+	</table>
+</div>
+
+<include file="Manage:Product:frame_footer"/>

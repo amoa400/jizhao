@@ -94,6 +94,16 @@ class RmsPositionModel extends Model {
 		return $res;
 	}
 	
+	// 获取列表（仅显示编号名字对）
+	public function rListPair() {
+		$data = $this->field('`position_id`, `name`')->select();
+		$ret = array();
+		foreach ($data as $value) {
+			$ret[$value['position_id']] = $value['name'];
+		}
+		return $ret;
+	}
+	
 	// 删除
 	public function d($positionId) {
 		$sql = array('position_id' => (int)$positionId);

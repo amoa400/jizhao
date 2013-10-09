@@ -1,0 +1,36 @@
+<include file="header"/>
+
+<link href="/css/ois/end.css" rel="stylesheet" type="text/css">
+
+<div class="info">
+	<div class="item"><img src="/images/ois/logo.png"></div>
+	<?php if ($_SESSION['role'] == 2) { ?>
+	<div class="item"><img src="/images/ois/end2.png"></div>
+	<?php } else { ?>
+	<div class="item"><img src="/images/ois/end.png"></div>
+	<?php } ?>
+	<div class="item">Copyright © 2013-2014&nbsp;&nbsp;-&nbsp;&nbsp;<a href="/">即招在线招聘平台(JZhao.cn)</a>&nbsp;&nbsp;-&nbsp;&nbsp;<a href="/about">关于我们</a></div>
+</div>
+
+<script>
+
+	function resetWidthHeight() {
+		var bodyWidth = parseInt($('body').css('width'));
+		var bodyHeight = parseInt($('body').css('height'));
+		var pageWidth = parseInt($('.ois_container').css('width'));
+		var pageHeight = parseInt($('.ois_container').css('height'));
+		
+		$('.info').css('padding-top', (pageHeight - 350) / 3);
+	}
+
+	$(window).resize(function(){
+		resetWidthHeight();
+	});
+
+	resetWidthHeight();
+
+
+</script>
+
+<include file="footer"/>
+

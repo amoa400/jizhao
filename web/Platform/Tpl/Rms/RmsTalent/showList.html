@@ -1,4 +1,4 @@
-<include file="Rms:Index:control_menu"/>
+<include file="Manage:Product:frame_header"/>
 
 <style>
 	.icon-repeat  {vertical-align:text-bottom;height:16px;width:13px;}
@@ -6,23 +6,23 @@
 	.icon-chevron-down {vertical-align:text-bottom;height:16px;width:12px;}
 </style>
 
-<div class="head">
+<div class="header">
 	<span class="title">求职者列表</span>
 </div>
 
-<div class="mytoolbar mytoolbar_table" style="margin-top:15px;">
-	<span class="item item_t mybtn mybtn_primary" style="margin:0;" md_op_url_tmp="<{:U('rms/rms_talent/arrangeExam')}>">安排笔试</span>
+<div class="mytoolbar mytoolbar_table " style="margin-top:15px;">
+	<span class="item mybtn mybtn_primary popbox_t" style="margin:0;" md_box_id="">新增</span>
+	<span class="item mybtn mybtn_primary popbox2_t" md_box_id="multi">批量上传</span>
+	<span class="item item_t mybtn mybtn_primary" md_id_name="talent_id" md_confirm="1" md_op_url_tmp="<{:U('rms/rms_talent/deleteList')}>" md_title="确认删除？" md_content="您即将删除您选中的求职者，请确认操作！" md_button_text="删除">删除</span>
+	<span class="item split"></span>
+	<span class="item item_t mybtn mybtn_primary" md_op_url_tmp="<{:U('rms/rms_talent/arrangeExam')}>">安排笔试</span>
 	<span class="item item_t mybtn mybtn_primary" md_op_url_tmp="<{:U('rms/rms_talent/arrangeInterview')}>">安排面试</span>
 	<span class="item item_t mybtn mybtn_primary" md_op_url_tmp="<{:U('rms/rms_talent/hire')}>">录用</span>
 	<span class="item item_t mybtn mybtn_primary" md_op_url_tmp="<{:U('rms/rms_talent/eliminate')}>">淘汰</span>
-	<span class="item item_t mybtn mybtn_primary" md_id_name="talent_id" md_confirm="1" md_op_url_tmp="<{:U('rms/rms_talent/deleteList')}>" md_title="确认删除？" md_content="您即将删除您选中的求职者，请确认操作！" md_button_text="删除">删除</span>
 	<span class="item split"></span>
 	<span class="item mybtn mybtn_primary" onclick="location.reload()">刷新 <i class="icon-repeat icon-white"></i></span>
 	<span class="item mybtn mybtn_primary para_set" md_para_name="filter" md_para_value="1" md_para_nojump="1" onclick="$('.filter').show();$(this).hide();$(this).next().show();" <?php if (!empty($_GET['filter'])) echo 'style="display:none;"'; ?>>筛选 <i class="icon-chevron-down icon-white"></i></span>
 	<span class="item mybtn mybtn_primary para_set" md_para_name="filter" md_para_value="0" md_para_nojump="1"  onclick="$('.filter').hide();$(this).hide();$(this).prev().show();" <?php if (empty($_GET['filter'])) echo 'style="display:none;"'; ?>>筛选 <i class="icon-chevron-up icon-white"></i></span>
-	<span class="item split"></span>
-	<span class="item mybtn mybtn_primary popbox_t" md_box_id="">新增</span>
-	<span class="item mybtn mybtn_primary popbox2_t" md_box_id="multi">批量上传</span>
 </div>
 
 <div class="filter" <?php if (empty($_GET['filter'])) echo 'style="display:none;"'; ?>>
@@ -133,7 +133,7 @@
 		<tr>
 			<td><input type="checkbox" value="<{$item.talent_id}>"></td>
 			<td><{$item.talent_id}></td>
-			<td><a href="<{:U('rms/rms_talent/show?talent_id='.$item['talent_id'])}>" target="_blank"><{$item.name}></a></td>
+			<td><a class="new_tab" md_url="/rms/rms_talent/show/talent_id/<{$item.talent_id}>"><{$item.name}></a></td>
 			<td><{$item.gender}></td>
 			<td><{$item.age}></td>
 			<td><{$item.education}></td>
@@ -142,12 +142,12 @@
 			<td><{$item.join_time}></td>
 			<td><{$item.status}></td>
 			<td>
-				<a href="<{:U('rms/rms_talent/edit?talent_id='.$item['talent_id'])}>" target="_blank"><span class="mylabel mylabel_info">编辑</span></a>&nbsp;
+				<a class="new_tab" md_url="/rms/rms_talent/edit/talent_id/<{$item.talent_id}>"><span class="mylabel mylabel_info">编辑</span></a>&nbsp;
 				<a href="javascript:void(0)" class="open_confirm_window" md_title="确认删除？" md_content="您即将删除<span class='danger'><{$item.talent_id}>号求职者<{$item.name}></span>，请确认操作！" md_button_text="删除" md_button_class="mybtn_danger" md_op_url="<{:U('rms/rms_talent/delete?talent_id='.$item['talent_id'])}>"><span class="mylabel mylabel_danger">删除</span></a>&nbsp;
 				<a href="javascript:void(0)" class="popbox_t" md_box_id="<{$item.talent_id}>" md_left="-93" md_top="-6px" md_width="80" md_border_width="3" md_background="#ffffff" md_border_color="#468847" md_btn_height="29"><span class="mylabel mylabel_success">更多</span></a>
 				<div class="popbox popbox_<{$item.talent_id}>">
-					<span class="btn_item">安排笔试</span>
-					<span class="btn_item">安排面试</span>
+					<span class="btn_item">在线笔试</span>
+					<span class="btn_item"><a class="new_tab" md_url="/ois/ois_interview/create/talent_id/<{$item.talent_id}>">在线面试</a></span>
 					<span class="btn_item">录取</span>
 					<span class="btn_item">淘汰</span>
 					<span class="btn_item">收藏</span>
@@ -213,4 +213,4 @@
 	</div>
 </div>
 
-<include file="Manage:Product:footer"/>
+<include file="Manage:Product:frame_footer"/>

@@ -1,0 +1,89 @@
+html,body {height:100%;background:url('../../images/ois/bg.png');overflow:hidden;}
+
+#room {height:100%;width:90%;margin:0 auto;}
+#room .icon {display:inline-block;vertical-align:text-bottom;}
+
+#room .header {margin-top:20px;height:55px;overflow:hidden;}
+#room .header .logo {float:left;margin-left:5px;}
+#room .header .logo img {height:55px;}
+#room .header .toolbar {float:right;}
+#room .header .toolbar li {line-height:55px;margin-right:20px;cursor:pointer;}
+#room .header .toolbar img {height:30px;}
+#room .header .toolbar .message {line-height:62px;cursor:auto;}
+#room .header .toolbar .clock {line-height:62px;cursor:auto;}
+#room .header .toolbar .prog {}
+#room .header .toolbar .prog .border {margin-top:17px;height:25px;background:#a8aaa2;line-height:25px;text-align:center;width:200px;overflow:hidden;}
+#room .header .toolbar .prog .border .background {height:25px;background:#83a098;width:0%;}
+#room .header .toolbar .progTip {position:fixed;top:13px;display:none;}
+#room .header .toolbar .timer {line-height:62px;cursor:auto;}
+#room .header .toolbar .timer {line-height:62px;cursor:auto;}
+
+#room .video {position:relative;float:left;margin-top:20px;}
+#room .video .flash {margin-top:10px;-moz-box-shadow:0 0 5px #e1e3d9;-webkit-box-shadow:0 0 5px #e1e3d9;box-shadow:0 0 5px #e1e3d9;border:1px solid #e1e3d9;border:1px solid #e1e3d9;background:#fff;}
+
+#room .plugin {float:left;margin-left:20px;margin-top:20px;background:#ffffff;-moz-box-shadow:0 0 5px #e1e3d9;-webkit-box-shadow:0 0 5px #e1e3d9;box-shadow:0 0 5px #e1e3d9;border:1px solid #e1e3d9;/*overflow:hidden;*/}
+#room .plugin .navi {height:35px;border-bottom:5px solid #83a098;}
+#room .plugin .navi li {height:30px;width:80px;font-size:14px;line-height:30px;text-align:center;color:#ffffff;background:#b9c7ca;cursor:pointer;padding:0;margin:0;}
+#room .plugin .navi .active {background:#83a098;}
+#room .plugin .navi .icon {height:16px;}
+#room .plugin .navi .icon_code {width:16px;height:16px;background-image:url('../images/room/icon/code.png')}
+
+#room .plugin .cont {background:#ffffff;display:none;position:relative;}
+
+#plgInfo {overflow:hidden;}
+#plgInfo ul {width:90%;margin:0 auto;margin-top:20px;}
+#plgInfo ul li {float:none;font-size:14px;padding-top:20px;padding-bottom:20px;border-bottom:1px dashed #b9c7c9;}
+#plgInfo .title {display:inline-block;width:100px;text-align:right;color:#8ba69e;vertical-align:top;font-weight:bold;}
+#plgInfo .content {display:inline-block;vertical-align:top;}
+
+#plgCode {position:absolute;}
+#plgCode .window {width:100%;height:100%;display:none;}
+#plgCode #editor {width:100%;height:100%;display:block;}
+#plgCode .toolbar {position:absolute;width:35px;top:30px;right:-35px;background:#b9c7ca;}
+#plgCode .toolbar li {float:none;font-size:12px;text-align:center;color:#ffffff;cursor:pointer;padding-top:5px;padding-bottom:5px;}
+#plgCode .toolbar li:hover {background:#83a098;}
+#plgCode .toolbar .active {background:#83a098;}
+#plgCode .compile textarea {padding:10px;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;outline:none;}
+#plgCode .compile textarea:hover {-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;}
+#plgCode .compile .toolbar2 {height:45px;background:#b9c7ca;}
+#plgCode .compile .toolbar2 li {line-height:45px;margin-left:20px;}
+#plgCode .compile .toolbar2 input {display:inline-block;width:50px;text-align:center;font-size:12px;margin:0;padding:0;}
+#plgCode .compile .toolbar2 span {display:inline-block;vertical-align:middle;}
+#plgCode .result textarea {padding:10px;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;outline:none;}
+#plgCode .result textarea:hover {-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;}
+#plgCode .language {width:60%;margin:0 auto;}
+#plgCode .language .title {text-align:center;font-size:16px;padding-top:30px;}
+#plgCode .language ul {margin-top:20px;}
+#plgCode .language li {float:none;text-align:center;font-size:14px;border-bottom:1px dashed #b9c7c9;padding-top:10px;padding-bottom:10px;cursor:pointer;}
+#plgCode .language li:hover {background:#b9c7c9;color:#ffffff;}
+#plgCode .language .active {background:#b9c7c9;color:#ffffff;}
+
+#plgWhiteboard .whiteboard, .whiteboardTemp {position:absolute;width:100%;height:100%;cursor:url('../../images/ois/icon/wb_pencil.cur'),auto;}
+#plgWhiteboard  .whiteboardTemp {background:transparent;display:none;}
+#plgWhiteboard .toolbar {position:absolute;height:100%;width:50px;top:0;left:0;z-index:999;border-right:2px solid #ebebeb;background:#f0f0f0;}
+#plgWhiteboard .toolbar .item {}
+#plgWhiteboard .toolbar .item .title {background:#dcdcdc;cursor:default;margin-top:15px;color:#000000;height:25px;line-height:25px;}
+#plgWhiteboard .toolbar .item li {float:none;text-align:center;cursor:pointer;margin-top:8px;}
+
+#plgWebpage .navibar {background:#abb5be;height:35px;border-bottom:1px solid #dfe7ea;}
+#plgWebpage .navibar li {line-height:35px;width:100px;text-align:center;border-right:1px solid #7e878e;cursor:pointer;font-size:14px;}
+#plgWebpage .navibar .icon {height:16px;}
+#plgWebpage .navibar .active {background:#ced7dc;}
+#plgWebpage .toolbar {background:#ced7dc;height:45px;}
+#plgWebpage .toolbar li {line-height:45px;margin-left:10px;cursor:pointer;}
+#plgWebpage .toolbar .address {cursor:default;}
+#plgWebpage .toolbar .address input {padding-left:5px;padding-right:5px;}
+#plgWebpage .page iframe {width:100%;height:100%;border:none;}
+
+.evaluation {position:absolute;top:0;display:none;}
+.evaluation .top {font-size:16px;color:#ffffff;background:#83a098;height:40px;}
+.evaluation .top .item {float:left;line-height:40px;padding-left:10px;}
+.evaluation .top .closed {float:right;margin-top:1px;cursor:pointer;padding-right:10px;}
+.evaluation .top .closed:hover {color:#b9c7ca;}
+.evaluation .content {}
+.evaluation .content textarea {height:100%;width:100%;border:none;outline:none;resize:none;}
+
+.end_ok {display:none;}
+.end_no {display:none;}
+
+#grey {background:#000;display: block;z-index:100;width:100%;height:100%;position:absolute;top: 0;left:0;opacity:0.2;display:none;}

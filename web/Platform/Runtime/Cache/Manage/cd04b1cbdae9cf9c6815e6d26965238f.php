@@ -12,6 +12,7 @@
 	<link href="/css/manage/global.css" rel="stylesheet" type="text/css">
 	
 	<script src="/js/jquery.min.js" type="text/javascript" ></script>
+	<script src="/js/jquery.base64.js" type="text/javascript" ></script>
 	<script src="/js/bootstrap.min.js" type="text/javascript" ></script>
 	<script src="/js/global.js" type="text/javascript" ></script>
 </head>
@@ -51,6 +52,14 @@
 		</div>
 		
 		<div class="item">
+			<a href="<?php echo U('/ois/');?>" class="pic exam"></a>
+			<ul>
+				<li class="tt"><a href="<?php echo U('/oes/');?>">在线面试（OES）</a></li>
+				<li class="ct"><a href="<?php echo U('/oes/');?>">进入管理 >></a></li>
+			</ul>
+		</div>
+		
+		<div class="item">
 			<a href="<?php echo U('/ois/');?>" class="pic interview"></a>
 			<ul>
 				<li class="tt"><a href="<?php echo U('/ois/');?>">在线面试（OIS）</a></li>
@@ -59,15 +68,7 @@
 		</div>
 		
 		<div class="item">
-			<div class="pic exam"></div>
-			<ul>
-				<li class="tt">在线笔试（OES）</li>
-				<li class="ct"><a href="<?php echo U('/ois/');?>">进入管理 >></a></li>
-			</ul>
-		</div>
-		
-		<div class="item">
-			<a href="<?php echo U('/cms/');?>" class="pic setting"></a>
+			<a href="<?php echo U('/sys/');?>" class="pic setting"></a>
 			<ul>
 				<li class="tt"><a href="<?php echo U('/sys/');?>">系统设置（SYS）</a></li>
 				<li class="ct"><a href="<?php echo U('/sys/');?>">进入管理 >></a></li>

@@ -3,17 +3,19 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title><?php echo ($pageTitle); ?> - 管理平台 - __NAME__</title>
 
 	<link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link href="/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+	<link href="/css/jizhao-ui.css" rel="stylesheet" type="text/css">
 	<link href="/css/global.css" rel="stylesheet" type="text/css">
+	<link href="/css/manage/global.css" rel="stylesheet" type="text/css">
 	<link href="/css/manage/frame.css" rel="stylesheet" type="text/css">
 	
-	<script src="/js/jquery.min.js" type="text/javascript" ></script>
-	<script src="/js/bootstrap.min.js" type="text/javascript" ></script>
+	<script src="/js/jquery.min.js" type="text/javascript"></script>
+	<script src="/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="/js/jizhao-ui.js" type="text/javascript"></script>
 	<script src="/js/global.js" type="text/javascript" ></script>
-	
-	<title><?php echo ($pageTitle); ?> - 即招</title>
 </head>
 
 <body>
@@ -43,8 +45,15 @@
 	</div>
 </div>
 
+
+		<div style="height:20px;">&nbsp;</div>
 	</div>
-	
+
 	<script src="/js/manage/frame.js" type="text/javascript" ></script>
+	
+	<?php if (!empty($tabTitle)) { ?>
+	<script>changeTab2('<?php echo ($tabTitle); ?>');</script>
+	<?php } ?>
+	
 </body>
 </html>

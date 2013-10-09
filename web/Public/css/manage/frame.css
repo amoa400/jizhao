@@ -1,0 +1,125 @@
+body {overflow:auto;}
+
+#frame {padding:20px;padding-bottom:0;overflow:auto;position:relative;height:100%;}
+#frame a {color:#0066cc;cursor:pointer;}
+#frame a:hover{color:#4990d6;text-decoration:none;}
+
+/* 头部 */
+.header {padding-bottom:10px;border-bottom:1px solid #d2d2d2;}
+.header {font-size:24px;color:#000000;}
+
+/* 信息 */
+.information {margin-top:10px;background:#f9f9f9;border:1px solid #e6e6e6;padding:10px;}
+.information .title {float:left;font-size:16px;color:#0066cc;}
+.information .toolbar {float:right;font-size:16px;}
+.information .toolbar a:hover .icon {background-image:url('/images/icon/glyphicons-blue.png');}
+.information .toolbar .item {font-size:13px;margin-right:10px;}
+.information .content {margin-left:23px;margin-top:10px;}
+.information .content .item {display:block;margin-top:8px;}
+
+/*信息2*/
+.information2 {}
+.information2 .item {font-size:13px;margin-top:10px;}
+.information2 .item .tt {display:inline-block;text-align:right;}
+
+/* 表格样式 */
+.mytable {width:100%;text-align:left;}
+.mytable table {width:100%;}
+.mytable .title {background:#ecf3ff;cursor:auto;}
+.mytable .title:hover {background:#ecf3ff;}
+.mytable tr {}
+.mytable tr:hover {background:#f4f4f4;}
+.mytable th {font-weight:normal;padding:10px 10px 10px 10px;font-weight:bold;text-align:center;}
+.mytable td {font-weight:normal;padding:10px 10px 10px 10px;border-bottom:1px solid #e4e4e4;text-align:center;}
+.mytable .green {color:#44c20c;}
+.mytable .left {text-align:left;}
+.mytable .sel {width:30px;}
+.mytable input[type="checkbox"] {margin:0;padding:0;cursor:pointer;}
+.mytable_left td {text-align:left;}
+.mytable_firstcol tr td:first-child {background:#ecf3ff;font-weight:bold;text-align:center;border-right:1px solid #e4e4e4;}
+.mytable_fullborder table {border:1px solid #e4e4e4;}
+.mytable_fullborder tr:last-child td {border-bottom:none;}
+
+/* 表单样式 */
+.myform {margin-top:10px;}
+.myform form {display:block;}
+.myform  input {margin:0;padding:6px 9px 6px 9px;}
+.myform select {margin:0;height:34px;width:226px;}
+.myform  input[type="submit"] {padding:6px 15px 6px 15px;}
+.myform  input[type="button"] {padding:6px 15px 6px 15px;}
+.myform input[disabled="disabled"] {border:1px solid #cccccc;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
+.myform textarea {margin:0;padding:6px 9px 6px 9px;}
+.myform td {padding-top:10px;}
+.myform tr:first-child td {padding-top:0px;}
+.myform .item {margin-top:10px;}
+.myform .item .tt {text-align:right;}
+.myform .item .cont {padding-left:5px;}
+.myform .item  .tip {padding-left:10px;font-size:13px;}
+.myform .item  .tip_error {color:#ff0000;}
+.myform .wide_textarea {width:400px;height:90px;}
+
+
+/* 工具栏样式 */
+.mytoolbar {}
+.mytoolbar .item {display:inline-block;vertical-align:middle;margin-left:10px;}
+.mytoolbar .item:first-child {margin:0;}
+.mytoolbar .split {border:1px solid #d2d2d2;height:20px;}
+.mytoolbar input[type="checkbox"] {margin:0;padding:0;}
+.mytoolbar .item_right {float:right;}
+
+/* 弹出确认窗口 */
+.confirm_window {position:fixed;top:20%;left:6%;width:70%;border:1px solid #8e8e8e;background:#ffffff;z-index:999;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;-moz-box-shadow:0 0 3px #2f4d52;-webkit-box-shadow:0 0 3px #2f4d52;box-shadow:0 0 3px #2f4d52;}
+.confirm_window .title {font-size:20px;border-bottom:1px solid #dddddd;padding:15px;}
+.confirm_window .content {font-size:14px;border-bottom:1px solid #dddddd;padding:15px;}
+.confirm_window .buttons {font-size:14px;padding:15px;text-align:right;}
+.confirm_window .danger {color:#ff0000;}
+
+/* 筛选框 */
+.filter {border:1px dotted #dbdbdb;background:#f7f7f7;margin-top:15px;padding:15px;}
+.filter .title {padding-left:15px;text-align:right;}
+.filter tr .title:first-child {padding-left:0;}
+.filter .content {padding-left:5px;}
+.filter table {}
+.filter tr {width:100%;}
+.filter tr:first-child td {padding-top:0;}
+.filter td {padding-top:10px;}
+.filter input[type="text"] {width:150px;display:inline-block;}
+.filter select {width:150px;display:inline-block;}
+
+/*
+.filter .item {}
+.filter .item .title {float:left;width:5%;margin-top:10px;}
+.filter .item .content {float:left;width:95%;}
+.filter .item .content span{display:inline-block;margin-top:10px;margin-right:10px;}
+.filter .item .content .link {border:1px solid #c6c6c6;border:none;color:#4f4f4f;cursor:pointer;}
+.filter .item .content .link_active {background:#ffae2c;color:#ffffff;padding:1px 15px 1px 15px;}
+.filter .item:first-child .title {margin:0;}
+.filter .item:first-child .content span {margin-top:0;}
+.filter .split {border-top:1px dotted #dbdbdb;height:1px;margin-top:11px;}
+.filter .item input {padding:2px 5px 2px 5px;font-size:13px;text-align:center;}
+.filter .item input[type="submit"] {padding:5px 10px 5px 10px;}
+.filter .item .input_height {height:27px;line-height:27px;}
+*/
+
+
+/* 分页 */
+.pager {}
+.pager span {display:inline-block;border:1px solid #dedddd;padding:5px 15px 5px 15px;color:#4f4f4f;cursor:pointer;}
+.pager span:hover {color:#0099fd;background:#f5f5f5;}
+.pager .active {color:#ffffff;background:#4990d6;}
+.pager .active:hover {color:#ffffff;background:#4990d6;}
+
+/* 弹出框 */
+.popbox {position:absolute;border:1px solid black;background:#ffffff;display:none;background:#e8e8e8;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
+.popbox .btn_item {display:block;border-bottom:1px solid black;}
+.popbox .btn_item:last-child {border:none;}
+.popbox .triangle_right {display:block;position:absolute;width:0;height:0;border-top:5px solid transparent;border-bottom:5px solid transparent;border-left:5px solid #468847;top:7px;right:-8px;}
+
+/* 弹出框2 */
+.popbox2 {position:fixed;top:20%;left:6%;width:70%;border:1px solid #8e8e8e;background:#ffffff;z-index:999;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;-moz-box-shadow:0 0 3px #2f4d52;-webkit-box-shadow:0 0 3px #2f4d52;box-shadow:0 0 3px #2f4d52;display:none;}
+.popbox2 .title {font-size:20px;border-bottom:1px solid #dddddd;padding:15px;}
+.popbox2 .title .close_btn {float:right;cursor:pointer;background:url('/images/icon/close2.png');display:inline-block;width:24px;height:24px;margin-top:-2px;opacity:0.8;}
+.popbox2 .title .close_btn:hover {opacity:1;}
+.popbox2 .content {font-size:14px;padding:15px;}
+
+/* 屏蔽屏幕 */

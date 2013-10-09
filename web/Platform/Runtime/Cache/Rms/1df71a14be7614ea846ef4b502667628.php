@@ -3,49 +3,24 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<meta name="description" content="管理平台 - __NAME__" />
 	<title><?php echo ($pageTitle); ?> - 管理平台 - __NAME__</title>
 
 	<link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link href="/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+	<link href="/css/jizhao-ui.css" rel="stylesheet" type="text/css">
 	<link href="/css/global.css" rel="stylesheet" type="text/css">
 	<link href="/css/manage/global.css" rel="stylesheet" type="text/css">
+	<link href="/css/manage/frame.css" rel="stylesheet" type="text/css">
 	
-	<script src="/js/jquery.min.js" type="text/javascript" ></script>
-	<script src="/js/bootstrap.min.js" type="text/javascript" ></script>
+	<script src="/js/jquery.min.js" type="text/javascript"></script>
+	<script src="/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="/js/jizhao-ui.js" type="text/javascript"></script>
 	<script src="/js/global.js" type="text/javascript" ></script>
 </head>
 
 <body>
 
-<div id="header">
-	<div class="logo">
-		<a href="<?php echo U('/manage/');?>"><img src="/images/logo.png"></a>
-	</div>
-	<div class="naviRight">
-		<ul>
-			<li><?php echo (session('user_name')); ?></li>
-			<li><?php echo (session('company_name')); ?></li>
-			<li>帮助</li>
-			<a href="<?php echo U('/home/company/logout');?>"><li style="border:0;">退出</li></a>
-		</ul>
-	</div>
-	<div class="clear"></div>
-</div>
-
-<link href="/css/manage/product.css" rel="stylesheet" type="text/css">
-
-<div id="product">
-
-
-
-<div class="control_menu">
-	<a href="<?php echo U('rms/rms_talent/showList');?>" class="item <?php if ($pageTitle == '求职者管理') echo 'item_active'; ?>"><i class="icon1 icon1_blue icon1_user1"></i>&nbsp;&nbsp;&nbsp;求职者管理</a>
-	<a href="<?php echo U('rms/rms_position/showList');?>" class="item <?php if ($pageTitle == '职位管理') echo 'item_active'; ?>"><i class="icon1 icon1_blue icon1_user1"></i>&nbsp;&nbsp;&nbsp;职位管理</a>
-</div>
-
-<div class="main_body">
-<div class="main_body2">
+<div id="frame">
 
 <style>
 	.icon-repeat  {vertical-align:text-bottom;height:16px;width:13px;}
@@ -53,7 +28,7 @@
 	.icon-chevron-down {vertical-align:text-bottom;height:16px;width:12px;}
 </style>
 
-<div class="head">
+<div class="header">
 	<span class="title">职位列表</span>
 </div>
 
@@ -168,19 +143,15 @@
 	<?php } ?>
 </div>
 
-	
+
+		<div style="height:20px;">&nbsp;</div>
 	</div>
-	</div>
+
+	<script src="/js/manage/frame.js" type="text/javascript" ></script>
 	
-	<div class="clear"></div>
-</div>
-
-<script src="/js/manage/product.js" type="text/javascript" ></script>
-
-
-<div class="grey"></div>
-
-<script src="/js/manage/global.js" type="text/javascript" ></script>
-
+	<?php if (!empty($tabTitle)) { ?>
+	<script>changeTab2('<?php echo ($tabTitle); ?>');</script>
+	<?php } ?>
+	
 </body>
 </html>

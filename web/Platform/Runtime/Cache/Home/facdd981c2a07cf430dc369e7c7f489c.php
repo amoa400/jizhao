@@ -29,8 +29,8 @@
 				<li class="normal">产品简介</li>
 				<li class="normal">价格方案</li>
 				<li class="normal">关于我们</li>
-				<a href="<?php echo U('Company/register');?>"><li class="btn btn-warning">免费注册</li></a>
-				<a href="<?php echo U('Company/login');?>"><li class="btn btn-info">即刻登录</li></a>
+				<a href="/company/register"><li class="btn btn-warning">免费注册</li></a>
+				<a href="/company/login/id/1"><li class="btn btn-info">即刻登录</li></a>
 			</ul>
 		</div>
 		<div class="clear"></div>

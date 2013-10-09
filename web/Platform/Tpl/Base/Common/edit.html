@@ -1,0 +1,63 @@
+<include file="Manage:Product:frame_header"/>
+
+<style>
+	.myform .item .tt {width:<{$const.fieldWidth}>px;}
+</style>
+	
+<div class="header">
+	<span class="title">编辑<{$const.title}> - <{$data.name}></span>
+</div>
+
+<div class="myform" style="margin-top:15px;">
+<form name="form" action="/<{$const.group}>/<{$const.group}>_<{$const.action}>/editDo" method="post">
+	
+		<table>
+			<?php foreach ($fieldName as $key => $item) { ?>
+			<?php
+				if (in_array($key, $const['hideField'])) continue;
+			?>
+			<tr class="item">
+				<td class="tt"><{$item}>：</td>
+				<td class="cont">
+					<?php if (!empty($selectField[$key])) { ?>
+					<select class="form-control" name="<{$key}>">
+						<?php foreach($selectField[$key] as $key2 => $item2) { ?>
+						<option value="<{$key2}>" <?php if ($key2 == $data[$key]) echo 'selected="selected"'; ?>><{$item2}></option>
+						<?php } ?>
+					</select>
+					<?php } else 
+					if (in_array($key, $textareaField)) { ?>
+					<textarea class="form-control" name="<{$key}>"><{$data[$key]}></textarea>
+					<?php } else 
+					if (in_array($key, $const['disableField'])) {
+					?>
+					<input type="text" class="form-control" name="<{$key}>" value="<{$data[$key]}>" style="display:none;">
+					<input type="text" class="form-control" value="<{$data[$key]}>" disabled="disabled">
+					<?php } else { ?>
+					<input type="text" class="form-control" name="<{$key}>" value="<{$data[$key]}>">
+					<?php } ?>
+				</td>
+				<td class="tip"></td>
+			</tr>
+			<?php } ?>
+			<tr class="item">
+				<td class="tt"></td>
+				<td class="cont">
+					<input type="submit" value="保存" class="mybtn mybtn_primary">&nbsp;
+					<input type="button" value="重置" class="mybtn mybtn_danger" onclick="location.reload()">
+				</td>
+				<td class="tip"></td>
+			</tr>
+			
+			<span class="formSubmitTip hidden">保存</span>
+			<span class="formSubmitingTip hidden">正在保存</span>
+			<span class="formSuccessTip hidden">保存成功</span>
+			<span class="formFailTip hidden">保存失败</span>
+			<span class="formDisabled hidden"></span>
+			<span class="formForceSubmit hidden"></span>
+		</table>
+
+</form>
+</div>
+
+<include file="Manage:Product:frame_footer"/>

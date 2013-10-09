@@ -1,0 +1,90 @@
+[ 2013-09-17T10:35:35+08:00 ] 192.168.0.100 /Company/loginDo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001283s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\jizhao\web\ThinkPHP\Common\functions.php 第 566 行.
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.054901s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `jz_user` WHERE ( `email` = 'weiqin@vip.126.com' ) LIMIT 1   [ RunTime:0.001083s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `jz_company` [ RunTime:0.025256s ]
+SQL: SELECT * FROM `jz_company` WHERE ( `company_id` = 1 ) LIMIT 1   [ RunTime:0.000652s ]
+
+[ 2013-09-17T10:38:43+08:00 ] 192.168.0.100 /rms/rms_interview/showList
+ERR: 无法加载模块:RmsInterview
+
+[ 2013-09-17T10:39:16+08:00 ] 192.168.0.100 /ois/ois_interviewer/showList
+ERR: 无法加载模块:OisInterviewer
+
+[ 2013-09-17T10:39:16+08:00 ] 192.168.0.100 /ois/ois_template/showList
+ERR: 无法加载模块:OisTemplate
+
+[ 2013-09-17T10:40:36+08:00 ] 192.168.0.100 /ois/ois_interview/create
+ERR: 非法操作:create
+
+[ 2013-09-17T10:41:38+08:00 ] 192.168.0.100 /ois/ois_interviewer/showList
+ERR: 无法加载模块:OisInterviewer
+
+[ 2013-09-17T10:43:06+08:00 ] 192.168.0.100 /ois/ois_interview/create
+ERR: 模板不存在[../Platform/Tpl/Ois/OisInterview/create.html]
+
+[ 2013-09-17T10:58:27+08:00 ] 192.168.0.100 /ois/ois_template/showList
+ERR: 无法加载模块:OisTemplate
+
+[ 2013-09-17T11:01:14+08:00 ] 192.168.0.100 /ois/ois_interviewer/showList
+ERR: 无法加载模块:OisInterviewer
+
+[ 2013-09-17T11:02:25+08:00 ] 192.168.0.100 /ois/ois_interview/show/interview_id/1
+ERR: 非法操作:show
+
+[ 2013-09-17T11:30:43+08:00 ] 192.168.0.100 /cms
+ERR: 无法加载模块:Cms
+
+[ 2013-09-17T11:32:24+08:00 ] 192.168.0.100 /ois/ois_template/showList
+ERR: 无法加载模块:OisTemplate
+
+[ 2013-09-17T11:32:25+08:00 ] 192.168.0.100 /ois/ois_interviewer/showList
+ERR: 无法加载模块:OisInterviewer
+
+[ 2013-09-17T11:33:30+08:00 ] 192.168.0.100 /ois/ois_interview/createDo
+ERR: 非法操作:createdo
+
+[ 2013-09-17T11:33:32+08:00 ] 192.168.0.100 /ois/ois_interview/createDo
+ERR: 非法操作:createdo
+
+[ 2013-09-17T11:33:35+08:00 ] 192.168.0.100 /ois/ois_interview/createDo
+ERR: 非法操作:createdo
+
+[ 2013-09-17T11:33:37+08:00 ] 192.168.0.100 /ois/ois_interview/createDo
+ERR: 非法操作:createdo
+
+[ 2013-09-17T11:33:39+08:00 ] 192.168.0.100 /ois/ois_interview/createDo
+ERR: 非法操作:createdo
+
+[ 2013-09-17T11:33:40+08:00 ] 192.168.0.100 /ois/ois_interview/createDo
+ERR: 非法操作:createdo
+
+[ 2013-09-17T11:59:25+08:00 ] 192.168.0.100 /ois/ois_interview/show/interview_id/6
+ERR: 非法操作:show
+
+[ 2013-09-17T12:01:39+08:00 ] 192.168.0.100 /ois/ois_interview/show/interview_id/7
+ERR: 非法操作:show
+
+[ 2013-09-17T12:01:42+08:00 ] 192.168.0.100 /ois/ois_interview/show/interview_id/7
+ERR: 非法操作:show
+
+[ 2013-09-17T12:03:45+08:00 ] 192.168.0.100 /ois/ois_interview/show/interview_id/8
+ERR: 非法操作:show
+
+[ 2013-09-17T12:06:24+08:00 ] 192.168.0.100 /ois/ois_interview/show/interview_id/8
+ERR: Model:r您所请求的方法不存在！
+
+[ 2013-09-17T12:07:40+08:00 ] 192.168.0.100 /ois/ois_interview/show/interview_id=8
+ERR: Model:r您所请求的方法不存在！
+
+[ 2013-09-17T12:09:51+08:00 ] 192.168.0.100 /ois/ois_interviewer/showList
+ERR: 无法加载模块:OisInterviewer
+
+[ 2013-09-17T15:23:39+08:00 ] 192.168.0.100 /ois/ois_interviewer/showList
+ERR: 无法加载模块:OisInterviewer
+
