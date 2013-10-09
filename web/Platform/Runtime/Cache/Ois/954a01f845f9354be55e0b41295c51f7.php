@@ -7,19 +7,20 @@
 
 	<link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link href="/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+	<link href="/css/jizhao-ui.css" rel="stylesheet" type="text/css">
 	<link href="/css/global.css" rel="stylesheet" type="text/css">
 	<link href="/css/manage/global.css" rel="stylesheet" type="text/css">
 	<link href="/css/manage/frame.css" rel="stylesheet" type="text/css">
 	
-	<script src="/js/jquery.min.js" type="text/javascript" ></script>
-	<script src="/js/bootstrap.min.js" type="text/javascript" ></script>
+	<script src="/js/jquery.min.js" type="text/javascript"></script>
+	<script src="/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="/js/jizhao-ui.js" type="text/javascript"></script>
 	<script src="/js/global.js" type="text/javascript" ></script>
 </head>
 
 <body>
 
 <div id="frame">
-
 
 <style>
 	.myform .item .tt {width:<?php echo ($const["fieldWidth"]); ?>px;}
@@ -80,8 +81,7 @@
 
 		<div style="height:20px;">&nbsp;</div>
 	</div>
-	
-	
+
 	<script src="/js/manage/frame.js" type="text/javascript" ></script>
 	
 	<?php if (!empty($tabTitle)) { ?>
