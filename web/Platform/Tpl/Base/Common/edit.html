@@ -9,53 +9,86 @@
 </div>
 
 <div class="myform" style="margin-top:15px;">
-<form name="form" action="/<{$const.group}>/<{$const.group}>_<{$const.action}>/editDo" method="post">
+<form name="form" action="/base/common/editDo" method="post">
+	<input name="jz_group" value="<{$const.group}>" style="display:none;">
+	<input name="jz_action" value="<{$const.action}>" style="display:none;">
 	
-		<table>
-			<?php foreach ($fieldName as $key => $item) { ?>
-			<?php
-				if (in_array($key, $const['hideField'])) continue;
-			?>
-			<tr class="item">
-				<td class="tt"><{$item}>：</td>
-				<td class="cont">
-					<?php if (!empty($selectField[$key])) { ?>
-					<select class="form-control" name="<{$key}>">
-						<?php foreach($selectField[$key] as $key2 => $item2) { ?>
-						<option value="<{$key2}>" <?php if ($key2 == $data[$key]) echo 'selected="selected"'; ?>><{$item2}></option>
+	<table>
+		<?php foreach ($const['showField'] as $item) { ?>
+		<tr class="item">
+			<td class="tt"><{$fieldName[$item]}>：</td>
+			<td class="cont">
+
+				<!-- 特殊框 -->
+				<?php if (!empty($const['specialField'][$item])) { ?>
+					<!-- 日期选择 -->
+					<?php if ($const['specialField'][$item][0] == 'date') { ?>
+						<input type="text" name="<{$item}>" value="<{$data[$item]}>" style="display:none;">
+						<input type="text" md_name="<{$item}>" value="<?php echo intToTime($data[$item], 'Y-m-d'); ?>" class="form-control jz_date_picker_t">
+					<?php } ?>
+					<!-- 时间选择 -->
+					<?php if ($const['specialField'][$item][0] == 'time') { ?>
+						<input type="text" name="<{$item}>"  value="<{$data[$item]}>" style="display:none;">
+						<input type="text" md_name="<{$item}>" value="<?php echo intToTime($data[$item], 'H:i'); ?>" class="form-control jz_time_picker_t">
+					<?php } ?>
+					<!-- 日期时间选择 -->
+					<?php if ($const['specialField'][$item][0] == 'datetime') { ?>
+						<input type="text" name="<{$item}>" value="<{$data[$item]}>" style="display:none;">
+						<input type="text" md_name="<{$item}>" md_time="1" value="<?php echo intToTime($data[$item], 'Y-m-d H:i'); ?>" class="form-control jz_date_picker_t">
+					<?php } ?>
+					<!-- 名称选择器 -->
+					<?php if ($const['specialField'][$item][0] == 'namePicker') { ?>
+						<input type="text" name="<{$item}>"  value="<{$data[$item]}>" style="display:none;">
+						<input type="text" class="form-control jz_name_picker_t" md_url="<{$const['specialField'][$item][1]}>" md_name="<{$item}>" value="<?php echo $data[substr($item, 0, strlen($item) - 2) . 'name'] ?>">
+					<?php } ?>
+					<!-- 文件 -->
+					<?php if ($const['specialField'][$item][0] == 'file') { ?>
+						<input type="text" name="<{$item}>"  value="<{$data[$item]}>" style="display:none;">
+						<input type="text" class="form-control jz_name_picker_t" md_url="<{$const['specialField'][$item][1]}>" md_name="<{$item}>" value="<?php echo $data[substr($item, 0, strlen($item) - 2) . 'name'] ?>">
+					<?php } ?>
+				<!-- 选择框 -->
+				<?php } else 
+					if (!empty($selectField[$item])) { 
+				?>
+					<select class="form-control" name="<{$item}>">
+						<?php foreach($selectField[$item] as $key2 => $item2) { ?>
+						<option value="<{$key2}>" <?php if ($data[$item] == $key2) echo 'selected="selected"'; ?>><{$item2}></option>
 						<?php } ?>
 					</select>
-					<?php } else 
-					if (in_array($key, $textareaField)) { ?>
-					<textarea class="form-control" name="<{$key}>"><{$data[$key]}></textarea>
-					<?php } else 
-					if (in_array($key, $const['disableField'])) {
-					?>
-					<input type="text" class="form-control" name="<{$key}>" value="<{$data[$key]}>" style="display:none;">
-					<input type="text" class="form-control" value="<{$data[$key]}>" disabled="disabled">
-					<?php } else { ?>
-					<input type="text" class="form-control" name="<{$key}>" value="<{$data[$key]}>">
-					<?php } ?>
-				</td>
-				<td class="tip"></td>
-			</tr>
-			<?php } ?>
-			<tr class="item">
-				<td class="tt"></td>
-				<td class="cont">
-					<input type="submit" value="保存" class="mybtn mybtn_primary">&nbsp;
-					<input type="button" value="重置" class="mybtn mybtn_danger" onclick="location.reload()">
-				</td>
-				<td class="tip"></td>
-			</tr>
-			
-			<span class="formSubmitTip hidden">保存</span>
-			<span class="formSubmitingTip hidden">正在保存</span>
-			<span class="formSuccessTip hidden">保存成功</span>
-			<span class="formFailTip hidden">保存失败</span>
-			<span class="formDisabled hidden"></span>
-			<span class="formForceSubmit hidden"></span>
-		</table>
+				<!-- 文本框 -->
+				<?php } else 
+					if (in_array($item, $textareaField)) { 
+				?>
+					<textarea class="form-control" name="<{$item}>"><{$data[$item]}></textarea>
+				<!-- 隐藏框 -->
+				<?php } else 
+					if (in_array($item, $const['disableField'])) {
+				?>
+					<input type="text" class="form-control" name="<{$item}>" value="<{$data[$item]}>" style="display:none;">
+					<input type="text" class="form-control" value="<{$data[$item]}>" disabled="disabled">
+				<!-- 普通框 -->
+				<?php } else { ?>
+					<input type="text" class="form-control" name="<{$item}>" value="<{$data[$item]}>">
+				<?php } ?>
+			</td>
+			<td class="tip"></td>
+		</tr>
+		<?php } ?>
+		<tr class="item">
+			<td class="tt"></td>
+			<td class="cont">
+				<input type="submit" value="保存" class="mybtn mybtn_primary">&nbsp;
+				<input type="button" value="重置" class="mybtn mybtn_danger" onclick="location.reload()">
+			</td>
+			<td class="tip"></td>
+		</tr>
+		
+		<span class="formSubmitTip hidden">保存</span>
+		<span class="formSubmitingTip hidden">正在保存</span>
+		<span class="formSuccessTip hidden">保存成功</span>
+		<span class="formFailTip hidden">保存失败</span>
+		<span class="formDisabled hidden"></span>
+	</table>
 
 </form>
 </div>

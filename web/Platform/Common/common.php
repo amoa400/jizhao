@@ -10,8 +10,9 @@ function getTime() {
 }
 
 // 转换成时间
-function intToTime($time) {
-	return date('Y-m-d H:i:s', $time);
+function intToTime($time, $type = '') {
+	if (empty($type)) $type = 'Y-m-d H:i:s';
+	return date($type, $time);
 }
 
 // 转换成使用时间

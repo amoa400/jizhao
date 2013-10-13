@@ -1,5 +1,9 @@
 <include file="Manage:Product:frame_header"/>
 
+<style>
+	td {max-width:200px;}
+</style>
+
 <div class="header">
 	<span class="title"><{$const.title}>管理</span>
 </div>
@@ -11,15 +15,22 @@
 	<?php } ?>
 	<!-- 删除 -->
 	<?php if ($const['toolbar']['delete']['on']) { ?>
-	<span class="item item_t mybtn mybtn_primary" md_confirm="1" md_op_url_tmp="/<{$const.group}>/<{$const.group}>_<{$const.action}>/deleteList" md_title="确认删除？" md_content="您即将删除您选中的<{$const.title}>，请确认操作！" md_button_text="删除">删除</span>
+	<span class="item item_t mybtn mybtn_primary" md_confirm="1" md_op_url_tmp="/base/common/deleteList/group/<{$const.group}>/action/<{$const.action}>" md_title="确认删除？" md_content="您即将删除您选中的<{$const.title}>，请确认操作！" md_button_text="删除">删除</span>
 	<?php } ?>
 	<!-- 分割线 -->
 	<span class="item split"></span>
+	<!-- 其他 -->
+	<?php if (!empty($const['toolbar']['other'])) { ?>
+		<?php foreach($const['toolbar']['other'] as $item) { ?>
+		<span class="item item_t mybtn mybtn_primary" md_op_url_tmp="<{$item[1]}>"><{$item[0]}></span>
+		<?php } ?>
+		<span class="item split"></span>
+	<?php } ?>
 	<!-- 刷新 -->
 	<span class="item mybtn mybtn_primary" onclick="location.reload()">刷新&nbsp;<span class="glyphicon glyphicon-repeat"></span></span>
 	<!-- 筛选 -->
-	<span class="item mybtn mybtn_primary para_set" md_para_name="filter" md_para_value="1" md_para_nojump="1" onclick="$('.filter').show();$(this).hide();$(this).next().show();">筛选 <i class="glyphicon glyphicon-chevron-down"></i></span>
-	<span class="item mybtn mybtn_primary para_set" md_para_name="filter" md_para_value="0" md_para_nojump="1"  onclick="$('.filter').hide();$(this).hide();$(this).prev().show();" style="display:none;">筛选 <i class="glyphicon glyphicon-chevron-up"></i></span>
+	<span class="item mybtn mybtn_primary para_set filter_show" md_para_name="filter" md_para_value="1" md_para_nojump="1" onclick="$('.filter').show();$(this).hide();$(this).next().show();">筛选 <i class="glyphicon glyphicon-chevron-down"></i></span>
+	<span class="item mybtn mybtn_primary para_set filter_hide" md_para_name="filter" md_para_value="0" md_para_nojump="1"  onclick="$('.filter').hide();$(this).hide();$(this).prev().show();" style="display:none;">筛选 <i class="glyphicon glyphicon-chevron-up"></i></span>
 </div>
 
 <!-- 筛选区 -->
@@ -31,25 +42,25 @@
 	<?php
 		$cnt = 0;
 		$flag = false;
-		foreach ($fieldNameAlign as $key => $value) {
-			if (in_array($key, $const['hideFilterField'])) continue;
-			if (!empty($const['specialFilterField'][$key])) continue;
-			if (!empty($selectField[$key]))	{
+		$haveTimeBetween = false;
+		foreach ($const['showFilterField'] as $item) {
+			if (!empty($const['specialFilterField'][$item])) continue;
+			if (!empty($selectField[$item]))	{
 				$flag = true;
 				$cnt++;
 				if ($cnt % 3 == 1) echo '<tr>';
 	?>
-		<td class="title"><{$value}>：</td>
+		<td class="title"><{$fieldNameAlign[$item]}>：</td>
 		<td class="content">
-			<select name="<{$key}>" class="form-control" multiple="multiple">
-					<option value="0"  <?php if (empty($_GET[$key])) echo 'selected="selected"'; ?>>不限</option>
-				<?php foreach ($selectField[$key] as $key2 => $value2) { ?>
-					<option value="<{$key2}>" <?php if (strstr($_GET[$key], $key2 . '|')) echo 'selected="selected"'; ?>><{$value2}></option>
+			<select name="<{$item}>" class="form-control" multiple="multiple">
+					<option value="0"  <?php if (empty($_GET[$item])) echo 'selected="selected"'; ?>>不限</option>
+				<?php foreach ($selectField[$item] as $key2 => $value2) { ?>
+					<option value="<{$key2}>" <?php if (strstr($_GET[$item], $key2 . '|')) echo 'selected="selected"'; ?>><{$value2}></option>
 				<?php } ?>
 			</select>
 		</td>
 	<?php
-			if ($cnt % 3 == 0) echo '</tr>';
+				if ($cnt % 3 == 0) echo '</tr>';
 			}
 		}
 		while ($cnt % 3 != 0) {
@@ -62,18 +73,16 @@
 	<!-- 文字框 -->
 	<?php
 		$cnt = 0;
-		foreach ($fieldNameAlign as $key => $value) { 
+		foreach ($const['showFilterField'] as $item) {
 	?>
 	<?php
-		if (!empty($selectField[$key])) continue;
-		if (in_array($key, $textareaField)) continue;
-		if (in_array($key, $const['hideFilterField'])) continue;
-		if (!empty($const['specialFilterField'][$key])) continue;
+		if (!empty($selectField[$item])) continue;
+		if (!empty($const['specialFilterField'][$item])) continue;
 		$cnt++;
 		if ($cnt % 3 == 1) echo '<tr>';
 	?>
-		<td class="title"><{$value}>：</td>
-		<td class="content"><input type="text" name="<{$key}>" class="form-control" value="<{$_GET[$key]}>"></td>
+		<td class="title"><{$fieldNameAlign[$item]}>：</td>
+		<td class="content"><input type="text" name="<{$item}>" class="form-control" value="<{$_GET[$item]}>"></td>
 	<?php
 			if ($cnt % 3 == 0) echo '</tr>';
 		}
@@ -85,27 +94,37 @@
 	?>
 	
 	<!-- 特殊区 -->
-	<?php foreach ($fieldNameAlign as $key => $value) { ?>
-	<?php if (!empty($const['specialFilterField'][$key])) { ?>
+	<?php foreach ($const['showFilterField'] as $item) { ?>
+	<?php if (!empty($const['specialFilterField'][$item])) { ?>
 		<!-- 时间区间 -->
-		<?php if ($const['specialFilterField'][$key][0] == 'timeBetween') { ?>
+		<?php if ($const['specialFilterField'][$item][0] == 'timeBetween') { ?>
 		<tr>
-			<td class="title"><{$value}>：</td>
-			<td class="content" colspan="5" style="position:relative;">
-				<input type="text" name="<{$key}>_s" class="form-control jz_date_picker_t" value="<?php echo $_GET[$key . '_s']; ?>"><span class="glyphicon glyphicon-calendar" style="position:absolute;left:130px;top:20px;color:#9b9b9b;cursor:pointer;" onclick="$(this).prev().click();window.event.cancelBubble = true;window.event.stopPropagation();"></span>&nbsp;
+			<td class="title"><{$fieldNameAlign[$item]}>：</td>
+			<td class="content" colspan="5">
+				<input type="text" name="<{$item}>_s" class="form-control jz_date_picker_t" value="<?php echo $_GET[$item . '_s']; ?>">&nbsp;
 				--&nbsp;
-				<input type="text" name="<{$key}>_e" class="form-control jz_date_picker_t" value="<?php echo $_GET[$key . '_e']; ?>"><span class="glyphicon glyphicon-calendar" style="position:absolute;left:310px;top:20px;color:#9b9b9b;cursor:pointer;" onclick="$(this).prev().click();window.event.cancelBubble = true;window.event.stopPropagation();"></span>
+				<input type="text" name="<{$item}>_e" class="form-control jz_date_picker_t" value="<?php echo $_GET[$item . '_e']; ?>">
 			</td>
 		</tr>
 		<?php } ?>
 		<!-- 普通区间 -->
-		<?php if ($const['specialFilterField'][$key][0] == 'between') { ?>
+		<?php if ($const['specialFilterField'][$item][0] == 'between') { ?>
 		<tr>
-			<td class="title"><{$value}>：</td>
+			<td class="title"><{$fieldNameAlign[$item]}>：</td>
 			<td class="content" colspan="5" style="position:relative;">
-				<input type="text" name="<{$key}>_s" class="form-control" value="<?php echo $_GET[$key . '_s']; ?>">&nbsp;
+				<input type="text" name="<{$item}>_s" class="form-control" value="<?php echo $_GET[$item . '_s']; ?>">&nbsp;
 				--&nbsp;
-				<input type="text" name="<{$key}>_e" class="form-control" value="<?php echo $_GET[$key . '_e']; ?>">
+				<input type="text" name="<{$item}>_e" class="form-control" value="<?php echo $_GET[$item . '_e']; ?>">
+			</td>
+		</tr>
+		<?php } ?>
+		<!-- 名称选择器 -->
+		<?php if ($const['specialFilterField'][$item][0] == 'namePicker') { ?>
+		<tr>
+			<td class="title"><{$fieldNameAlign[$item]}>：</td>
+			<td class="content" colspan="5" style="position:relative;">
+				<input type="text" name="<{$item}>" value="<{$_GET[$item]}>" style="display:none;">
+				<input type="text" class="form-control jz_name_picker_t" md_url="<{$const['specialFilterField'][$item][1]}>" md_name="<{$item}>" value="<{$const['filterDefaultValue'][$item]}>">
 			</td>
 		</tr>
 		<?php } ?>
@@ -127,6 +146,13 @@
 </form>
 </div>
 
+<script>
+	$('.filter_show').one('click', function() {
+		jzDatePicker.createIcon();
+		jzNamePicker.createIcon();
+	});
+</script>
+
 <div class="mytable" style="margin-top:15px;">
 	<table>
 		<tr class="title">
@@ -135,7 +161,7 @@
 			<?php foreach($const['showField'] as $value) { ?>
 			<th><{$fieldName[$value]}></th>
 			<?php } ?>
-			<th style="width:160px;">更多</th>
+			<th style="width:170px;">更多</th>
 		</tr>
 		
 		<!-- 内容为空 -->
@@ -170,18 +196,41 @@
 			
 			<td>
 				<!-- 编辑 -->
-				<a class="new_tab" md_url="/<{$const.group}>/<{$const.group}>_<{$const.action}>/edit/<{$idField}>/<{$id}>"><span class="mylabel mylabel_info">编辑</span></a>&nbsp;
+				<a class="new_tab" md_url="/<{$const.group}>/<{$const.group}>_<{$const.action}>/edit/<{$idField}>/<{$id}>"><span class="mylabel mylabel_info">编辑</span></a>&nbsp;&nbsp;
 				<!-- 删除 -->
-				<a href="javascript:void(0)" class="open_confirm_window" md_title="确认删除？" md_content="您即将删除<span class='danger'><{$id}>号<{$const.title}>-<{$data.name}></span>，请确认操作！" md_button_text="删除" md_button_class="mybtn_danger" md_op_url="/<{$const.group}>/<{$const.group}>_<{$const.action}>/delete/<{$idField}>/<{$id}>"><span class="mylabel mylabel_danger">删除</span></a>&nbsp;
+				<a class="open_confirm_window" md_title="确认删除？" md_content="您即将删除<span class='danger'><{$id}>号<{$const.title}>-<{$data.name}></span>，请确认操作！" md_button_text="删除" md_button_class="mybtn_danger" md_op_url="/base/common/delete/group/<{$const.group}>/action/<{$const.action}>/id/<{$id}>"><span class="mylabel mylabel_danger">删除</span></a>&nbsp;&nbsp;
 				<!-- 更多 -->
+				<a><span class="mylabel mylabel_success jz_popover_t" md_class="popover_<{$id}>" md_direction="left">更多</span></a>
+				
+				<div class="jz_popover popover_<{$id}>">
+					<?php foreach($data['moreField'] as $more) { ?>
+					<div class="item">
+						<?php if ($more['target'] == 'new_tab') { ?>
+							<a class="new_tab" md_url="<{$more['url']}>">
+						<?php } ?>
+						<?php if ($more['target'] == '_blank') { ?>
+							<a href="<{$more['url']}>" target="_blank">
+						<?php } else { ?>
+							<a href="<{$more['url']}>">
+						<?php } ?>
+							<{$more['name']}>&nbsp;<span class="glyphicon glyphicon-chevron-right"></span>
+						</a>
+					</div>
+					<?php } ?>
+				</div>
+				
+				<!--
 				<a href="javascript:void(0)" class="popbox_t" md_box_id="<{$id}>" md_left="-103" md_top="-6px" md_border_width="3" md_background="#ffffff" md_border_color="#468847" md_btn_padding_left="10" md_btn_padding_top="5"><span class="mylabel mylabel_success">更多</span></a>
+				-->
 				<!-- 更多面板 -->
+				<!--
 				<div class="popbox popbox_<{$id}>">
 					<?php foreach($const['moreList'] as $more) { ?>
 					<span class="btn_item"><a href="/ois/ois_room/show/id/<{$interview.interview_id}>" target="_blank"><{$more[0]}></a></span>
 					<?php } ?>
 					<span class="triangle_right"></span>
 				</div>
+				-->
 			</td>
 			
 		</tr>

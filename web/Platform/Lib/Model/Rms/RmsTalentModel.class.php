@@ -27,6 +27,7 @@ class RmsTalentModel extends Model {
 		'major' 				=> 		'专业',
 		'phone' 				=> 		'手机',
 		'email' 				=> 		'邮箱',
+		'resume'				=>		'简历',
 	);
 	
 	public $textareaField = array();
@@ -45,13 +46,11 @@ class RmsTalentModel extends Model {
 		),
 		'status_id' => array (
 			'1' => '未查看',
-			'2' => '已查看',
+			'2' => '简历通过',
 			'3' => '笔试考查',
 			'4' => '面试考查',
 			'5' => '已录用',
 			'6' => '已淘汰',
-		),
-		'position_id' => array( 
 		),
 	);
 	
@@ -64,7 +63,6 @@ class RmsTalentModel extends Model {
 	// 构造函数
 	public function _initialize() {
 		$this->tableName = $_SESSION['company_id'] . '_rms_talent';
-		$this->selectField['position_id'] = D('Rms/RmsPosition')->rListPair();
 	}
 	
 	// 创建

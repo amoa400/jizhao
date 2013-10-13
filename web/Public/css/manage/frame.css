@@ -44,11 +44,12 @@ body {overflow:auto;}
 .myform {margin-top:10px;}
 .myform form {display:block;}
 .myform  input {margin:0;padding:6px 9px 6px 9px;}
-.myform select {margin:0;height:34px;width:226px;}
+.myform select {margin:0;height:34px;width:200px;cursor:pointer;}
+.myform input[type="text"] {width:200px;}
 .myform  input[type="submit"] {padding:6px 15px 6px 15px;}
 .myform  input[type="button"] {padding:6px 15px 6px 15px;}
 .myform input[disabled="disabled"] {border:1px solid #cccccc;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
-.myform textarea {margin:0;padding:6px 9px 6px 9px;}
+.myform textarea {margin:0;padding:6px 9px 6px 9px;width:200px;}
 .myform td {padding-top:10px;}
 .myform tr:first-child td {padding-top:0px;}
 .myform .item {margin-top:10px;}
@@ -85,22 +86,6 @@ body {overflow:auto;}
 .filter td {padding-top:10px;}
 .filter input[type="text"] {width:150px;display:inline-block;}
 .filter select {width:150px;display:inline-block;}
-
-/*
-.filter .item {}
-.filter .item .title {float:left;width:5%;margin-top:10px;}
-.filter .item .content {float:left;width:95%;}
-.filter .item .content span{display:inline-block;margin-top:10px;margin-right:10px;}
-.filter .item .content .link {border:1px solid #c6c6c6;border:none;color:#4f4f4f;cursor:pointer;}
-.filter .item .content .link_active {background:#ffae2c;color:#ffffff;padding:1px 15px 1px 15px;}
-.filter .item:first-child .title {margin:0;}
-.filter .item:first-child .content span {margin-top:0;}
-.filter .split {border-top:1px dotted #dbdbdb;height:1px;margin-top:11px;}
-.filter .item input {padding:2px 5px 2px 5px;font-size:13px;text-align:center;}
-.filter .item input[type="submit"] {padding:5px 10px 5px 10px;}
-.filter .item .input_height {height:27px;line-height:27px;}
-*/
-
 
 /* 分页 */
 .pager {}

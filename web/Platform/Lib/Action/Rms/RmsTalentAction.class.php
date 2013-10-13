@@ -8,36 +8,6 @@ class RmsTalentAction extends Action {
 	public function _initialize() {
 		isLogin(1);
 	}
-
-	// 显示列表
-	public function showList() {
-		$const = array();
-		$const['title'] = '求职者';
-		$const['group'] = 'rms';
-		$const['action'] = 'talent';
-		$const['table'] = 'RmsTalent';
-		$const['toolbar'] = array(
-			'create' => array('on' => 1),
-			'delete' => array('on' => 1),
-		);
-		$const['showField'] = array('talent_id', 'name', 'gender', 'age', 'education', 'shcool', 'position_name', 'join_time', 'status');
-		$const['linkField'] = array(
-			'name' =>		
-				array('/rms/rms_talent/show/talent_id/{$0$}', array('talent_id')),
-			'position_name' =>		
-				array('/rms/rms_position/show/position_id/{$0$}', array('position_id')),
-		);
-		$const['hideFilterField'] = array('gender', 'education', 'position_name', 'join_time', 'status', 'province', 'city');
-		$const['specialFilterField'] = array(
-			'join_time_int' =>
-				array('timeBetween'),
-			'age' =>
-				array('between'),
-		);
-		$const['page'] = $_GET['page'];
-		
-		A('Base/Common')->showList($const);
-	}
 	
 	// 创建新求职者
 	public function create() {
@@ -123,13 +93,21 @@ class RmsTalentAction extends Action {
 	
 	// 修改求职者
 	public function edit() {
-		$talent = D('RmsTalent')->r($_GET['talent_id']);
-		$ret = D('RmsPosition')->rList();
-		$positionList = $ret['data'];
-		$this->assign('talent', $talent);
-		$this->assign('positionList', $positionList);
-		$this->assign('tabTitle', '编辑 - ' . $talent['name']);
-		$this->display();
+		$const = array();
+		$const['title'] = '求职者';
+		$const['group'] = 'rms';
+		$const['action'] = 'talent';
+		$const['id'] = $_GET['talent_id'];
+		$const['disableField'] = array('talent_id');
+		$const['showField'] = array('talent_id', 'name', 'gender_id', 'age', 'education_id', 'position_id', 'status_id', 'province', 'city', 'school', 'major', 'phone', 'email', 'resume');
+		$const['specialField'] = array(
+			'position_id' =>
+				array('namePicker', '/base/common/getIdNameList/group/rms/action/position'),
+			'resume' =>
+				array('file'),
+		);
+		
+		A('Base/Common')->edit($const);
 	}
 	
 	// 修改求职者（处理）
@@ -158,36 +136,72 @@ class RmsTalentAction extends Action {
 	
 	// 显示求职者
 	public function show() {
-		$talent = D('RmsTalent')->r($_GET['talent_id']);
-		if ($talent['status_id'] == 1) {
-			D('RmsTalent')->uStatus($talent['talent_id'], 2);
-			$talent['status_id'] = 2;
-		}
-		$talent = $this->format($talent);
-		$this->assign('talent', $talent);
-		$this->assign('tabTitle', '查看 - ' . $talent['name']);
-		$this->display();
+		$const = array();
+		$const['title'] = '求职者';
+		$const['group'] = 'rms';
+		$const['action'] = 'talent';
+		$const['id'] = $_GET['talent_id'];
+		$const['showField'] = array('talent_id', 'name', 'gender', 'age', 'education', 'position_name', 'join_time', 'status', 'province', 'city', 'school', 'major', 'phone', 'email', 'resume');
+		$const['linkField'] = array(
+			'position_name'		=>	'/rms/rms_position/show/position_id/{position_id}',
+		);
+		
+		A('Base/Common')->show($const);
 	}
 	
-	// 删除求职者
-	public function delete() {
-		D('RmsTalent')->d($_GET['talent_id']);
-		if ($_GET['close_window'] == 1) {
-			echo '<script>parent.closeTabFromChild(this);</script>';
-		}
-		else {
-			$this->redirect($_SERVER['HTTP_REFERER']);
-		}
-	}
-	
-	// 删除多位求职者
-	public function deleteList() {
-		$talentIdList = split('\|', $_GET['id_list']);
-		foreach($talentIdList as $talentId) {
-			if (empty($talentId)) continue;
-			D('RmsTalent')->d($talentId);
-		}
-		$this->redirect($_SERVER['HTTP_REFERER']);
+
+	// 显示列表
+	public function showList() {
+		$const = array();
+		$const['title'] = '求职者';
+		$const['group'] = 'rms';
+		$const['action'] = 'talent';
+		$const['toolbar'] = array(
+			'create' => array('on' => 1),
+			'delete' => array('on' => 1),
+			'other' => array(
+				array('简历通过', '/rms/rms_talent/resumeOK'),
+				array('安排笔试', '/rms/rms_talent/arrangeExam'),
+				array('安排面试', '/rms/rms_talent/arrangeInterview'),
+				array('录用', '/rms/rms_talent/hire'),
+				array('淘汰', '/rms/rms_talent/eliminate'),
+				array('发邮件', '/rms/rms_talent/sendEmail'),
+				array('发短信', '/rms/rms_talent/sendMessage'),
+			),
+		);
+		$const['showField'] = array('talent_id', 'name', 'gender', 'age', 'education', 'shcool', 'position_name', 'join_time', 'status');
+		$const['linkField'] = array(
+			'name' =>		
+				array('/rms/rms_talent/show/talent_id/{$0$}', array('talent_id')),
+			'position_name' =>		
+				array('/rms/rms_position/show/position_id/{$0$}', array('position_id')),
+		);
+		$const['showFilterField'] = array('talent_id', 'name', 'gender_id', 'position_id', 'age', 'education_id', 'join_time_int', 'status_id', 'school', 'major', 'phone', 'email');
+		$const['specialFilterField'] = array(
+			'join_time_int' =>
+				array('timeBetween'),
+			'age' =>
+				array('between'),
+			'position_id' =>
+				array('namePicker', '/base/common/getIdNameList/group/rms/action/position'),
+		);
+		$const['filterDefault'] = array(
+			'position_id' =>
+				array('rms', 'position', 'position_id', 'name'),
+		);
+		$const['moreField'] = array(
+			array('简历通过', array('/rms/rms_talent/resumeOK/id/{$0$}', array('talent_id'))),
+			array('安排笔试', array('/rms/rms_talent/arrangeExam/id/{$0$}', array('talent_id'))),
+			array('安排面试', array('/rms/rms_talent/arrangeInterview/id/{$0$}', array('talent_id'))),
+			array('录用', array('/rms/rms_talent/hire/id/{$0$}', array('talent_id'))),
+			array('淘汰', array('/rms/rms_talent/eliminate/id/{$0$}', array('talent_id'))),
+			array('发邮件', array('/rms/rms_talent/sendEmail/id/{$0$}', array('talent_id'))),
+			array('发短信', array('/rms/rms_talent/sendMessage/id/{$0$}', array('talent_id'))),
+		);
+		$const['page'] = $_GET['page'];
+		$const['order'] = array('talent_id', 'DESC');
+		
+		A('Base/Common')->showList($const);
 	}
 	
 	// 上传并解析简历
@@ -219,43 +233,48 @@ class RmsTalentAction extends Action {
 		}
 	}
 	
+	// 简历通过
+	public function resumeOK() {
+		$idList = A('Base/Common')->getGetIdList();
+		D('Base/Common')->changeField('status_id', 2, $idList, 'rms', 'talent');
+		$this->redirect($_SERVER['HTTP_REFERER']);
+	}
+	
 	// 安排笔试
 	public function arrangeExam() {
-		$talentIdList = split('\|', $_GET['id_list']);
-		foreach($talentIdList as $talentId) {
-			if (empty($talentId)) continue;
-			D('RmsTalent')->uStatus($talentId, 3);
-		}
+		$idList = A('Base/Common')->getGetIdList();
+		D('Base/Common')->changeField('status_id', 3, $idList, 'rms', 'talent');
 		$this->redirect($_SERVER['HTTP_REFERER']);
 	}
 	
 	// 安排面试
 	public function arrangeInterview() {
-		$talentIdList = split('\|', $_GET['id_list']);
-		foreach($talentIdList as $talentId) {
-			if (empty($talentId)) continue;
-			D('RmsTalent')->uStatus($talentId, 4);
-		}
+		$idList = A('Base/Common')->getGetIdList();
+		D('Base/Common')->changeField('status_id', 4, $idList, 'rms', 'talent');
 		$this->redirect($_SERVER['HTTP_REFERER']);
 	}
 	
 	// 录用
 	public function hire() {
-		$talentIdList = split('\|', $_GET['id_list']);
-		foreach($talentIdList as $talentId) {
-			if (empty($talentId)) continue;
-			D('RmsTalent')->uStatus($talentId, 5);
-		}
+		$idList = A('Base/Common')->getGetIdList();
+		D('Base/Common')->changeField('status_id', 5, $idList, 'rms', 'talent');
 		$this->redirect($_SERVER['HTTP_REFERER']);
 	}
 	
 	// 淘汰
 	public function eliminate() {
-		$talentIdList = split('\|', $_GET['id_list']);
-		foreach($talentIdList as $talentId) {
-			if (empty($talentId)) continue;
-			D('RmsTalent')->uStatus($talentId, 6);
-		}
+		$idList = A('Base/Common')->getGetIdList();
+		D('Base/Common')->changeField('status_id', 6, $idList, 'rms', 'talent');
+		$this->redirect($_SERVER['HTTP_REFERER']);
+	}
+	
+	// 发送邮件
+	public function sendEmail() {
+		$this->redirect($_SERVER['HTTP_REFERER']);
+	}
+	
+	// 发送短信
+	public function sendMessage() {
 		$this->redirect($_SERVER['HTTP_REFERER']);
 	}
 	
@@ -300,7 +319,7 @@ class RmsTalentAction extends Action {
 				$talent['status'] = '未查看';
 				break;
 			case 2:
-				$talent['status'] = '已查看';
+				$talent['status'] = '简历通过';
 				break;
 			case 3:
 				$talent['status'] = '笔试考查';

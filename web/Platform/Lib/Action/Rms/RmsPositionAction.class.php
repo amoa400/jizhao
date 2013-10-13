@@ -6,101 +6,73 @@ class RmsPositionAction extends Action {
 		isLogin(1);
 	}
 	
-	// 显示列表
-	public function showList() {
-		// 获取列表
-		$ret = D('Rms/RmsPosition')->rList($_GET);
-		$positionList = $ret['data'];
-		
-		// 分页信息
-		$pager['count'] = $ret['count'];
-		$pager['cntPage'] = $_GET['page'];
-		if (empty($pager['cntPage'])) $pager['cntPage'] = 1;
-		$pager['totPage'] =  ceil($pager['count'] / 20);
-
-		foreach($positionList as $key => $position) {
-			$positionList[$key] = $this->format($position);
-			// 缩短描述
-			$positionList[$key]['description'] = msubstr($position['description'], 0, 100);
-		}
-		$this->assign('positionList', $positionList);
-		$this->assign('pager', $pager);
-		$this->assign('pageTitle', '职位管理');
-		$this->display();
-	}
-	
 	// 创建
 	public function create() {
-		$this->display();
-	}
-	
-	// 创建处理
-	public function createDo() {
-		$posDo = D('RmsPosition');
-		$res = $posDo->c($data);
-		// 返回
-		$ret = array();
-		if ($res == false) {
-			$ret['retStatus'] = 'fail';
-			$ret['error'] = $posDo->errorInfo;
-		} else {
-			$ret['retStatus'] = 'success';
-			$ret['jumpAction'] = 'position';
-			$ret['jumpFunc'] = 'showList';
-		}
-		$this->ajaxReturn($ret);
+		$const = array();
+		$const['title'] = '职位';
+		$const['group'] = 'rms';
+		$const['action'] = 'position';
+		$const['showField'] = array('name', 'description', 'requirement');
+		
+		A('Base/Common')->create($const);
 	}
 	
 	// 修改职位
 	public function edit() {
-		$position = D('RmsPosition')->r($_GET['position_id']);
-		$this->assign('position', $position);
-		$this->assign('pageTitle', '编辑职位 - ' . $position['name']);
-		$this->display();
-	}
-	
-	// 修改职位（处理）
-	public function editDo() {
-		$posDo = D('RmsPosition');
-		$res = $posDo->u();
-		// 返回
-		if ($res == false && !empty($posDo->errorInfo)) {
-			$ret['retStatus'] = 'fail';
-			$ret['error'] = $posDo->errorInfo;
-		} else {
-			$ret['retStatus'] = 'success';
-		}
-		$this->ajaxReturn($ret);
+		$const = array();
+		$const['title'] = '职位';
+		$const['group'] = 'rms';
+		$const['action'] = 'position';
+		$const['id'] = $_GET['position_id'];
+		$const['disableField'] = array('position_id');
+		$const['showField'] = array('position_id', 'name', 'description', 'requirement', 'status_id');
+		
+		A('Base/Common')->edit($const);
 	}
 	
 	// 显示职位
 	public function show() {
-		$position = D('RmsPosition')->r($_GET['position_id']);
-		$position = $this->format($position);
-		$this->assign('position', $position);
-		$this->assign('pageTitle', '查看职位 - ' . $position['name']);
-		$this->display();
+		$const = array();
+		$const['title'] = '职位';
+		$const['group'] = 'rms';
+		$const['action'] = 'position';
+		$const['id'] = $_GET['position_id'];
+		$const['showField'] = array('position_id', 'name', 'description', 'requirement', 'enrollment', 'create_time', 'status');
+		
+		A('Base/Common')->show($const);
 	}
-	
-	// 删除职位
-	public function delete() {
-		D('RmsPosition')->d($_GET['position_id']);
-		if ($_GET['close_window'] == 1) {
-			echo '<script>window.close()</script>';
-		}
-		else {
-			$this->success('删除成功！');
-		}
-	}
-	
-	//  删除列表
-	public function deleteList() {
-		$positionIdList = split('\|', $_GET['id_list']);
-		foreach($positionIdList as $positionId) {
-			if (empty($positionId)) continue;
-			D('RmsPosition')->d($positionId);
-		}
-		$this->success('删除成功！');
+
+	// 显示列表
+	public function showList() {
+		$const = array();
+		$const['title'] = '职位';
+		$const['group'] = 'rms';
+		$const['action'] = 'position';
+		$const['toolbar'] = array(
+			'create' => array('on' => 1),
+			'delete' => array('on' => 1),
+		);
+		$const['showField'] = array('position_id', 'name', 'description', 'enrollment', 'create_time', 'status');
+		$const['linkField'] = array(
+			'name' =>		
+				array('/rms/rms_position/show/position_id/{$0$}', array('position_id')),
+		);
+		$const['showFilterField'] = array('position_id', 'name', 'enrollment',  'status_id', 'create_time_int');
+		$const['specialFilterField'] = array(
+			'enrollment' =>
+				array('between'),
+			'create_time_int' =>
+				array('timeBetween'),
+		);
+		$const['moreField'] = array(
+			array('停止发布'),
+			array('发布职位'),
+			array('关闭职位'),
+		);
+		$const['page'] = $_GET['page'];
+		$const['order'] = array('position_id', 'DESC');
+		
+		A('Base/Common')->showList($const);
 	}
 	
 	// 格式化
